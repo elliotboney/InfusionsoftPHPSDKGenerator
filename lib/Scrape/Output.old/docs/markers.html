@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=940, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<title>API Documentation</title>
+<meta name="author" content="Elliot Boney">
+<meta name="description" content="">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                            API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a href="namespaces/iSDK.html"><i class="icon-th"></i> iSDK</a></li>
+<li><a href="namespaces/xmlrpc.html"><i class="icon-th"></i> xmlrpc</a></li>
+<li><a>Packages</a></li>
+<li><a href="packages/ActionSequence.html"><i class="icon-folder-open"></i> ActionSequence</a></li>
+<li><a href="packages/AffResource.html"><i class="icon-folder-open"></i> AffResource</a></li>
+<li><a href="packages/Affiliate.html"><i class="icon-folder-open"></i> Affiliate</a></li>
+<li><a href="packages/AffiliateProgramService.html"><i class="icon-folder-open"></i> AffiliateProgramService</a></li>
+<li><a href="packages/AffiliateService.html"><i class="icon-folder-open"></i> AffiliateService</a></li>
+<li><a href="packages/CCharge.html"><i class="icon-folder-open"></i> CCharge</a></li>
+<li><a href="packages/CProgram.html"><i class="icon-folder-open"></i> CProgram</a></li>
+<li><a href="packages/Campaign.html"><i class="icon-folder-open"></i> Campaign</a></li>
+<li><a href="packages/CampaignStep.html"><i class="icon-folder-open"></i> CampaignStep</a></li>
+<li><a href="packages/Campaignee.html"><i class="icon-folder-open"></i> Campaignee</a></li>
+<li><a href="packages/Company.html"><i class="icon-folder-open"></i> Company</a></li>
+<li><a href="packages/Contact.html"><i class="icon-folder-open"></i> Contact</a></li>
+<li><a href="packages/ContactAction.html"><i class="icon-folder-open"></i> ContactAction</a></li>
+<li><a href="packages/ContactGroup.html"><i class="icon-folder-open"></i> ContactGroup</a></li>
+<li><a href="packages/ContactGroupCategory.html"><i class="icon-folder-open"></i> ContactGroupCategory</a></li>
+<li><a href="packages/ContactService.html"><i class="icon-folder-open"></i> ContactService</a></li>
+<li><a href="packages/CreditCard.html"><i class="icon-folder-open"></i> CreditCard</a></li>
+<li><a href="packages/DataFormField.html"><i class="icon-folder-open"></i> DataFormField</a></li>
+<li><a href="packages/DataFormGroup.html"><i class="icon-folder-open"></i> DataFormGroup</a></li>
+<li><a href="packages/DataFormTab.html"><i class="icon-folder-open"></i> DataFormTab</a></li>
+<li><a href="packages/DataService.html"><i class="icon-folder-open"></i> DataService</a></li>
+<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="packages/DiscountService.html"><i class="icon-folder-open"></i> DiscountService</a></li>
+<li><a href="packages/Expense.html"><i class="icon-folder-open"></i> Expense</a></li>
+<li><a href="packages/FileBox.html"><i class="icon-folder-open"></i> FileBox</a></li>
+<li><a href="packages/GroupAssign.html"><i class="icon-folder-open"></i> GroupAssign</a></li>
+<li><a href="packages/Invoice.html"><i class="icon-folder-open"></i> Invoice</a></li>
+<li><a href="packages/InvoiceItem.html"><i class="icon-folder-open"></i> InvoiceItem</a></li>
+<li><a href="packages/InvoicePayment.html"><i class="icon-folder-open"></i> InvoicePayment</a></li>
+<li><a href="packages/InvoiceService.html"><i class="icon-folder-open"></i> InvoiceService</a></li>
+<li><a href="packages/Job.html"><i class="icon-folder-open"></i> Job</a></li>
+<li><a href="packages/JobRecurringInstance.html"><i class="icon-folder-open"></i> JobRecurringInstance</a></li>
+<li><a href="packages/Lead.html"><i class="icon-folder-open"></i> Lead</a></li>
+<li><a href="packages/LeadSource.html"><i class="icon-folder-open"></i> LeadSource</a></li>
+<li><a href="packages/LeadSourceCategory.html"><i class="icon-folder-open"></i> LeadSourceCategory</a></li>
+<li><a href="packages/LeadSourceExpense.html"><i class="icon-folder-open"></i> LeadSourceExpense</a></li>
+<li><a href="packages/LeadSourceRecurringExpense.html"><i class="icon-folder-open"></i> LeadSourceRecurringExpense</a></li>
+<li><a href="packages/MtgLead.html"><i class="icon-folder-open"></i> MtgLead</a></li>
+<li><a href="packages/OrderItem.html"><i class="icon-folder-open"></i> OrderItem</a></li>
+<li><a href="packages/PackageName.html"><i class="icon-folder-open"></i> PackageName</a></li>
+<li><a href="packages/PayPlan.html"><i class="icon-folder-open"></i> PayPlan</a></li>
+<li><a href="packages/PayPlanItem.html"><i class="icon-folder-open"></i> PayPlanItem</a></li>
+<li><a href="packages/Payment.html"><i class="icon-folder-open"></i> Payment</a></li>
+<li><a href="packages/Product.html"><i class="icon-folder-open"></i> Product</a></li>
+<li><a href="packages/ProductCategory.html"><i class="icon-folder-open"></i> ProductCategory</a></li>
+<li><a href="packages/ProductCategoryAssign.html"><i class="icon-folder-open"></i> ProductCategoryAssign</a></li>
+<li><a href="packages/ProductInterest.html"><i class="icon-folder-open"></i> ProductInterest</a></li>
+<li><a href="packages/ProductInterestBundle.html"><i class="icon-folder-open"></i> ProductInterestBundle</a></li>
+<li><a href="packages/ProductOptValue.html"><i class="icon-folder-open"></i> ProductOptValue</a></li>
+<li><a href="packages/ProductOption.html"><i class="icon-folder-open"></i> ProductOption</a></li>
+<li><a href="packages/ProductService.html"><i class="icon-folder-open"></i> ProductService</a></li>
+<li><a href="packages/RecurringOrder.html"><i class="icon-folder-open"></i> RecurringOrder</a></li>
+<li><a href="packages/RecurringOrderWithContact.html"><i class="icon-folder-open"></i> RecurringOrderWithContact</a></li>
+<li><a href="packages/Referral.html"><i class="icon-folder-open"></i> Referral</a></li>
+<li><a href="packages/SavedFilter.html"><i class="icon-folder-open"></i> SavedFilter</a></li>
+<li><a href="packages/SearchService.html"><i class="icon-folder-open"></i> SearchService</a></li>
+<li><a href="packages/ShippingService.html"><i class="icon-folder-open"></i> ShippingService</a></li>
+<li><a href="packages/Stage.html"><i class="icon-folder-open"></i> Stage</a></li>
+<li><a href="packages/StageMove.html"><i class="icon-folder-open"></i> StageMove</a></li>
+<li><a href="packages/Status.html"><i class="icon-folder-open"></i> Status</a></li>
+<li><a href="packages/SubscriptionPlan.html"><i class="icon-folder-open"></i> SubscriptionPlan</a></li>
+<li><a href="packages/Template.html"><i class="icon-folder-open"></i> Template</a></li>
+<li><a href="packages/Ticket.html"><i class="icon-folder-open"></i> Ticket</a></li>
+<li><a href="packages/TicketStage.html"><i class="icon-folder-open"></i> TicketStage</a></li>
+<li><a href="packages/TicketType.html"><i class="icon-folder-open"></i> TicketType</a></li>
+<li><a href="packages/User.html"><i class="icon-folder-open"></i> User</a></li>
+<li><a href="packages/UserGroup.html"><i class="icon-folder-open"></i> UserGroup</a></li>
+<li><a href="packages/WebFormService.html"><i class="icon-folder-open"></i> WebFormService</a></li>
+<li><a href="packages/Xmlrpc.html"><i class="icon-folder-open"></i> Xmlrpc</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                            Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                                Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">20</span></a></li>
+<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">4</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4"><ul class="side-nav nav nav-list">
+<li class="nav-header">Navigation</li>
+<li><a href="#lib/xmlrpc.php"><i class="icon-file"></i>lib/xmlrpc.php</a></li>
+<li><a href="#lib/xmlrpc_wrappers.php"><i class="icon-file"></i>lib/xmlrpc_wrappers.php</a></li>
+</ul></div>
+<div class="span8">
+<ul class="breadcrumb">
+<li>
+<a href=""><i class="icon-map-marker"></i></a><span class="divider">\</span>
+</li>
+<li>Markers</li>
+</ul>
+<div id="marker-accordion">
+<div class="package-contents">
+<a name="lib/xmlrpc.php" id="lib/xmlrpc.php"></a><h3>
+<i class="icon-file"></i>lib/xmlrpc.php<small style="float: right;padding-right: 10px;">8</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>268</td>
+<td>do a bit of basic benchmarking (strtr vs. str_replace)</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>268</td>
+<td>make usage of iconv() or recode_string() or mb_string() where available</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>3273</td>
+<td>explore usage of mb_http_input(): does it detect http headers + post data? if so, use it instead of hand-detection!!!</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1003</td>
+<td>check correctness of urlencoding cookie value (copied from php way of doing it...)</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1728</td>
+<td>add check that $val / $fcode / $fstr is of correct type???
+NB: as of now we do not do it, since it might be either an xmlrpcval or a plain
+php val, or a complete xml chunk, depending on usage of xmlrpc_client::send() inside which creator is called...</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1986</td>
+<td>add 2nd &amp; 3rd param to be passed to ParseResponse() ???</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>2495</td>
+<td>add some checking for $vals to be an array of xmlrpcvals?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>2519</td>
+<td>add some checking for $vals to be an array?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="lib/xmlrpc_wrappers.php" id="lib/xmlrpc_wrappers.php"></a><h3>
+<i class="icon-file"></i>lib/xmlrpc_wrappers.php<small style="float: right;padding-right: 10px;">14</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>0</td>
+<td>separate introspection from code generation for func-2-method wrapping</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>0</td>
+<td>use some better templating system for code generation?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>0</td>
+<td>implement method wrapping with preservation of php objs in calls</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>0</td>
+<td>when wrapping methods without obj rebuilding, use return_type = &#039;phpvals&#039; (faster)</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>0</td>
+<td>implement self-parsing of php code for PHP &lt;= 4</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>decide how to deal with params passed by ref: bomb out or allow?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>finish using javadoc info to build method sig if all params are named but out of order</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>add a check for params of &#039;resource&#039; type</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>add some trigger_errors / error_log when returning false?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>what to do when the PHP function returns NULL? we are currently returning an empty string value...</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>add an option to suppress php warnings in invocation of user function, similar to server debug level 3?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>if $newfuncname is empty, we could use create_user_func instead of eval, as it is possibly faster</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>145</td>
+<td>add a verbatim_object_copy parameter to allow avoiding the same obj instance?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>499</td>
+<td>get_class_methods will return both static and non-static methods.
+      we have to differentiate the action, depending on wheter we recived a class name or object</td>
+</tr>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+                        Generated on 2013-09-27T20:26:53-05:00.<br></footer></div>
+</div>
+</body>
+</html>

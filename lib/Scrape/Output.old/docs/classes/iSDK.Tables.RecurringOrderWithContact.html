@@ -1,0 +1,737 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=940, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<title>API Documentation » \iSDK\Tables\RecurringOrderWithContact</title>
+<meta name="author" content="Elliot Boney">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                            API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a href="../namespaces/iSDK.html"><i class="icon-th"></i> iSDK</a></li>
+<li><a href="../namespaces/xmlrpc.html"><i class="icon-th"></i> xmlrpc</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ActionSequence.html"><i class="icon-folder-open"></i> ActionSequence</a></li>
+<li><a href="../packages/AffResource.html"><i class="icon-folder-open"></i> AffResource</a></li>
+<li><a href="../packages/Affiliate.html"><i class="icon-folder-open"></i> Affiliate</a></li>
+<li><a href="../packages/AffiliateProgramService.html"><i class="icon-folder-open"></i> AffiliateProgramService</a></li>
+<li><a href="../packages/AffiliateService.html"><i class="icon-folder-open"></i> AffiliateService</a></li>
+<li><a href="../packages/CCharge.html"><i class="icon-folder-open"></i> CCharge</a></li>
+<li><a href="../packages/CProgram.html"><i class="icon-folder-open"></i> CProgram</a></li>
+<li><a href="../packages/Campaign.html"><i class="icon-folder-open"></i> Campaign</a></li>
+<li><a href="../packages/CampaignStep.html"><i class="icon-folder-open"></i> CampaignStep</a></li>
+<li><a href="../packages/Campaignee.html"><i class="icon-folder-open"></i> Campaignee</a></li>
+<li><a href="../packages/Company.html"><i class="icon-folder-open"></i> Company</a></li>
+<li><a href="../packages/Contact.html"><i class="icon-folder-open"></i> Contact</a></li>
+<li><a href="../packages/ContactAction.html"><i class="icon-folder-open"></i> ContactAction</a></li>
+<li><a href="../packages/ContactGroup.html"><i class="icon-folder-open"></i> ContactGroup</a></li>
+<li><a href="../packages/ContactGroupCategory.html"><i class="icon-folder-open"></i> ContactGroupCategory</a></li>
+<li><a href="../packages/ContactService.html"><i class="icon-folder-open"></i> ContactService</a></li>
+<li><a href="../packages/CreditCard.html"><i class="icon-folder-open"></i> CreditCard</a></li>
+<li><a href="../packages/DataFormField.html"><i class="icon-folder-open"></i> DataFormField</a></li>
+<li><a href="../packages/DataFormGroup.html"><i class="icon-folder-open"></i> DataFormGroup</a></li>
+<li><a href="../packages/DataFormTab.html"><i class="icon-folder-open"></i> DataFormTab</a></li>
+<li><a href="../packages/DataService.html"><i class="icon-folder-open"></i> DataService</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/DiscountService.html"><i class="icon-folder-open"></i> DiscountService</a></li>
+<li><a href="../packages/Expense.html"><i class="icon-folder-open"></i> Expense</a></li>
+<li><a href="../packages/FileBox.html"><i class="icon-folder-open"></i> FileBox</a></li>
+<li><a href="../packages/GroupAssign.html"><i class="icon-folder-open"></i> GroupAssign</a></li>
+<li><a href="../packages/Invoice.html"><i class="icon-folder-open"></i> Invoice</a></li>
+<li><a href="../packages/InvoiceItem.html"><i class="icon-folder-open"></i> InvoiceItem</a></li>
+<li><a href="../packages/InvoicePayment.html"><i class="icon-folder-open"></i> InvoicePayment</a></li>
+<li><a href="../packages/InvoiceService.html"><i class="icon-folder-open"></i> InvoiceService</a></li>
+<li><a href="../packages/Job.html"><i class="icon-folder-open"></i> Job</a></li>
+<li><a href="../packages/JobRecurringInstance.html"><i class="icon-folder-open"></i> JobRecurringInstance</a></li>
+<li><a href="../packages/Lead.html"><i class="icon-folder-open"></i> Lead</a></li>
+<li><a href="../packages/LeadSource.html"><i class="icon-folder-open"></i> LeadSource</a></li>
+<li><a href="../packages/LeadSourceCategory.html"><i class="icon-folder-open"></i> LeadSourceCategory</a></li>
+<li><a href="../packages/LeadSourceExpense.html"><i class="icon-folder-open"></i> LeadSourceExpense</a></li>
+<li><a href="../packages/LeadSourceRecurringExpense.html"><i class="icon-folder-open"></i> LeadSourceRecurringExpense</a></li>
+<li><a href="../packages/MtgLead.html"><i class="icon-folder-open"></i> MtgLead</a></li>
+<li><a href="../packages/OrderItem.html"><i class="icon-folder-open"></i> OrderItem</a></li>
+<li><a href="../packages/PackageName.html"><i class="icon-folder-open"></i> PackageName</a></li>
+<li><a href="../packages/PayPlan.html"><i class="icon-folder-open"></i> PayPlan</a></li>
+<li><a href="../packages/PayPlanItem.html"><i class="icon-folder-open"></i> PayPlanItem</a></li>
+<li><a href="../packages/Payment.html"><i class="icon-folder-open"></i> Payment</a></li>
+<li><a href="../packages/Product.html"><i class="icon-folder-open"></i> Product</a></li>
+<li><a href="../packages/ProductCategory.html"><i class="icon-folder-open"></i> ProductCategory</a></li>
+<li><a href="../packages/ProductCategoryAssign.html"><i class="icon-folder-open"></i> ProductCategoryAssign</a></li>
+<li><a href="../packages/ProductInterest.html"><i class="icon-folder-open"></i> ProductInterest</a></li>
+<li><a href="../packages/ProductInterestBundle.html"><i class="icon-folder-open"></i> ProductInterestBundle</a></li>
+<li><a href="../packages/ProductOptValue.html"><i class="icon-folder-open"></i> ProductOptValue</a></li>
+<li><a href="../packages/ProductOption.html"><i class="icon-folder-open"></i> ProductOption</a></li>
+<li><a href="../packages/ProductService.html"><i class="icon-folder-open"></i> ProductService</a></li>
+<li><a href="../packages/RecurringOrder.html"><i class="icon-folder-open"></i> RecurringOrder</a></li>
+<li><a href="../packages/RecurringOrderWithContact.html"><i class="icon-folder-open"></i> RecurringOrderWithContact</a></li>
+<li><a href="../packages/Referral.html"><i class="icon-folder-open"></i> Referral</a></li>
+<li><a href="../packages/SavedFilter.html"><i class="icon-folder-open"></i> SavedFilter</a></li>
+<li><a href="../packages/SearchService.html"><i class="icon-folder-open"></i> SearchService</a></li>
+<li><a href="../packages/ShippingService.html"><i class="icon-folder-open"></i> ShippingService</a></li>
+<li><a href="../packages/Stage.html"><i class="icon-folder-open"></i> Stage</a></li>
+<li><a href="../packages/StageMove.html"><i class="icon-folder-open"></i> StageMove</a></li>
+<li><a href="../packages/Status.html"><i class="icon-folder-open"></i> Status</a></li>
+<li><a href="../packages/SubscriptionPlan.html"><i class="icon-folder-open"></i> SubscriptionPlan</a></li>
+<li><a href="../packages/Template.html"><i class="icon-folder-open"></i> Template</a></li>
+<li><a href="../packages/Ticket.html"><i class="icon-folder-open"></i> Ticket</a></li>
+<li><a href="../packages/TicketStage.html"><i class="icon-folder-open"></i> TicketStage</a></li>
+<li><a href="../packages/TicketType.html"><i class="icon-folder-open"></i> TicketType</a></li>
+<li><a href="../packages/User.html"><i class="icon-folder-open"></i> User</a></li>
+<li><a href="../packages/UserGroup.html"><i class="icon-folder-open"></i> UserGroup</a></li>
+<li><a href="../packages/WebFormService.html"><i class="icon-folder-open"></i> WebFormService</a></li>
+<li><a href="../packages/Xmlrpc.html"><i class="icon-folder-open"></i> Xmlrpc</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                            Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                                Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">20</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">4</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple active" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_AffiliateId" title="$AffiliateId() :: API Access: Read"><span class="description"></span><pre>$AffiliateId</pre></a></li>
+<li class="property public "><a href="#property_AutoCharge" title="$AutoCharge() :: API Access: Read"><span class="description"></span><pre>$AutoCharge</pre></a></li>
+<li class="property public "><a href="#property_BillingAmt" title="$BillingAmt() :: API Access: Read"><span class="description"></span><pre>$BillingAmt</pre></a></li>
+<li class="property public "><a href="#property_BillingCycle" title="$BillingCycle() :: API Access: Read"><span class="description"></span><pre>$BillingCycle</pre></a></li>
+<li class="property public "><a href="#property_CC1" title="$CC1() :: API Access: Read"><span class="description"></span><pre>$CC1</pre></a></li>
+<li class="property public "><a href="#property_CC2" title="$CC2() :: API Access: Read"><span class="description"></span><pre>$CC2</pre></a></li>
+<li class="property public "><a href="#property_City" title="$City() :: API Access: Read"><span class="description"></span><pre>$City</pre></a></li>
+<li class="property public "><a href="#property_ContactId" title="$ContactId() :: API Access: Read"><span class="description"></span><pre>$ContactId</pre></a></li>
+<li class="property public "><a href="#property_Country" title="$Country() :: API Access: Read"><span class="description"></span><pre>$Country</pre></a></li>
+<li class="property public "><a href="#property_Email" title="$Email() :: API Access: Read"><span class="description"></span><pre>$Email</pre></a></li>
+<li class="property public "><a href="#property_EmailAddress2" title="$EmailAddress2() :: API Access: Read"><span class="description"></span><pre>$EmailAddress2</pre></a></li>
+<li class="property public "><a href="#property_EmailAddress3" title="$EmailAddress3() :: API Access: Read"><span class="description"></span><pre>$EmailAddress3</pre></a></li>
+<li class="property public "><a href="#property_EndDate" title="$EndDate() :: API Access: Read"><span class="description"></span><pre>$EndDate</pre></a></li>
+<li class="property public "><a href="#property_FirstName" title="$FirstName() :: API Access: Read"><span class="description"></span><pre>$FirstName</pre></a></li>
+<li class="property public "><a href="#property_Frequency" title="$Frequency() :: API Access: Read"><span class="description"></span><pre>$Frequency</pre></a></li>
+<li class="property public "><a href="#property_HTMLSignature" title="$HTMLSignature() :: API Access: Read"><span class="description"></span><pre>$HTMLSignature</pre></a></li>
+<li class="property public "><a href="#property_LastBillDate" title="$LastBillDate() :: API Access: Read"><span class="description"></span><pre>$LastBillDate</pre></a></li>
+<li class="property public "><a href="#property_LastName" title="$LastName() :: API Access: Read"><span class="description"></span><pre>$LastName</pre></a></li>
+<li class="property public "><a href="#property_LeadAffiliateId" title="$LeadAffiliateId() :: API Access: Read"><span class="description"></span><pre>$LeadAffiliateId</pre></a></li>
+<li class="property public "><a href="#property_MaxRetry" title="$MaxRetry() :: API Access: Read"><span class="description"></span><pre>$MaxRetry</pre></a></li>
+<li class="property public "><a href="#property_MerchantAccountId" title="$MerchantAccountId() :: API Access: Read"><span class="description"></span><pre>$MerchantAccountId</pre></a></li>
+<li class="property public "><a href="#property_MiddleName" title="$MiddleName() :: API Access: Read"><span class="description"></span><pre>$MiddleName</pre></a></li>
+<li class="property public "><a href="#property_NextBillDate" title="$NextBillDate() :: API Access: Read"><span class="description"></span><pre>$NextBillDate</pre></a></li>
+<li class="property public "><a href="#property_Nickname" title="$Nickname() :: API Access: Read"><span class="description"></span><pre>$Nickname</pre></a></li>
+<li class="property public "><a href="#property_NumDaysBetweenRetry" title="$NumDaysBetweenRetry() :: API Access: Read"><span class="description"></span><pre>$NumDaysBetweenRetry</pre></a></li>
+<li class="property public "><a href="#property_PaidThruDate" title="$PaidThruDate() :: API Access: Read"><span class="description"></span><pre>$PaidThruDate</pre></a></li>
+<li class="property public "><a href="#property_Phone1" title="$Phone1() :: API Access: Read"><span class="description"></span><pre>$Phone1</pre></a></li>
+<li class="property public "><a href="#property_Phone1Ext" title="$Phone1Ext() :: API Access: Read"><span class="description"></span><pre>$Phone1Ext</pre></a></li>
+<li class="property public "><a href="#property_Phone1Type" title="$Phone1Type() :: API Access: Read"><span class="description"></span><pre>$Phone1Type</pre></a></li>
+<li class="property public "><a href="#property_Phone2" title="$Phone2() :: API Access: Read"><span class="description"></span><pre>$Phone2</pre></a></li>
+<li class="property public "><a href="#property_Phone2Ext" title="$Phone2Ext() :: API Access: Read"><span class="description"></span><pre>$Phone2Ext</pre></a></li>
+<li class="property public "><a href="#property_Phone2Type" title="$Phone2Type() :: API Access: Read"><span class="description"></span><pre>$Phone2Type</pre></a></li>
+<li class="property public "><a href="#property_PostalCode" title="$PostalCode() :: API Access: Read"><span class="description"></span><pre>$PostalCode</pre></a></li>
+<li class="property public "><a href="#property_ProductId" title="$ProductId() :: API Access: Read"><span class="description"></span><pre>$ProductId</pre></a></li>
+<li class="property public "><a href="#property_ProgramId" title="$ProgramId() :: API Access: Read"><span class="description"></span><pre>$ProgramId</pre></a></li>
+<li class="property public "><a href="#property_PromoCode" title="$PromoCode() :: API Access: Read"><span class="description"></span><pre>$PromoCode</pre></a></li>
+<li class="property public "><a href="#property_Qty" title="$Qty() :: API Access: Read"><span class="description"></span><pre>$Qty</pre></a></li>
+<li class="property public "><a href="#property_ReasonStopped" title="$ReasonStopped() :: API Access: Read"><span class="description"></span><pre>$ReasonStopped</pre></a></li>
+<li class="property public "><a href="#property_RecurringOrderId" title="$RecurringOrderId() :: API Access: Read"><span class="description"></span><pre>$RecurringOrderId</pre></a></li>
+<li class="property public "><a href="#property_Signature" title="$Signature() :: API Access: Read"><span class="description"></span><pre>$Signature</pre></a></li>
+<li class="property public "><a href="#property_SpouseName" title="$SpouseName() :: API Access: Read"><span class="description"></span><pre>$SpouseName</pre></a></li>
+<li class="property public "><a href="#property_StartDate" title="$StartDate() :: API Access: Read"><span class="description"></span><pre>$StartDate</pre></a></li>
+<li class="property public "><a href="#property_State" title="$State() :: API Access: Read"><span class="description"></span><pre>$State</pre></a></li>
+<li class="property public "><a href="#property_Status" title="$Status() :: API Access: Read"><span class="description"></span><pre>$Status</pre></a></li>
+<li class="property public "><a href="#property_StreetAddress1" title="$StreetAddress1() :: API Access: Read"><span class="description"></span><pre>$StreetAddress1</pre></a></li>
+<li class="property public "><a href="#property_StreetAddress2" title="$StreetAddress2() :: API Access: Read"><span class="description"></span><pre>$StreetAddress2</pre></a></li>
+<li class="property public "><a href="#property_SubscriptionPlanId" title="$SubscriptionPlanId() :: API Access: Read"><span class="description"></span><pre>$SubscriptionPlanId</pre></a></li>
+<li class="property public "><a href="#property_Suffix" title="$Suffix() :: API Access: Read"><span class="description"></span><pre>$Suffix</pre></a></li>
+<li class="property public "><a href="#property_Title" title="$Title() :: API Access: Read"><span class="description"></span><pre>$Title</pre></a></li>
+<li class="property public "><a href="#property_ZipFour1" title="$ZipFour1() :: API Access: Read"><span class="description"></span><pre>$ZipFour1</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\iSDK\Tables\RecurringOrderWithContact"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/iSDK.html">iSDK</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/iSDK.Tables.html">Tables</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/iSDK.Tables.RecurringOrderWithContact.html">RecurringOrderWithContact</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">RecurringOrderWithContact Table Class</p>
+<div class="details">
+<div class="long_description">RecurringOrderWithContact [short description]</div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Tables</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/RecurringOrderWithContact.html">RecurringOrderWithContact</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Elliot Boney &lt;elliotboney@gmail.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">MIT License (http://www.opensource.org/licenses/mit-license.php)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="">http://developers.infusionsoft.com/dbDocs/RecurringOrderWithContact.html</a></td>
+</tr>
+</table>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_AffiliateId"> </a><div class="element clickable property public property_AffiliateId" data-toggle="collapse" data-target=".property_AffiliateId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$AffiliateId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_AutoCharge"> </a><div class="element clickable property public property_AutoCharge" data-toggle="collapse" data-target=".property_AutoCharge .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$AutoCharge : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BillingAmt"> </a><div class="element clickable property public property_BillingAmt" data-toggle="collapse" data-target=".property_BillingAmt .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$BillingAmt : double</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_BillingCycle"> </a><div class="element clickable property public property_BillingCycle" data-toggle="collapse" data-target=".property_BillingCycle .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$BillingCycle : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_CC1"> </a><div class="element clickable property public property_CC1" data-toggle="collapse" data-target=".property_CC1 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$CC1 : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_CC2"> </a><div class="element clickable property public property_CC2" data-toggle="collapse" data-target=".property_CC2 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$CC2 : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_City"> </a><div class="element clickable property public property_City" data-toggle="collapse" data-target=".property_City .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$City : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ContactId"> </a><div class="element clickable property public property_ContactId" data-toggle="collapse" data-target=".property_ContactId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$ContactId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Country"> </a><div class="element clickable property public property_Country" data-toggle="collapse" data-target=".property_Country .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Country : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Email"> </a><div class="element clickable property public property_Email" data-toggle="collapse" data-target=".property_Email .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Email : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_EmailAddress2"> </a><div class="element clickable property public property_EmailAddress2" data-toggle="collapse" data-target=".property_EmailAddress2 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$EmailAddress2 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_EmailAddress3"> </a><div class="element clickable property public property_EmailAddress3" data-toggle="collapse" data-target=".property_EmailAddress3 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$EmailAddress3 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_EndDate"> </a><div class="element clickable property public property_EndDate" data-toggle="collapse" data-target=".property_EndDate .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$EndDate : \iSDK\Tables\datetime</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_FirstName"> </a><div class="element clickable property public property_FirstName" data-toggle="collapse" data-target=".property_FirstName .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$FirstName : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Frequency"> </a><div class="element clickable property public property_Frequency" data-toggle="collapse" data-target=".property_Frequency .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Frequency : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_HTMLSignature"> </a><div class="element clickable property public property_HTMLSignature" data-toggle="collapse" data-target=".property_HTMLSignature .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$HTMLSignature : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_LastBillDate"> </a><div class="element clickable property public property_LastBillDate" data-toggle="collapse" data-target=".property_LastBillDate .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$LastBillDate : \iSDK\Tables\datetime</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_LastName"> </a><div class="element clickable property public property_LastName" data-toggle="collapse" data-target=".property_LastName .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$LastName : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_LeadAffiliateId"> </a><div class="element clickable property public property_LeadAffiliateId" data-toggle="collapse" data-target=".property_LeadAffiliateId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$LeadAffiliateId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_MaxRetry"> </a><div class="element clickable property public property_MaxRetry" data-toggle="collapse" data-target=".property_MaxRetry .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$MaxRetry : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_MerchantAccountId"> </a><div class="element clickable property public property_MerchantAccountId" data-toggle="collapse" data-target=".property_MerchantAccountId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$MerchantAccountId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_MiddleName"> </a><div class="element clickable property public property_MiddleName" data-toggle="collapse" data-target=".property_MiddleName .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$MiddleName : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_NextBillDate"> </a><div class="element clickable property public property_NextBillDate" data-toggle="collapse" data-target=".property_NextBillDate .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$NextBillDate : \iSDK\Tables\datetime</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Nickname"> </a><div class="element clickable property public property_Nickname" data-toggle="collapse" data-target=".property_Nickname .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Nickname : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_NumDaysBetweenRetry"> </a><div class="element clickable property public property_NumDaysBetweenRetry" data-toggle="collapse" data-target=".property_NumDaysBetweenRetry .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$NumDaysBetweenRetry : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PaidThruDate"> </a><div class="element clickable property public property_PaidThruDate" data-toggle="collapse" data-target=".property_PaidThruDate .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$PaidThruDate : \iSDK\Tables\datetime</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone1"> </a><div class="element clickable property public property_Phone1" data-toggle="collapse" data-target=".property_Phone1 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone1 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone1Ext"> </a><div class="element clickable property public property_Phone1Ext" data-toggle="collapse" data-target=".property_Phone1Ext .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone1Ext : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone1Type"> </a><div class="element clickable property public property_Phone1Type" data-toggle="collapse" data-target=".property_Phone1Type .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone1Type : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone2"> </a><div class="element clickable property public property_Phone2" data-toggle="collapse" data-target=".property_Phone2 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone2 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone2Ext"> </a><div class="element clickable property public property_Phone2Ext" data-toggle="collapse" data-target=".property_Phone2Ext .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone2Ext : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Phone2Type"> </a><div class="element clickable property public property_Phone2Type" data-toggle="collapse" data-target=".property_Phone2Type .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Phone2Type : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PostalCode"> </a><div class="element clickable property public property_PostalCode" data-toggle="collapse" data-target=".property_PostalCode .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$PostalCode : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ProductId"> </a><div class="element clickable property public property_ProductId" data-toggle="collapse" data-target=".property_ProductId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$ProductId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ProgramId"> </a><div class="element clickable property public property_ProgramId" data-toggle="collapse" data-target=".property_ProgramId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$ProgramId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PromoCode"> </a><div class="element clickable property public property_PromoCode" data-toggle="collapse" data-target=".property_PromoCode .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$PromoCode : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Qty"> </a><div class="element clickable property public property_Qty" data-toggle="collapse" data-target=".property_Qty .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Qty : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ReasonStopped"> </a><div class="element clickable property public property_ReasonStopped" data-toggle="collapse" data-target=".property_ReasonStopped .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$ReasonStopped : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_RecurringOrderId"> </a><div class="element clickable property public property_RecurringOrderId" data-toggle="collapse" data-target=".property_RecurringOrderId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$RecurringOrderId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Signature"> </a><div class="element clickable property public property_Signature" data-toggle="collapse" data-target=".property_Signature .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Signature : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_SpouseName"> </a><div class="element clickable property public property_SpouseName" data-toggle="collapse" data-target=".property_SpouseName .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$SpouseName : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_StartDate"> </a><div class="element clickable property public property_StartDate" data-toggle="collapse" data-target=".property_StartDate .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$StartDate : \iSDK\Tables\datetime</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_State"> </a><div class="element clickable property public property_State" data-toggle="collapse" data-target=".property_State .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$State : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Status"> </a><div class="element clickable property public property_Status" data-toggle="collapse" data-target=".property_Status .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Status : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_StreetAddress1"> </a><div class="element clickable property public property_StreetAddress1" data-toggle="collapse" data-target=".property_StreetAddress1 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$StreetAddress1 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_StreetAddress2"> </a><div class="element clickable property public property_StreetAddress2" data-toggle="collapse" data-target=".property_StreetAddress2 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$StreetAddress2 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_SubscriptionPlanId"> </a><div class="element clickable property public property_SubscriptionPlanId" data-toggle="collapse" data-target=".property_SubscriptionPlanId .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$SubscriptionPlanId : int</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Suffix"> </a><div class="element clickable property public property_Suffix" data-toggle="collapse" data-target=".property_Suffix .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Suffix : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_Title"> </a><div class="element clickable property public property_Title" data-toggle="collapse" data-target=".property_Title .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$Title : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_ZipFour1"> </a><div class="element clickable property public property_ZipFour1" data-toggle="collapse" data-target=".property_ZipFour1 .collapse" title="public">
+<h2>API Access: Read</h2>
+<pre>$ZipFour1 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+                        Generated on 2013-09-27T20:26:53-05:00.<br></footer></div>
+</div>
+</body>
+</html>

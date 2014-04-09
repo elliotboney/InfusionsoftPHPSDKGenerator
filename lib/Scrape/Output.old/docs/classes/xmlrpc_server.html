@@ -1,0 +1,583 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=940, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<title>API Documentation » \xmlrpc_server</title>
+<meta name="author" content="Elliot Boney">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                            API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a href="../namespaces/iSDK.html"><i class="icon-th"></i> iSDK</a></li>
+<li><a href="../namespaces/xmlrpc.html"><i class="icon-th"></i> xmlrpc</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ActionSequence.html"><i class="icon-folder-open"></i> ActionSequence</a></li>
+<li><a href="../packages/AffResource.html"><i class="icon-folder-open"></i> AffResource</a></li>
+<li><a href="../packages/Affiliate.html"><i class="icon-folder-open"></i> Affiliate</a></li>
+<li><a href="../packages/AffiliateProgramService.html"><i class="icon-folder-open"></i> AffiliateProgramService</a></li>
+<li><a href="../packages/AffiliateService.html"><i class="icon-folder-open"></i> AffiliateService</a></li>
+<li><a href="../packages/CCharge.html"><i class="icon-folder-open"></i> CCharge</a></li>
+<li><a href="../packages/CProgram.html"><i class="icon-folder-open"></i> CProgram</a></li>
+<li><a href="../packages/Campaign.html"><i class="icon-folder-open"></i> Campaign</a></li>
+<li><a href="../packages/CampaignStep.html"><i class="icon-folder-open"></i> CampaignStep</a></li>
+<li><a href="../packages/Campaignee.html"><i class="icon-folder-open"></i> Campaignee</a></li>
+<li><a href="../packages/Company.html"><i class="icon-folder-open"></i> Company</a></li>
+<li><a href="../packages/Contact.html"><i class="icon-folder-open"></i> Contact</a></li>
+<li><a href="../packages/ContactAction.html"><i class="icon-folder-open"></i> ContactAction</a></li>
+<li><a href="../packages/ContactGroup.html"><i class="icon-folder-open"></i> ContactGroup</a></li>
+<li><a href="../packages/ContactGroupCategory.html"><i class="icon-folder-open"></i> ContactGroupCategory</a></li>
+<li><a href="../packages/ContactService.html"><i class="icon-folder-open"></i> ContactService</a></li>
+<li><a href="../packages/CreditCard.html"><i class="icon-folder-open"></i> CreditCard</a></li>
+<li><a href="../packages/DataFormField.html"><i class="icon-folder-open"></i> DataFormField</a></li>
+<li><a href="../packages/DataFormGroup.html"><i class="icon-folder-open"></i> DataFormGroup</a></li>
+<li><a href="../packages/DataFormTab.html"><i class="icon-folder-open"></i> DataFormTab</a></li>
+<li><a href="../packages/DataService.html"><i class="icon-folder-open"></i> DataService</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/DiscountService.html"><i class="icon-folder-open"></i> DiscountService</a></li>
+<li><a href="../packages/Expense.html"><i class="icon-folder-open"></i> Expense</a></li>
+<li><a href="../packages/FileBox.html"><i class="icon-folder-open"></i> FileBox</a></li>
+<li><a href="../packages/GroupAssign.html"><i class="icon-folder-open"></i> GroupAssign</a></li>
+<li><a href="../packages/Invoice.html"><i class="icon-folder-open"></i> Invoice</a></li>
+<li><a href="../packages/InvoiceItem.html"><i class="icon-folder-open"></i> InvoiceItem</a></li>
+<li><a href="../packages/InvoicePayment.html"><i class="icon-folder-open"></i> InvoicePayment</a></li>
+<li><a href="../packages/InvoiceService.html"><i class="icon-folder-open"></i> InvoiceService</a></li>
+<li><a href="../packages/Job.html"><i class="icon-folder-open"></i> Job</a></li>
+<li><a href="../packages/JobRecurringInstance.html"><i class="icon-folder-open"></i> JobRecurringInstance</a></li>
+<li><a href="../packages/Lead.html"><i class="icon-folder-open"></i> Lead</a></li>
+<li><a href="../packages/LeadSource.html"><i class="icon-folder-open"></i> LeadSource</a></li>
+<li><a href="../packages/LeadSourceCategory.html"><i class="icon-folder-open"></i> LeadSourceCategory</a></li>
+<li><a href="../packages/LeadSourceExpense.html"><i class="icon-folder-open"></i> LeadSourceExpense</a></li>
+<li><a href="../packages/LeadSourceRecurringExpense.html"><i class="icon-folder-open"></i> LeadSourceRecurringExpense</a></li>
+<li><a href="../packages/MtgLead.html"><i class="icon-folder-open"></i> MtgLead</a></li>
+<li><a href="../packages/OrderItem.html"><i class="icon-folder-open"></i> OrderItem</a></li>
+<li><a href="../packages/PackageName.html"><i class="icon-folder-open"></i> PackageName</a></li>
+<li><a href="../packages/PayPlan.html"><i class="icon-folder-open"></i> PayPlan</a></li>
+<li><a href="../packages/PayPlanItem.html"><i class="icon-folder-open"></i> PayPlanItem</a></li>
+<li><a href="../packages/Payment.html"><i class="icon-folder-open"></i> Payment</a></li>
+<li><a href="../packages/Product.html"><i class="icon-folder-open"></i> Product</a></li>
+<li><a href="../packages/ProductCategory.html"><i class="icon-folder-open"></i> ProductCategory</a></li>
+<li><a href="../packages/ProductCategoryAssign.html"><i class="icon-folder-open"></i> ProductCategoryAssign</a></li>
+<li><a href="../packages/ProductInterest.html"><i class="icon-folder-open"></i> ProductInterest</a></li>
+<li><a href="../packages/ProductInterestBundle.html"><i class="icon-folder-open"></i> ProductInterestBundle</a></li>
+<li><a href="../packages/ProductOptValue.html"><i class="icon-folder-open"></i> ProductOptValue</a></li>
+<li><a href="../packages/ProductOption.html"><i class="icon-folder-open"></i> ProductOption</a></li>
+<li><a href="../packages/ProductService.html"><i class="icon-folder-open"></i> ProductService</a></li>
+<li><a href="../packages/RecurringOrder.html"><i class="icon-folder-open"></i> RecurringOrder</a></li>
+<li><a href="../packages/RecurringOrderWithContact.html"><i class="icon-folder-open"></i> RecurringOrderWithContact</a></li>
+<li><a href="../packages/Referral.html"><i class="icon-folder-open"></i> Referral</a></li>
+<li><a href="../packages/SavedFilter.html"><i class="icon-folder-open"></i> SavedFilter</a></li>
+<li><a href="../packages/SearchService.html"><i class="icon-folder-open"></i> SearchService</a></li>
+<li><a href="../packages/ShippingService.html"><i class="icon-folder-open"></i> ShippingService</a></li>
+<li><a href="../packages/Stage.html"><i class="icon-folder-open"></i> Stage</a></li>
+<li><a href="../packages/StageMove.html"><i class="icon-folder-open"></i> StageMove</a></li>
+<li><a href="../packages/Status.html"><i class="icon-folder-open"></i> Status</a></li>
+<li><a href="../packages/SubscriptionPlan.html"><i class="icon-folder-open"></i> SubscriptionPlan</a></li>
+<li><a href="../packages/Template.html"><i class="icon-folder-open"></i> Template</a></li>
+<li><a href="../packages/Ticket.html"><i class="icon-folder-open"></i> Ticket</a></li>
+<li><a href="../packages/TicketStage.html"><i class="icon-folder-open"></i> TicketStage</a></li>
+<li><a href="../packages/TicketType.html"><i class="icon-folder-open"></i> TicketType</a></li>
+<li><a href="../packages/User.html"><i class="icon-folder-open"></i> User</a></li>
+<li><a href="../packages/UserGroup.html"><i class="icon-folder-open"></i> UserGroup</a></li>
+<li><a href="../packages/WebFormService.html"><i class="icon-folder-open"></i> WebFormService</a></li>
+<li><a href="../packages/Xmlrpc.html"><i class="icon-folder-open"></i> Xmlrpc</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                            Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                                Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">20</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">4</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple active" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_add_to_map" title="add_to_map() :: Add a method to the dispatch map"><span class="description">Add a method to the dispatch map</span><pre>add_to_map()</pre></a></li>
+<li class="method public "><a href="#method_debugmsg" title="debugmsg() :: add a string to the 'internal debug message' (separate from 'user debug message')"><span class="description">add a string to the 'internal debug message' (separate from 'user debug message')</span><pre>debugmsg()</pre></a></li>
+<li class="method public "><a href="#method_echoInput" title="echoInput() :: A debugging routine: just echoes back the input packet as a string value
+DEPRECATED!"><span class="description">A debugging routine: just echoes back the input packet as a string value
+DEPRECATED!</span><pre>echoInput()</pre></a></li>
+<li class="method public "><a href="#method_execute" title="execute() :: Execute a method invoked by the client, checking parameters used"><span class="description">Execute a method invoked by the client, checking parameters used</span><pre>execute()</pre></a></li>
+<li class="method public "><a href="#method_parseRequest" title="parseRequest() :: Parse an xml chunk containing an xmlrpc request and execute the corresponding
+php function registered with the server"><span class="description">Parse an xml chunk containing an xmlrpc request and execute the corresponding
+php function registered with the server</span><pre>parseRequest()</pre></a></li>
+<li class="method public "><a href="#method_parseRequestHeaders" title="parseRequestHeaders() :: Parse http headers received along with xmlrpc request. If needed, inflate request"><span class="description">Parse http headers received along with xmlrpc request. If needed, inflate request</span><pre>parseRequestHeaders()</pre></a></li>
+<li class="method public "><a href="#method_serializeDebug" title="serializeDebug() :: Return a string with the serialized representation of all debug info"><span class="description">Return a string with the serialized representation of all debug info</span><pre>serializeDebug()</pre></a></li>
+<li class="method public "><a href="#method_service" title="service() :: Execute the xmlrpc request, printing the response"><span class="description">Execute the xmlrpc request, printing the response</span><pre>service()</pre></a></li>
+<li class="method public "><a href="#method_setDebug" title="setDebug() :: Set debug level of server."><span class="description">Set debug level of server.</span><pre>setDebug()</pre></a></li>
+<li class="method public "><a href="#method_verifySignature" title="verifySignature() :: Verify type and number of parameters received against a list of known signatures"><span class="description">Verify type and number of parameters received against a list of known signatures</span><pre>verifySignature()</pre></a></li>
+<li class="method public "><a href="#method_xml_header" title="xml_header() :: "><span class="description">xml_header()
+        </span><pre>xml_header()</pre></a></li>
+<li class="method public "><a href="#method_xmlrpc_server" title="xmlrpc_server() :: "><span class="description">xmlrpc_server()
+        </span><pre>xmlrpc_server()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_accepted_charset_encodings" title="$accepted_charset_encodings() :: "><span class="description"></span><pre>$accepted_charset_encodings</pre></a></li>
+<li class="property public "><a href="#property_accepted_compression" title="$accepted_compression() :: List of http compression methods accepted by the server for requests."><span class="description"></span><pre>$accepted_compression</pre></a></li>
+<li class="property public "><a href="#property_allow_system_funcs" title="$allow_system_funcs() :: "><span class="description"></span><pre>$allow_system_funcs</pre></a></li>
+<li class="property public "><a href="#property_compress_response" title="$compress_response() :: When set to true, it will enable HTTP compression of the response, in case
+the client has declared its support for compression in the request."><span class="description"></span><pre>$compress_response</pre></a></li>
+<li class="property public "><a href="#property_debug" title="$debug() :: "><span class="description"></span><pre>$debug</pre></a></li>
+<li class="property public "><a href="#property_debug_info" title="$debug_info() :: Storage for internal debug info"><span class="description"></span><pre>$debug_info</pre></a></li>
+<li class="property public "><a href="#property_dmap" title="$dmap() :: Array defining php functions exposed as xmlrpc methods by this server"><span class="description"></span><pre>$dmap</pre></a></li>
+<li class="property public "><a href="#property_exception_handling" title="$exception_handling() :: Controls behaviour of server when invoked user function throws an exception:
+0 = catch it and return an 'internal error' xmlrpc response (default)
+1 = catch it and return an xmlrpc response with the error corresponding to the exception
+2 = allow the exception to float to the upper layers"><span class="description"></span><pre>$exception_handling</pre></a></li>
+<li class="property public "><a href="#property_functions_parameters_type" title="$functions_parameters_type() :: Defines how functions in dmap will be invoked: either using an xmlrpc msg object
+or plain php values."><span class="description"></span><pre>$functions_parameters_type</pre></a></li>
+<li class="property public "><a href="#property_phpvals_encoding_options" title="$phpvals_encoding_options() :: Option used for fine-tuning the encoding the php values returned from
+functions registered in the dispatch map when the functions_parameters_types
+member is set to 'phpvals'"><span class="description"></span><pre>$phpvals_encoding_options</pre></a></li>
+<li class="property public "><a href="#property_response_charset_encoding" title="$response_charset_encoding() :: charset encoding to be used for response."><span class="description"></span><pre>$response_charset_encoding</pre></a></li>
+<li class="property public "><a href="#property_user_data" title="$user_data() :: Extra data passed at runtime to method handling functions. Used only by EPI layer"><span class="description"></span><pre>$user_data</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\xmlrpc_server"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/xmlrpc_server.html">xmlrpc_server</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_add_to_map"></a><div class="element clickable method public method_add_to_map" data-toggle="collapse" data-target=".method_add_to_map .collapse" title="public">
+<h2>Add a method to the dispatch map</h2>
+<pre>add_to_map(string $methodname, string $function, array $sig<code> = null</code>, string $doc<code> = false</code>, array $sigdoc<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$methodname</h4>
+<code>string</code><p>the name with which the method will be made available</p></div>
+<div class="subelement argument">
+<h4>$function</h4>
+<code>string</code><p>the php function that will get invoked</p></div>
+<div class="subelement argument">
+<h4>$sig</h4>
+<code>array</code><p>the array of valid method signatures</p></div>
+<div class="subelement argument">
+<h4>$doc</h4>
+<code>string</code><p>method documentation</p></div>
+<div class="subelement argument">
+<h4>$sigdoc</h4>
+<code>array</code><p>the array of valid method signatures docs (one string per param, one for return type)</p>
+</div>
+</div></div>
+</div>
+<a id="method_debugmsg"></a><div class="element clickable method public method_debugmsg" data-toggle="collapse" data-target=".method_debugmsg .collapse" title="public">
+<h2>add a string to the 'internal debug message' (separate from 'user debug message')</h2>
+<pre>debugmsg($string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$string</h4></div>
+</div></div>
+</div>
+<a id="method_echoInput"></a><div class="element clickable method public method_echoInput" data-toggle="collapse" data-target=".method_echoInput .collapse" title="public">
+<h2>A debugging routine: just echoes back the input packet as a string value
+DEPRECATED!</h2>
+<pre>echoInput() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_execute"></a><div class="element clickable method public method_execute" data-toggle="collapse" data-target=".method_execute .collapse" title="public">
+<h2>Execute a method invoked by the client, checking parameters used</h2>
+<pre>execute(mixed $m, array $params<code> = null</code>, array $paramtypes<code> = null</code>) : \xmlrpcresp</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$m</h4>
+<code>mixed</code><p>either an xmlrpcmsg obj or a method name</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>array with method parameters as php types (if m is method name only)</p>
+</div>
+<div class="subelement argument">
+<h4>$paramtypes</h4>
+<code>array</code><p>array with xmlrpc types of method parameters (if m is method name only)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\xmlrpcresp</code></div>
+</div></div>
+</div>
+<a id="method_parseRequest"></a><div class="element clickable method public method_parseRequest" data-toggle="collapse" data-target=".method_parseRequest .collapse" title="public">
+<h2>Parse an xml chunk containing an xmlrpc request and execute the corresponding
+php function registered with the server</h2>
+<pre>parseRequest(string $data, string $req_encoding<code> = ''</code>) : \xmlrpcresp</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>the xml request</p></div>
+<div class="subelement argument">
+<h4>$req_encoding</h4>
+<code>string</code><p>(optional) the charset encoding of the xml request</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\xmlrpcresp</code></div>
+</div></div>
+</div>
+<a id="method_parseRequestHeaders"></a><div class="element clickable method public method_parseRequestHeaders" data-toggle="collapse" data-target=".method_parseRequestHeaders .collapse" title="public">
+<h2>Parse http headers received along with xmlrpc request. If needed, inflate request</h2>
+<pre>parseRequestHeaders($data, $req_encoding, $resp_encoding, $resp_compression) : null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument"><h4>$req_encoding</h4></div>
+<div class="subelement argument"><h4>$resp_encoding</h4></div>
+<div class="subelement argument"><h4>$resp_compression</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code>on success or an xmlrpcresp</div>
+</div></div>
+</div>
+<a id="method_serializeDebug"></a><div class="element clickable method public method_serializeDebug" data-toggle="collapse" data-target=".method_serializeDebug .collapse" title="public">
+<h2>Return a string with the serialized representation of all debug info</h2>
+<pre>serializeDebug(string $charset_encoding<code> = ''</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$charset_encoding</h4>
+<code>string</code><p>the target charset encoding for the serialization</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>an XML comment (or two)</div>
+</div></div>
+</div>
+<a id="method_service"></a><div class="element clickable method public method_service" data-toggle="collapse" data-target=".method_service .collapse" title="public">
+<h2>Execute the xmlrpc request, printing the response</h2>
+<pre>service(string $data<code> = null</code>, $return_payload<code> = false</code>) : \xmlrpcresp</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>the request body. If null, the http POST request will be examined</p></div>
+<div class="subelement argument"><h4>$return_payload</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\xmlrpcresp</code>the response object (usually not used by caller...)</div>
+</div></div>
+</div>
+<a id="method_setDebug"></a><div class="element clickable method public method_setDebug" data-toggle="collapse" data-target=".method_setDebug .collapse" title="public">
+<h2>Set debug level of server.</h2>
+<pre>setDebug(integer $in) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>public</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$in</h4>
+<code>integer</code><p>debug lvl: determines info added to xmlrpc responses (as xml comments)
+0 = no debug info,
+1 = msgs set from user with debugmsg(),
+2 = add complete xmlrpc request (headers and body),
+3 = add also all processing warnings happened during method processing
+(NB: this involves setting a custom error handler, and might interfere
+with the standard processing of the php function exposed as method. In
+particular, triggering an USER_ERROR level error will not halt script
+execution anymore, but just end up logged in the xmlrpc response)
+Note that info added at elevel 2 and 3 will be base64 encoded</p>
+</div>
+</div></div>
+</div>
+<a id="method_verifySignature"></a><div class="element clickable method public method_verifySignature" data-toggle="collapse" data-target=".method_verifySignature .collapse" title="public">
+<h2>Verify type and number of parameters received against a list of known signatures</h2>
+<pre>verifySignature(array $in, array $sig) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$in</h4>
+<code>array</code><p>array of either xmlrpcval objects or xmlrpc type definitions</p></div>
+<div class="subelement argument">
+<h4>$sig</h4>
+<code>array</code><p>array of known signatures to match against</p></div>
+</div></div>
+</div>
+<a id="method_xml_header"></a><div class="element clickable method public method_xml_header" data-toggle="collapse" data-target=".method_xml_header .collapse" title="public">
+<h2>xml_header()
+        </h2>
+<pre>xml_header($charset_encoding<code> = ''</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$charset_encoding</h4></div>
+</div></div>
+</div>
+<a id="method_xmlrpc_server"></a><div class="element clickable method public method_xmlrpc_server" data-toggle="collapse" data-target=".method_xmlrpc_server .collapse" title="public">
+<h2>xmlrpc_server()
+        </h2>
+<pre>xmlrpc_server($dispMap<code> = null</code>, $serviceNow<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dispMap</h4></div>
+<div class="subelement argument"><h4>$serviceNow</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_accepted_charset_encodings"> </a><div class="element clickable property public property_accepted_charset_encodings" data-toggle="collapse" data-target=".property_accepted_charset_encodings .collapse" title="public">
+<h2>$accepted_charset_encodings</h2>
+<pre>$accepted_charset_encodings </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_accepted_compression"> </a><div class="element clickable property public property_accepted_compression" data-toggle="collapse" data-target=".property_accepted_compression .collapse" title="public">
+<h2>List of http compression methods accepted by the server for requests.</h2>
+<pre>$accepted_compression </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">NB: PHP supports deflate, gzip compressions out of the box if compiled w. zlib</div></div></div>
+</div>
+<a id="property_allow_system_funcs"> </a><div class="element clickable property public property_allow_system_funcs" data-toggle="collapse" data-target=".property_allow_system_funcs .collapse" title="public">
+<h2>$allow_system_funcs</h2>
+<pre>$allow_system_funcs </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_compress_response"> </a><div class="element clickable property public property_compress_response" data-toggle="collapse" data-target=".property_compress_response .collapse" title="public">
+<h2>When set to true, it will enable HTTP compression of the response, in case
+the client has declared its support for compression in the request.</h2>
+<pre>$compress_response </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_debug"> </a><div class="element clickable property public property_debug" data-toggle="collapse" data-target=".property_debug .collapse" title="public">
+<h2>$debug</h2>
+<pre>$debug </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>1</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_debug_info"> </a><div class="element clickable property public property_debug_info" data-toggle="collapse" data-target=".property_debug_info .collapse" title="public">
+<h2>Storage for internal debug info</h2>
+<pre>$debug_info </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_dmap"> </a><div class="element clickable property public property_dmap" data-toggle="collapse" data-target=".property_dmap .collapse" title="public">
+<h2>Array defining php functions exposed as xmlrpc methods by this server</h2>
+<pre>$dmap </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>private</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_exception_handling"> </a><div class="element clickable property public property_exception_handling" data-toggle="collapse" data-target=".property_exception_handling .collapse" title="public">
+<h2>Controls behaviour of server when invoked user function throws an exception:
+0 = catch it and return an 'internal error' xmlrpc response (default)
+1 = catch it and return an xmlrpc response with the error corresponding to the exception
+2 = allow the exception to float to the upper layers</h2>
+<pre>$exception_handling </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_functions_parameters_type"> </a><div class="element clickable property public property_functions_parameters_type" data-toggle="collapse" data-target=".property_functions_parameters_type .collapse" title="public">
+<h2>Defines how functions in dmap will be invoked: either using an xmlrpc msg object
+or plain php values.</h2>
+<pre>$functions_parameters_type </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'xmlrpcvals'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">valid strings are 'xmlrpcvals', 'phpvals' or 'epivals'</div></div></div>
+</div>
+<a id="property_phpvals_encoding_options"> </a><div class="element clickable property public property_phpvals_encoding_options" data-toggle="collapse" data-target=".property_phpvals_encoding_options .collapse" title="public">
+<h2>Option used for fine-tuning the encoding the php values returned from
+functions registered in the dispatch map when the functions_parameters_types
+member is set to 'phpvals'</h2>
+<pre>$phpvals_encoding_options </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('auto_dates')</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">for a list of values</a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_response_charset_encoding"> </a><div class="element clickable property public property_response_charset_encoding" data-toggle="collapse" data-target=".property_response_charset_encoding .collapse" title="public">
+<h2>charset encoding to be used for response.</h2>
+<pre>$response_charset_encoding </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description">NB: if we can, we will convert the generated response from internal_encoding to the intended one.
+can be: a supported xml encoding (only UTF-8 and ISO-8859-1 at present, unless mbstring is enabled),
+null (leave unspecified in response, convert output stream to US_ASCII),
+'default' (use xmlrpc library default as specified in xmlrpc.inc, convert output stream if needed),
+or 'auto' (use client-specified charset encoding or same as request if request headers do not specify it (unless request is US-ASCII: then use library default anyway).
+NB: pretty dangerous if you accept every charset and do not have mbstring enabled)</div></div></div>
+</div>
+<a id="property_user_data"> </a><div class="element clickable property public property_user_data" data-toggle="collapse" data-target=".property_user_data .collapse" title="public">
+<h2>Extra data passed at runtime to method handling functions. Used only by EPI layer</h2>
+<pre>$user_data </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+                        Generated on 2013-09-27T20:26:52-05:00.<br></footer></div>
+</div>
+</body>
+</html>

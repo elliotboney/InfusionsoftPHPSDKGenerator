@@ -1,0 +1,536 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=940, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<title>API Documentation » Xmlrpc</title>
+<meta name="author" content="Elliot Boney">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                            API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a href="../namespaces/iSDK.html"><i class="icon-th"></i> iSDK</a></li>
+<li><a href="../namespaces/xmlrpc.html"><i class="icon-th"></i> xmlrpc</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ActionSequence.html"><i class="icon-folder-open"></i> ActionSequence</a></li>
+<li><a href="../packages/AffResource.html"><i class="icon-folder-open"></i> AffResource</a></li>
+<li><a href="../packages/Affiliate.html"><i class="icon-folder-open"></i> Affiliate</a></li>
+<li><a href="../packages/AffiliateProgramService.html"><i class="icon-folder-open"></i> AffiliateProgramService</a></li>
+<li><a href="../packages/AffiliateService.html"><i class="icon-folder-open"></i> AffiliateService</a></li>
+<li><a href="../packages/CCharge.html"><i class="icon-folder-open"></i> CCharge</a></li>
+<li><a href="../packages/CProgram.html"><i class="icon-folder-open"></i> CProgram</a></li>
+<li><a href="../packages/Campaign.html"><i class="icon-folder-open"></i> Campaign</a></li>
+<li><a href="../packages/CampaignStep.html"><i class="icon-folder-open"></i> CampaignStep</a></li>
+<li><a href="../packages/Campaignee.html"><i class="icon-folder-open"></i> Campaignee</a></li>
+<li><a href="../packages/Company.html"><i class="icon-folder-open"></i> Company</a></li>
+<li><a href="../packages/Contact.html"><i class="icon-folder-open"></i> Contact</a></li>
+<li><a href="../packages/ContactAction.html"><i class="icon-folder-open"></i> ContactAction</a></li>
+<li><a href="../packages/ContactGroup.html"><i class="icon-folder-open"></i> ContactGroup</a></li>
+<li><a href="../packages/ContactGroupCategory.html"><i class="icon-folder-open"></i> ContactGroupCategory</a></li>
+<li><a href="../packages/ContactService.html"><i class="icon-folder-open"></i> ContactService</a></li>
+<li><a href="../packages/CreditCard.html"><i class="icon-folder-open"></i> CreditCard</a></li>
+<li><a href="../packages/DataFormField.html"><i class="icon-folder-open"></i> DataFormField</a></li>
+<li><a href="../packages/DataFormGroup.html"><i class="icon-folder-open"></i> DataFormGroup</a></li>
+<li><a href="../packages/DataFormTab.html"><i class="icon-folder-open"></i> DataFormTab</a></li>
+<li><a href="../packages/DataService.html"><i class="icon-folder-open"></i> DataService</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/DiscountService.html"><i class="icon-folder-open"></i> DiscountService</a></li>
+<li><a href="../packages/Expense.html"><i class="icon-folder-open"></i> Expense</a></li>
+<li><a href="../packages/FileBox.html"><i class="icon-folder-open"></i> FileBox</a></li>
+<li><a href="../packages/GroupAssign.html"><i class="icon-folder-open"></i> GroupAssign</a></li>
+<li><a href="../packages/Invoice.html"><i class="icon-folder-open"></i> Invoice</a></li>
+<li><a href="../packages/InvoiceItem.html"><i class="icon-folder-open"></i> InvoiceItem</a></li>
+<li><a href="../packages/InvoicePayment.html"><i class="icon-folder-open"></i> InvoicePayment</a></li>
+<li><a href="../packages/InvoiceService.html"><i class="icon-folder-open"></i> InvoiceService</a></li>
+<li><a href="../packages/Job.html"><i class="icon-folder-open"></i> Job</a></li>
+<li><a href="../packages/JobRecurringInstance.html"><i class="icon-folder-open"></i> JobRecurringInstance</a></li>
+<li><a href="../packages/Lead.html"><i class="icon-folder-open"></i> Lead</a></li>
+<li><a href="../packages/LeadSource.html"><i class="icon-folder-open"></i> LeadSource</a></li>
+<li><a href="../packages/LeadSourceCategory.html"><i class="icon-folder-open"></i> LeadSourceCategory</a></li>
+<li><a href="../packages/LeadSourceExpense.html"><i class="icon-folder-open"></i> LeadSourceExpense</a></li>
+<li><a href="../packages/LeadSourceRecurringExpense.html"><i class="icon-folder-open"></i> LeadSourceRecurringExpense</a></li>
+<li><a href="../packages/MtgLead.html"><i class="icon-folder-open"></i> MtgLead</a></li>
+<li><a href="../packages/OrderItem.html"><i class="icon-folder-open"></i> OrderItem</a></li>
+<li><a href="../packages/PackageName.html"><i class="icon-folder-open"></i> PackageName</a></li>
+<li><a href="../packages/PayPlan.html"><i class="icon-folder-open"></i> PayPlan</a></li>
+<li><a href="../packages/PayPlanItem.html"><i class="icon-folder-open"></i> PayPlanItem</a></li>
+<li><a href="../packages/Payment.html"><i class="icon-folder-open"></i> Payment</a></li>
+<li><a href="../packages/Product.html"><i class="icon-folder-open"></i> Product</a></li>
+<li><a href="../packages/ProductCategory.html"><i class="icon-folder-open"></i> ProductCategory</a></li>
+<li><a href="../packages/ProductCategoryAssign.html"><i class="icon-folder-open"></i> ProductCategoryAssign</a></li>
+<li><a href="../packages/ProductInterest.html"><i class="icon-folder-open"></i> ProductInterest</a></li>
+<li><a href="../packages/ProductInterestBundle.html"><i class="icon-folder-open"></i> ProductInterestBundle</a></li>
+<li><a href="../packages/ProductOptValue.html"><i class="icon-folder-open"></i> ProductOptValue</a></li>
+<li><a href="../packages/ProductOption.html"><i class="icon-folder-open"></i> ProductOption</a></li>
+<li><a href="../packages/ProductService.html"><i class="icon-folder-open"></i> ProductService</a></li>
+<li><a href="../packages/RecurringOrder.html"><i class="icon-folder-open"></i> RecurringOrder</a></li>
+<li><a href="../packages/RecurringOrderWithContact.html"><i class="icon-folder-open"></i> RecurringOrderWithContact</a></li>
+<li><a href="../packages/Referral.html"><i class="icon-folder-open"></i> Referral</a></li>
+<li><a href="../packages/SavedFilter.html"><i class="icon-folder-open"></i> SavedFilter</a></li>
+<li><a href="../packages/SearchService.html"><i class="icon-folder-open"></i> SearchService</a></li>
+<li><a href="../packages/ShippingService.html"><i class="icon-folder-open"></i> ShippingService</a></li>
+<li><a href="../packages/Stage.html"><i class="icon-folder-open"></i> Stage</a></li>
+<li><a href="../packages/StageMove.html"><i class="icon-folder-open"></i> StageMove</a></li>
+<li><a href="../packages/Status.html"><i class="icon-folder-open"></i> Status</a></li>
+<li><a href="../packages/SubscriptionPlan.html"><i class="icon-folder-open"></i> SubscriptionPlan</a></li>
+<li><a href="../packages/Template.html"><i class="icon-folder-open"></i> Template</a></li>
+<li><a href="../packages/Ticket.html"><i class="icon-folder-open"></i> Ticket</a></li>
+<li><a href="../packages/TicketStage.html"><i class="icon-folder-open"></i> TicketStage</a></li>
+<li><a href="../packages/TicketType.html"><i class="icon-folder-open"></i> TicketType</a></li>
+<li><a href="../packages/User.html"><i class="icon-folder-open"></i> User</a></li>
+<li><a href="../packages/UserGroup.html"><i class="icon-folder-open"></i> UserGroup</a></li>
+<li><a href="../packages/WebFormService.html"><i class="icon-folder-open"></i> WebFormService</a></li>
+<li><a href="../packages/Xmlrpc.html"><i class="icon-folder-open"></i> Xmlrpc</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                            Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                                Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">20</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">4</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple active" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Xmlrpc.html" title="Xmlrpc"><i class="icon-folder-open"></i>Xmlrpc</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_decode_chunked" title='decode_chunked() :: decode a string that is encoded w/ "chunked" transfer encoding
+as defined in rfc2068 par. 19.4.6
+code shamelessly stolen from nusoap library by Dietrich Ayala'><span class="description">decode a string that is encoded w/ "chunked" transfer encoding
+as defined in rfc2068 par. 19.4.6
+code shamelessly stolen from nusoap library by Dietrich Ayala</span><pre>decode_chunked</pre></a></li>
+<li class="function  "><a href="#function_guess_encoding" title="guess_encoding() :: xml charset encoding guessing helper function."><span class="description">xml charset encoding guessing helper function.</span><pre>guess_encoding</pre></a></li>
+<li class="function  "><a href="#function_is_valid_charset" title="is_valid_charset() :: Checks if a given charset encoding is present in a list of encodings or
+if it is a valid subset of any encoding in the list"><span class="description">Checks if a given charset encoding is present in a list of encodings or
+if it is a valid subset of any encoding in the list</span><pre>is_valid_charset</pre></a></li>
+<li class="function  "><a href="#function_iso8601_decode" title="iso8601_decode() :: Given an ISO8601 date string, return a timet in the localtime, or UTC"><span class="description">Given an ISO8601 date string, return a timet in the localtime, or UTC</span><pre>iso8601_decode</pre></a></li>
+<li class="function  "><a href="#function_iso8601_encode" title="iso8601_encode() :: Given a timestamp, return the corresponding ISO8601 encoded string."><span class="description">Given a timestamp, return the corresponding ISO8601 encoded string.</span><pre>iso8601_encode</pre></a></li>
+<li class="function  "><a href="#function_php_xmlrpc_decode" title="php_xmlrpc_decode() :: Takes an xmlrpc value in PHP xmlrpcval object format and translates it into native PHP types."><span class="description">Takes an xmlrpc value in PHP xmlrpcval object format and translates it into native PHP types.</span><pre>php_xmlrpc_decode</pre></a></li>
+<li class="function  "><a href="#function_php_xmlrpc_decode_xml" title="php_xmlrpc_decode_xml() :: Convert the xml representation of a method response, method request or single
+xmlrpc value into the appropriate object (a.k.a. deserialize)"><span class="description">Convert the xml representation of a method response, method request or single
+xmlrpc value into the appropriate object (a.k.a. deserialize)</span><pre>php_xmlrpc_decode_xml</pre></a></li>
+<li class="function  "><a href="#function_php_xmlrpc_encode" title="php_xmlrpc_encode() :: Takes native php types and encodes them into xmlrpc PHP object format."><span class="description">Takes native php types and encodes them into xmlrpc PHP object format.</span><pre>php_xmlrpc_encode</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_cd" title="xmlrpc_cd() :: "><span class="description">xmlrpc_cd()
+        </span><pre>xmlrpc_cd</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_dh" title="xmlrpc_dh() :: "><span class="description">xmlrpc_dh()
+        </span><pre>xmlrpc_dh</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_ee" title="xmlrpc_ee() :: "><span class="description">xmlrpc_ee()
+        </span><pre>xmlrpc_ee</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_ee_fast" title="xmlrpc_ee_fast() :: "><span class="description">xmlrpc_ee_fast()
+        </span><pre>xmlrpc_ee_fast</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_encode_entitites" title="xmlrpc_encode_entitites() :: Convert a string to the correct XML representation in a target charset
+To help correct communication of non-ascii chars inside strings, regardless
+of the charset used when sending requests, parsing them, sending responses
+and parsing responses, an option is to convert all non-ascii chars present in the message
+into their equivalent 'charset entity'. Charset entities enumerated this way
+are independent of the charset encoding used to transmit them, and all XML
+parsers are bound to understand them."><span class="description">Convert a string to the correct XML representation in a target charset
+To help correct communication of non-ascii chars inside strings, regardless
+of the charset used when sending requests, parsing them, sending responses
+and parsing responses, an option is to convert all non-ascii chars present in the message
+into their equivalent 'charset entity'. Charset entities enumerated this way
+are independent of the charset encoding used to transmit them, and all XML
+parsers are bound to understand them.</span><pre>xmlrpc_encode_entitites</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_se" title="xmlrpc_se() :: xml parser handler function for opening element tags"><span class="description">xml parser handler function for opening element tags</span><pre>xmlrpc_se</pre></a></li>
+<li class="function  "><a href="#function_xmlrpc_se_any" title="xmlrpc_se_any() :: "><span class="description">xmlrpc_se_any()
+        </span><pre>xmlrpc_se_any</pre></a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#xmlrpc_client" title="">xmlrpc_client</a></li>
+<li><a href="#xmlrpcresp" title="">xmlrpcresp</a></li>
+<li><a href="#xmlrpcmsg" title="">xmlrpcmsg</a></li>
+<li><a href="#xmlrpcval" title="">xmlrpcval</a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_XMLRPC_EPI_ENABLED" title="XMLRPC_EPI_ENABLED() :: "><span class="description">XMLRPC_EPI_ENABLED</span><pre>XMLRPC_EPI_ENABLED</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Xmlrpc.html">Xmlrpc</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_decode_chunked"></a><div class="element clickable function  function_decode_chunked" data-toggle="collapse" data-target=".function_decode_chunked .collapse" title="">
+<h2>decode a string that is encoded w/ "chunked" transfer encoding
+as defined in rfc2068 par. 19.4.6
+code shamelessly stolen from nusoap library by Dietrich Ayala</h2>
+<pre>decode_chunked(string $buffer) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$buffer</h4>
+<code>string</code><p>the string to be decoded</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_guess_encoding"></a><div class="element clickable function  function_guess_encoding" data-toggle="collapse" data-target=".function_guess_encoding .collapse" title="">
+<h2>xml charset encoding guessing helper function.</h2>
+<pre>guess_encoding($httpheader<code> = ''</code>, string $xmlchunk<code> = ''</code>, string $encoding_prefs<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Tries to determine the charset encoding of an XML chunk received over HTTP.
+NB: according to the spec (RFC 3023), if text/xml content-type is received over HTTP without a content-type,
+we SHOULD assume it is strictly US-ASCII. But we try to be more tolerant of unconforming (legacy?) clients/servers,
+which will be most probably using UTF-8 anyway...</div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>explore usage of mb_http_input(): does it detect http headers + post data? if so, use it instead of hand-detection!!!</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$httpheader</h4></div>
+<div class="subelement argument">
+<h4>$xmlchunk</h4>
+<code>string</code><p>xml content buffer</p></div>
+<div class="subelement argument">
+<h4>$encoding_prefs</h4>
+<code>string</code><p>comma separated list of character encodings to be used as default (when mb extension is enabled)</p>
+</div>
+</div></div>
+</div>
+<a id="function_is_valid_charset"></a><div class="element clickable function  function_is_valid_charset" data-toggle="collapse" data-target=".function_is_valid_charset .collapse" title="">
+<h2>Checks if a given charset encoding is present in a list of encodings or
+if it is a valid subset of any encoding in the list</h2>
+<pre>is_valid_charset(string $encoding, mixed $validlist) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$encoding</h4>
+<code>string</code><p>charset to be tested</p></div>
+<div class="subelement argument">
+<h4>$validlist</h4>
+<code>mixed</code><p>comma separated list of valid charsets (or array of charsets)</p>
+</div>
+</div></div>
+</div>
+<a id="function_iso8601_decode"></a><div class="element clickable function  function_iso8601_decode" data-toggle="collapse" data-target=".function_iso8601_decode .collapse" title="">
+<h2>Given an ISO8601 date string, return a timet in the localtime, or UTC</h2>
+<pre>iso8601_decode(string $idate, int $utc<code> = 0</code>) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idate</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$utc</h4>
+<code>int</code><p>either 0 or 1</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>(datetime)</div>
+</div></div>
+</div>
+<a id="function_iso8601_encode"></a><div class="element clickable function  function_iso8601_encode" data-toggle="collapse" data-target=".function_iso8601_encode .collapse" title="">
+<h2>Given a timestamp, return the corresponding ISO8601 encoded string.</h2>
+<pre>iso8601_encode(int $timet, int $utc<code> = 0</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Really, timezones ought to be supported
+but the XML-RPC spec says:
+
+"Don't assume a timezone. It should be specified by the server in its
+documentation what assumptions it makes about timezones."
+
+These routines always assume localtime unless
+$utc is set to 1, in which case UTC is assumed
+and an adjustment for locale is made when encoding</div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$timet</h4>
+<code>int</code><p>(timestamp)</p>
+</div>
+<div class="subelement argument">
+<h4>$utc</h4>
+<code>int</code><p>(0 or 1)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="function_php_xmlrpc_decode"></a><div class="element clickable function  function_php_xmlrpc_decode" data-toggle="collapse" data-target=".function_php_xmlrpc_decode .collapse" title="">
+<h2>Takes an xmlrpc value in PHP xmlrpcval object format and translates it into native PHP types.</h2>
+<pre>php_xmlrpc_decode(\xmlrpc\xmlrpcval $xmlrpc_val, array $options<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Works with xmlrpc message objects as input, too.
+
+Given proper options parameter, can rebuild generic php object instances
+(provided those have been encoded to xmlrpc format using a corresponding
+option in php_xmlrpc_encode())
+PLEASE NOTE that rebuilding php objects involves calling their constructor function.
+This means that the remote communication end can decide which php code will
+get executed on your server, leaving the door possibly open to 'php-injection'
+style of attacks (provided you have some classes defined on your server that
+might wreak havoc if instances are built outside an appropriate context).
+Make sure you trust the remote server/client before eanbling this!</div>
+<table class="table table-bordered"><tr>
+<th>author</th>
+<td><a href="">Dan Libby (dan@libby.com)</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$xmlrpc_val</h4>
+<code>\xmlrpc\xmlrpcval</code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>if 'decode_php_objs' is set in the options array, xmlrpc structs can be decoded into php objects; if 'dates_as_objects' is set xmlrpc datetimes are decoded as php DateTime objects (standard is</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="function_php_xmlrpc_decode_xml"></a><div class="element clickable function  function_php_xmlrpc_decode_xml" data-toggle="collapse" data-target=".function_php_xmlrpc_decode_xml .collapse" title="">
+<h2>Convert the xml representation of a method response, method request or single
+xmlrpc value into the appropriate object (a.k.a. deserialize)</h2>
+<pre>php_xmlrpc_decode_xml(string $xml_val, array $options<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$xml_val</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>false on error, or an instance of either xmlrpcval, xmlrpcmsg or xmlrpcresp</div>
+</div></div>
+</div>
+<a id="function_php_xmlrpc_encode"></a><div class="element clickable function  function_php_xmlrpc_encode" data-toggle="collapse" data-target=".function_php_xmlrpc_encode .collapse" title="">
+<h2>Takes native php types and encodes them into xmlrpc PHP object format.</h2>
+<pre>php_xmlrpc_encode(mixed $php_val, array $options<code> = array()</code>) : \xmlrpc\xmlrpcval</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">It will not re-encode xmlrpcval objects.
+
+Feature creep -- could support more types via optional type argument
+(string => datetime support has been added, ??? => base64 not yet)
+
+If given a proper options parameter, php object instances will be encoded
+into 'special' xmlrpc values, that can later be decoded into php objects
+by calling php_xmlrpc_decode() with a corresponding option</div>
+<table class="table table-bordered"><tr>
+<th>author</th>
+<td><a href="">Dan Libby (dan@libby.com)</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$php_val</h4>
+<code>mixed</code><p>the value to be converted into an xmlrpcval object</p></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><p>can include 'encode_php_objs', 'auto_dates', 'null_extension' or 'extension_api'</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\xmlrpc\xmlrpcval</code></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_cd"></a><div class="element clickable function  function_xmlrpc_cd" data-toggle="collapse" data-target=".function_xmlrpc_cd .collapse" title="">
+<h2>xmlrpc_cd()
+        </h2>
+<pre>xmlrpc_cd($parser, $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_dh"></a><div class="element clickable function  function_xmlrpc_dh" data-toggle="collapse" data-target=".function_xmlrpc_dh .collapse" title="">
+<h2>xmlrpc_dh()
+        </h2>
+<pre>xmlrpc_dh($parser, $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$data</h4></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_ee"></a><div class="element clickable function  function_xmlrpc_ee" data-toggle="collapse" data-target=".function_xmlrpc_ee .collapse" title="">
+<h2>xmlrpc_ee()
+        </h2>
+<pre>xmlrpc_ee($parser, $name, $rebuild_xmlrpcvals<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$rebuild_xmlrpcvals</h4></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_ee_fast"></a><div class="element clickable function  function_xmlrpc_ee_fast" data-toggle="collapse" data-target=".function_xmlrpc_ee_fast .collapse" title="">
+<h2>xmlrpc_ee_fast()
+        </h2>
+<pre>xmlrpc_ee_fast($parser, $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_encode_entitites"></a><div class="element clickable function  function_xmlrpc_encode_entitites" data-toggle="collapse" data-target=".function_xmlrpc_encode_entitites .collapse" title="">
+<h2>Convert a string to the correct XML representation in a target charset
+To help correct communication of non-ascii chars inside strings, regardless
+of the charset used when sending requests, parsing them, sending responses
+and parsing responses, an option is to convert all non-ascii chars present in the message
+into their equivalent 'charset entity'. Charset entities enumerated this way
+are independent of the charset encoding used to transmit them, and all XML
+parsers are bound to understand them.</h2>
+<pre>xmlrpc_encode_entitites(string $data, string $src_encoding<code> = ''</code>, string $dest_encoding<code> = ''</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description">Note that in the std case we are not sending a charset encoding mime type
+along with http headers, so we are bound by RFC 3023 to emit strict us-ascii.</div>
+<table class="table table-bordered">
+<tr>
+<th>todo</th>
+<td>do a bit of basic benchmarking (strtr vs. str_replace)</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>make usage of iconv() or recode_string() or mb_string() where available</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>string</code><p>destination encoding</p></div>
+<div class="subelement argument">
+<h4>$src_encoding</h4>
+<code>string</code><p>destination encoding</p></div>
+<div class="subelement argument">
+<h4>$dest_encoding</h4>
+<code>string</code><p>destination encoding</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>returns escaped data</div>
+</div></div>
+</div>
+<a id="function_xmlrpc_se"></a><div class="element clickable function  function_xmlrpc_se" data-toggle="collapse" data-target=".function_xmlrpc_se .collapse" title="">
+<h2>xml parser handler function for opening element tags</h2>
+<pre>xmlrpc_se($parser, $name, $attrs, $accept_single_vals<code> = false</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$attrs</h4></div>
+<div class="subelement argument"><h4>$accept_single_vals</h4></div>
+</div></div>
+</div>
+<a id="function_xmlrpc_se_any"></a><div class="element clickable function  function_xmlrpc_se_any" data-toggle="collapse" data-target=".function_xmlrpc_se_any .collapse" title="">
+<h2>xmlrpc_se_any()
+        </h2>
+<pre>xmlrpc_se_any($parser, $name, $attrs) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$parser</h4></div>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$attrs</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="xmlrpc_client" class="element ajax clickable class">
+<h1>xmlrpc_client<a href="../classes/xmlrpc.xmlrpc_client.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc.xmlrpc_client.html" class="more">« More »</a>
+</div>
+<div id="xmlrpcmsg" class="element ajax clickable class">
+<h1>xmlrpcmsg<a href="../classes/xmlrpc.xmlrpcmsg.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc.xmlrpcmsg.html" class="more">« More »</a>
+</div>
+<div id="xmlrpcresp" class="element ajax clickable class">
+<h1>xmlrpcresp<a href="../classes/xmlrpc.xmlrpcresp.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc.xmlrpcresp.html" class="more">« More »</a>
+</div>
+<div id="xmlrpcval" class="element ajax clickable class">
+<h1>xmlrpcval<a href="../classes/xmlrpc.xmlrpcval.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/xmlrpc.xmlrpcval.html" class="more">« More »</a>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_XMLRPC_EPI_ENABLED"> </a><div class="element clickable constant  constant_XMLRPC_EPI_ENABLED" data-toggle="collapse" data-target=".constant_XMLRPC_EPI_ENABLED .collapse" title="">
+<h2>XMLRPC_EPI_ENABLED</h2>
+<pre>XMLRPC_EPI_ENABLED = '0' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+                        Generated on 2013-09-27T20:26:50-05:00.<br></footer></div>
+</div>
+</body>
+</html>

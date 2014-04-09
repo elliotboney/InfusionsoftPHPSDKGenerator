@@ -1,0 +1,788 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+debugecho	inc/helpers.php	/^function debugecho($string)$/;"	f
+fieldspulled	inc/helpers.php	/^        $fieldspulled = getTableFields($t);$/;"	v
+flush_buffers	inc/helpers.php	/^function flush_buffers(){ $/;"	f
+left	inc/helpers.php	/^function left($str, $length) {$/;"	f
+outputTablesSorted	inc/helpers.php	/^function outputTablesSorted($tablespulled) $/;"	f
+right	inc/helpers.php	/^function right($str, $length) {$/;"	f
+ISScraper	inc/scraper.php	/^class ISScraper$/;"	c
+count	inc/scraper.php	/^        $count = 0;$/;"	v
+descr	inc/scraper.php	/^                $descr = trim($tr->children(2)->plaintext);$/;"	v
+description	inc/scraper.php	/^            $description = $html->find('#databaseDoc', 0)->children(1)->plaintext."\\n";$/;"	v
+description	inc/scraper.php	/^            $description="No Description Available in Online Documentation.";$/;"	v
+fieldArray	inc/scraper.php	/^        $fieldArray = array();$/;"	v
+getServiceInfo	inc/scraper.php	/^    function getServiceInfo($s) $/;"	f
+getServiceList	inc/scraper.php	/^    function getServiceList()$/;"	f
+getTableDescr	inc/scraper.php	/^    function getTableDescr($t) $/;"	f
+getTableFields	inc/scraper.php	/^    function getTableFields($t)$/;"	f
+getTableList	inc/scraper.php	/^    function getTableList() $/;"	f
+header	inc/scraper.php	/^                $header = true;$/;"	v
+header	inc/scraper.php	/^        $header = false;$/;"	v
+html	inc/scraper.php	/^        $html = file_get_html($GLOBALS['api_base'].'developers\/tables\/'.$t->name);$/;"	v
+html	inc/scraper.php	/^        $html = file_get_html($GLOBALS['tables_url']);$/;"	v
+html	inc/scraper.php	/^        $html = file_get_html($s->url);$/;"	v
+html	inc/scraper.php	/^        $html = file_get_html($t->url);$/;"	v
+html	inc/scraper.php	/^        $html = file_get_html($url);$/;"	v
+methods	inc/scraper.php	/^        $methods = $html->find('.full_method');$/;"	v
+name	inc/scraper.php	/^                $name = trim($tr->children(0)->plaintext);$/;"	v
+name	inc/scraper.php	/^                if ($name == "privateKey" || $name == "Key" || $name == "key") { continue; }$/;"	v
+name	inc/scraper.php	/^            $name = $i->plaintext;$/;"	v
+paramtable	inc/scraper.php	/^            $paramtable = $m->next_sibling ()->next_sibling()->next_sibling();$/;"	v
+servicelist	inc/scraper.php	/^        $servicelist = array();$/;"	v
+surl	inc/scraper.php	/^            $surl = $i->href;$/;"	v
+tablearray	inc/scraper.php	/^        $tablearray = array();$/;"	v
+thead	inc/scraper.php	/^                if ($thead) { $thead=false; continue; }$/;"	v
+thead	inc/scraper.php	/^            $thead = true;$/;"	v
+type	inc/scraper.php	/^                $type = "[[[ ".$element->children(1)->plaintext." ]]]";$/;"	v
+type	inc/scraper.php	/^                $type = "blob";$/;"	v
+type	inc/scraper.php	/^                $type = "bool";$/;"	v
+type	inc/scraper.php	/^                $type = "datetime";$/;"	v
+type	inc/scraper.php	/^                $type = "double";$/;"	v
+type	inc/scraper.php	/^                $type = "enum";$/;"	v
+type	inc/scraper.php	/^                $type = "long";$/;"	v
+type	inc/scraper.php	/^                $type = trim($tr->children(1)->plaintext);$/;"	v
+type	inc/scraper.php	/^                $type="int";$/;"	v
+type	inc/scraper.php	/^                $type="string";$/;"	v
+url	inc/scraper.php	/^        $url = $GLOBALS['api_base']."api-docs";$/;"	v
+Service	inc/service_class.php	/^    function Service($name, $url) $/;"	f
+Service	inc/service_class.php	/^class Service $/;"	c
+ServiceMethod	inc/service_class.php	/^    function ServiceMethod($name,$parameters,$returns)$/;"	f
+ServiceMethod	inc/service_class.php	/^class ServiceMethod$/;"	c
+access	inc/service_class.php	/^        $this->access=$access;$/;"	v
+description	inc/service_class.php	/^    var $description;$/;"	v
+methods	inc/service_class.php	/^    var $methods;$/;"	v
+name	inc/service_class.php	/^        $this->name=$name;$/;"	v
+name	inc/service_class.php	/^    var $name;$/;"	v
+parameters	inc/service_class.php	/^    var $parameters;$/;"	v
+returns	inc/service_class.php	/^    var $returns;$/;"	v
+type	inc/service_class.php	/^        $this->type=$type;$/;"	v
+url	inc/service_class.php	/^        $this->url=$url;$/;"	v
+url	inc/service_class.php	/^    var $url;$/;"	v
+variable	inc/service_class.php	/^     * undocumented class variable$/;"	c
+DEFAULT_BR_TEXT	inc/simple_html_dom.php	/^define('DEFAULT_BR_TEXT', "\\r\\n");$/;"	d
+DEFAULT_SPAN_TEXT	inc/simple_html_dom.php	/^define('DEFAULT_SPAN_TEXT', " ");$/;"	d
+DEFAULT_TARGET_CHARSET	inc/simple_html_dom.php	/^define('DEFAULT_TARGET_CHARSET', 'UTF-8');$/;"	d
+HDOM_INFO_BEGIN	inc/simple_html_dom.php	/^define('HDOM_INFO_BEGIN',   0);$/;"	d
+HDOM_INFO_END	inc/simple_html_dom.php	/^define('HDOM_INFO_END',     1);$/;"	d
+HDOM_INFO_ENDSPACE	inc/simple_html_dom.php	/^define('HDOM_INFO_ENDSPACE',7);$/;"	d
+HDOM_INFO_INNER	inc/simple_html_dom.php	/^define('HDOM_INFO_INNER',   5);$/;"	d
+HDOM_INFO_OUTER	inc/simple_html_dom.php	/^define('HDOM_INFO_OUTER',   6);$/;"	d
+HDOM_INFO_QUOTE	inc/simple_html_dom.php	/^define('HDOM_INFO_QUOTE',   2);$/;"	d
+HDOM_INFO_SPACE	inc/simple_html_dom.php	/^define('HDOM_INFO_SPACE',   3);$/;"	d
+HDOM_INFO_TEXT	inc/simple_html_dom.php	/^define('HDOM_INFO_TEXT',    4);$/;"	d
+HDOM_QUOTE_DOUBLE	inc/simple_html_dom.php	/^define('HDOM_QUOTE_DOUBLE', 0);$/;"	d
+HDOM_QUOTE_NO	inc/simple_html_dom.php	/^define('HDOM_QUOTE_NO',     3);$/;"	d
+HDOM_QUOTE_SINGLE	inc/simple_html_dom.php	/^define('HDOM_QUOTE_SINGLE', 1);$/;"	d
+HDOM_TYPE_COMMENT	inc/simple_html_dom.php	/^define('HDOM_TYPE_COMMENT', 2);$/;"	d
+HDOM_TYPE_ELEMENT	inc/simple_html_dom.php	/^define('HDOM_TYPE_ELEMENT', 1);$/;"	d
+HDOM_TYPE_ENDTAG	inc/simple_html_dom.php	/^define('HDOM_TYPE_ENDTAG',  4);$/;"	d
+HDOM_TYPE_ROOT	inc/simple_html_dom.php	/^define('HDOM_TYPE_ROOT',    5);$/;"	d
+HDOM_TYPE_TEXT	inc/simple_html_dom.php	/^define('HDOM_TYPE_TEXT',    3);$/;"	d
+HDOM_TYPE_UNKNOWN	inc/simple_html_dom.php	/^define('HDOM_TYPE_UNKNOWN', 6);$/;"	d
+MAX_FILE_SIZE	inc/simple_html_dom.php	/^define('MAX_FILE_SIZE', 600000);$/;"	d
+_	inc/simple_html_dom.php	/^    public $_ = array();$/;"	v
+__construct	inc/simple_html_dom.php	/^    function __construct($dom)$/;"	f
+__construct	inc/simple_html_dom.php	/^    function __construct($str=null, $lowercase=true, $forceTagsClosed=true, $target_charset=DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	f
+__destruct	inc/simple_html_dom.php	/^    function __destruct()$/;"	f
+__get	inc/simple_html_dom.php	/^    function __get($name) {$/;"	f
+__get	inc/simple_html_dom.php	/^    function __get($name)$/;"	f
+__isset	inc/simple_html_dom.php	/^    function __isset($name) {$/;"	f
+__set	inc/simple_html_dom.php	/^    function __set($name, $value) {$/;"	f
+__toString	inc/simple_html_dom.php	/^    function __toString()$/;"	f
+__unset	inc/simple_html_dom.php	/^    function __unset($name) {$/;"	f
+_charset	inc/simple_html_dom.php	/^        return $this->_charset = $charset;$/;"	v
+_charset	inc/simple_html_dom.php	/^    public $_charset = '';$/;"	v
+_target_charset	inc/simple_html_dom.php	/^        $this->_target_charset = $target_charset;$/;"	v
+_target_charset	inc/simple_html_dom.php	/^    public $_target_charset = '';$/;"	v
+appendChild	inc/simple_html_dom.php	/^    function appendChild($node) {$node->parent($this); return $node;}$/;"	f
+args	inc/simple_html_dom.php	/^        $args = func_get_args();$/;"	v
+as_text_node	inc/simple_html_dom.php	/^    protected function as_text_node($tag)$/;"	f
+attr	inc/simple_html_dom.php	/^    public $attr = array();$/;"	v
+attributes	inc/simple_html_dom.php	/^            $attributes = array();$/;"	v
+b	inc/simple_html_dom.php	/^                    $b=ord($str[$i]);$/;"	v
+begin_tag_pos	inc/simple_html_dom.php	/^        $begin_tag_pos = $this->pos;$/;"	v
+bits	inc/simple_html_dom.php	/^                elseif($c >= 192) $bits=2;$/;"	v
+bits	inc/simple_html_dom.php	/^                elseif($c >= 224) $bits=3;$/;"	v
+bits	inc/simple_html_dom.php	/^                elseif($c >= 240) $bits=4;$/;"	v
+bits	inc/simple_html_dom.php	/^                elseif($c >= 248) $bits=5;$/;"	v
+bits	inc/simple_html_dom.php	/^                elseif($c >= 252) $bits=6;$/;"	v
+bits	inc/simple_html_dom.php	/^        $bits=0;$/;"	v
+block_tags	inc/simple_html_dom.php	/^    protected $block_tags = array('root'=>1, 'body'=>1, 'form'=>1, 'div'=>1, 'span'=>1, 'table'=>1);$/;"	v
+c	inc/simple_html_dom.php	/^            $c=ord($str[$i]);$/;"	v
+c	inc/simple_html_dom.php	/^        $c=0; $b=0;$/;"	v
+callback	inc/simple_html_dom.php	/^        $this->callback = $function_name;$/;"	v
+callback	inc/simple_html_dom.php	/^        $this->callback = null;$/;"	v
+callback	inc/simple_html_dom.php	/^    public $callback = null;$/;"	v
+case	inc/simple_html_dom.php	/^        \/\/ PaperG: If this is a "class" selector, lets get rid of the preceeding and trailing space since some people leave it in the multi class case.$/;"	c
+chainable	inc/simple_html_dom.php	/^        \/\/ make load function chainable$/;"	f
+char	inc/simple_html_dom.php	/^                    $this->char = (++$this->pos<$this->size) ? $this->doc[$this->pos] : null; \/\/ next$/;"	v
+char	inc/simple_html_dom.php	/^                    if ($this->char!='>') $this->char = $this->doc[--$this->pos]; \/\/ prev$/;"	v
+char	inc/simple_html_dom.php	/^                $this->char = (++$this->pos<$this->size) ? $this->doc[$this->pos] : null; \/\/ next$/;"	v
+char	inc/simple_html_dom.php	/^                $this->char = null;$/;"	v
+char	inc/simple_html_dom.php	/^            $this->char = $this->doc[$pos];$/;"	v
+char	inc/simple_html_dom.php	/^            $this->char = $this->doc[--$this->pos]; \/\/ prev$/;"	v
+char	inc/simple_html_dom.php	/^            $this->char = $this->doc[0];$/;"	v
+char	inc/simple_html_dom.php	/^            $this->char = (++$this->pos<$this->size) ? $this->doc[$this->pos] : null; \/\/ next$/;"	v
+char	inc/simple_html_dom.php	/^            $this->char = null;$/;"	v
+char	inc/simple_html_dom.php	/^        $this->char = $this->doc[$pos];$/;"	v
+char	inc/simple_html_dom.php	/^        $this->char = ($this->pos<$this->size) ? $this->doc[$this->pos] : null; \/\/ next$/;"	v
+char	inc/simple_html_dom.php	/^        $this->char = (++$this->pos<$this->size) ? $this->doc[$this->pos] : null; \/\/ next$/;"	v
+char	inc/simple_html_dom.php	/^        if ($this->size>0) $this->char = $this->doc[0];$/;"	v
+char	inc/simple_html_dom.php	/^    protected $char;$/;"	v
+charset	inc/simple_html_dom.php	/^                        $charset = $matches[1];$/;"	v
+charset	inc/simple_html_dom.php	/^                        $charset = 'ISO-8859-1';$/;"	v
+charset	inc/simple_html_dom.php	/^                $charset = $matches[1];$/;"	v
+charset	inc/simple_html_dom.php	/^                $charset = 'UTF-8';$/;"	v
+charset	inc/simple_html_dom.php	/^            $charset = 'CP1252';$/;"	v
+charset	inc/simple_html_dom.php	/^            $charset = mb_detect_encoding($this->root->plaintext . "ascii", $encoding_list = array( "UTF-8", "CP1252" ) );$/;"	v
+charset	inc/simple_html_dom.php	/^        $charset = null;$/;"	v
+check	inc/simple_html_dom.php	/^                                $check = $this->match($exp, $val, $k);$/;"	v
+check	inc/simple_html_dom.php	/^                                $check = $this->match($exp, strtolower($val), strtolower($k));$/;"	v
+check	inc/simple_html_dom.php	/^                    $check = $this->match($exp, $val, $nodeKeyValue);$/;"	v
+check	inc/simple_html_dom.php	/^                    $check = $this->match($exp, strtolower($val), strtolower($nodeKeyValue));$/;"	v
+childNodes	inc/simple_html_dom.php	/^    function childNodes($idx=-1) {return $this->children($idx);}$/;"	f
+childNodes	inc/simple_html_dom.php	/^    function childNodes($idx=-1) {return $this->root->childNodes($idx);}$/;"	f
+children	inc/simple_html_dom.php	/^        $this->children = null;$/;"	v
+children	inc/simple_html_dom.php	/^    function children($idx=-1)$/;"	f
+children	inc/simple_html_dom.php	/^    public $children = array();$/;"	v
+clear	inc/simple_html_dom.php	/^    function clear()$/;"	f
+contentTypeHeader	inc/simple_html_dom.php	/^            $contentTypeHeader = get_last_retrieve_url_contents_content_type();$/;"	v
+contents	inc/simple_html_dom.php	/^    $contents = file_get_contents($url, $use_include_path, $context, $offset);$/;"	v
+convert_text	inc/simple_html_dom.php	/^    function convert_text($text)$/;"	f
+converted_text	inc/simple_html_dom.php	/^                $converted_text = $text;$/;"	v
+converted_text	inc/simple_html_dom.php	/^                $converted_text = iconv($sourceCharset, $targetCharset, $text);$/;"	v
+converted_text	inc/simple_html_dom.php	/^                $converted_text = substr($converted_text, 0, -3);$/;"	v
+converted_text	inc/simple_html_dom.php	/^                $converted_text = substr($converted_text, 3);$/;"	v
+converted_text	inc/simple_html_dom.php	/^        $converted_text = $text;$/;"	v
+copy_skip	inc/simple_html_dom.php	/^    protected function copy_skip($chars)$/;"	f
+copy_until	inc/simple_html_dom.php	/^    protected function copy_until($chars)$/;"	f
+copy_until_char	inc/simple_html_dom.php	/^    protected function copy_until_char($char)$/;"	f
+copy_until_char_escape	inc/simple_html_dom.php	/^    protected function copy_until_char_escape($char)$/;"	f
+count	inc/simple_html_dom.php	/^            $count = 0;$/;"	v
+count	inc/simple_html_dom.php	/^        $count = count($this->parent->children);$/;"	v
+count	inc/simple_html_dom.php	/^        $count = preg_match_all($pattern, $this->doc, $matches, PREG_SET_ORDER|PREG_OFFSET_CAPTURE);$/;"	v
+createElement	inc/simple_html_dom.php	/^    function createElement($name, $value=null) {return @str_get_html("<$name>$value<\/$name>")->first_child();}$/;"	f
+createTextNode	inc/simple_html_dom.php	/^    function createTextNode($value) {return @end(str_get_html($value)->nodes);}$/;"	f
+cursor	inc/simple_html_dom.php	/^        $this->cursor = 1;$/;"	v
+cursor	inc/simple_html_dom.php	/^    protected $cursor;$/;"	v
+deep	inc/simple_html_dom.php	/^    function dump($show_attr=true, $deep=0)$/;"	v
+default_br_text	inc/simple_html_dom.php	/^        $this->default_br_text = $defaultBRText;$/;"	v
+default_br_text	inc/simple_html_dom.php	/^    protected $default_br_text = "";$/;"	v
+default_span_text	inc/simple_html_dom.php	/^        $this->default_span_text = $defaultSpanText;$/;"	v
+default_span_text	inc/simple_html_dom.php	/^    public $default_span_text = "";$/;"	v
+doc	inc/simple_html_dom.php	/^            $this->doc = substr_replace($this->doc, $key, $matches[$i][$idx][1], strlen($matches[$i][$idx][0]));$/;"	v
+doc	inc/simple_html_dom.php	/^        $this->doc = $str;$/;"	v
+doc	inc/simple_html_dom.php	/^    protected $doc;$/;"	v
+dom	inc/simple_html_dom.php	/^        $this->dom = $dom;$/;"	v
+dom	inc/simple_html_dom.php	/^        $this->dom = null;$/;"	v
+dom	inc/simple_html_dom.php	/^    $dom = new simple_html_dom(null, $lowercase, $forceTagsClosed, $target_charset, $stripRN, $defaultBRText, $defaultSpanText);$/;"	v
+dom	inc/simple_html_dom.php	/^    private $dom = null;$/;"	v
+dump	inc/simple_html_dom.php	/^    function dump($show_attr=true)$/;"	f
+dump	inc/simple_html_dom.php	/^    function dump($show_attr=true, $deep=0)$/;"	f
+dump_html_tree	inc/simple_html_dom.php	/^function dump_html_tree($node, $show_attr=true, $deep=0)$/;"	f
+dump_node	inc/simple_html_dom.php	/^    function dump_node($echo=true)$/;"	f
+el	inc/simple_html_dom.php	/^            $el = $this->root->find('meta[http-equiv=Content-Type]',0);$/;"	v
+end	inc/simple_html_dom.php	/^        $end = (!empty($this->_[HDOM_INFO_END])) ? $this->_[HDOM_INFO_END] : 0;$/;"	v
+file_get_html	inc/simple_html_dom.php	/^function file_get_html($url, $use_include_path = false, $context=null, $offset = -1, $maxLen=-1, $lowercase = true, $forceTagsClosed=true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	f
+find	inc/simple_html_dom.php	/^    function find($selector, $idx=null, $lowercase=false)$/;"	f
+find_ancestor_tag	inc/simple_html_dom.php	/^    function find_ancestor_tag($tag)$/;"	f
+firstChild	inc/simple_html_dom.php	/^    function firstChild() {return $this->first_child();}$/;"	f
+firstChild	inc/simple_html_dom.php	/^    function firstChild() {return $this->root->first_child();}$/;"	f
+first_child	inc/simple_html_dom.php	/^    function first_child()$/;"	f
+found	inc/simple_html_dom.php	/^        $found = array();$/;"	v
+found_keys	inc/simple_html_dom.php	/^        $found_keys = array();$/;"	v
+fullvalue	inc/simple_html_dom.php	/^                $fullvalue = $el->content;$/;"	v
+getAllAttributes	inc/simple_html_dom.php	/^    function getAllAttributes() {return $this->attr;}$/;"	f
+getAttribute	inc/simple_html_dom.php	/^    function getAttribute($name) {return $this->__get($name);}$/;"	f
+getElementById	inc/simple_html_dom.php	/^    function getElementById($id) {return $this->find("#$id", 0);}$/;"	f
+getElementByTagName	inc/simple_html_dom.php	/^    function getElementByTagName($name) {return $this->find($name, 0);}$/;"	f
+getElementsById	inc/simple_html_dom.php	/^    function getElementsById($id, $idx=null) {return $this->find("#$id", $idx);}$/;"	f
+getElementsByTagName	inc/simple_html_dom.php	/^    function getElementsByTagName($name, $idx=-1) {return $this->find($name, $idx);}$/;"	f
+getElementsByTagName	inc/simple_html_dom.php	/^    function getElementsByTagName($name, $idx=null) {return $this->find($name, $idx);}$/;"	f
+get_display_size	inc/simple_html_dom.php	/^    function get_display_size()$/;"	f
+guard	inc/simple_html_dom.php	/^            $guard = $this->pos;$/;"	v
+guard	inc/simple_html_dom.php	/^        $guard = 0; \/\/ prevent infinity loop$/;"	v
+hasAttribute	inc/simple_html_dom.php	/^    function hasAttribute($name) {return $this->__isset($name);}$/;"	f
+hasChildNodes	inc/simple_html_dom.php	/^    function hasChildNodes() {return $this->has_child();}$/;"	f
+has_child	inc/simple_html_dom.php	/^    function has_child()$/;"	f
+head	inc/simple_html_dom.php	/^                $head = $ret;$/;"	v
+head	inc/simple_html_dom.php	/^            $head = array($this->_[HDOM_INFO_BEGIN]=>1);$/;"	v
+height	inc/simple_html_dom.php	/^                        $height = $proposed_height;$/;"	v
+height	inc/simple_html_dom.php	/^            $height = $this->attr['height'];$/;"	v
+height	inc/simple_html_dom.php	/^            if (isset($attributes['height']) && $height == -1)$/;"	v
+height	inc/simple_html_dom.php	/^        $height = -1;$/;"	v
+i	inc/simple_html_dom.php	/^        $i = -1;$/;"	v
+idx	inc/simple_html_dom.php	/^            $idx = ($remove_tag) ? 0 : 1;$/;"	v
+idx	inc/simple_html_dom.php	/^        $idx = 0;$/;"	v
+idx	inc/simple_html_dom.php	/^        else if ($idx<0) $idx = count($found) + $idx;$/;"	v
+idx	inc/simple_html_dom.php	/^    function find($selector, $idx=null, $lowercase=false)$/;"	v
+idx	inc/simple_html_dom.php	/^    function getElementsById($id, $idx=null) {return $this->find("#$id", $idx);}$/;"	v
+idx	inc/simple_html_dom.php	/^    function getElementsByTagName($name, $idx=-1) {return $this->find($name, $idx);}$/;"	v
+idx	inc/simple_html_dom.php	/^    function getElementsByTagName($name, $idx=null) {return $this->find($name, $idx);}$/;"	v
+innertext	inc/simple_html_dom.php	/^    function innertext()$/;"	f
+is_utf8	inc/simple_html_dom.php	/^    function is_utf8($string)$/;"	f
+is_utf8	inc/simple_html_dom.php	/^    static function is_utf8($str)$/;"	f
+k	inc/simple_html_dom.php	/^                foreach ($head as $k=>$v)$/;"	v
+k	inc/simple_html_dom.php	/^            foreach ($head as $k=>$v)$/;"	v
+k	inc/simple_html_dom.php	/^            foreach ($this->_ as $k=>$v)$/;"	v
+k	inc/simple_html_dom.php	/^            foreach ($this->attr as $k=>$v)$/;"	v
+k	inc/simple_html_dom.php	/^        foreach ($found_keys as $k=>$v)$/;"	v
+k2	inc/simple_html_dom.php	/^                    foreach ($v as $k2=>$v2)$/;"	v
+key	inc/simple_html_dom.php	/^                $key = '___noise___'.$text[$pos+11].$text[$pos+12].$text[$pos+13].$text[$pos+14].$text[$pos+15];$/;"	v
+key	inc/simple_html_dom.php	/^            $key = '___noise___'.sprintf('% 5d', count($this->noise)+1000);$/;"	v
+key	inc/simple_html_dom.php	/^            if ($this->dom->lowercase) {$tag=strtolower($tag); $key=strtolower($key);}$/;"	v
+key	inc/simple_html_dom.php	/^        foreach ($this->attr as $key=>$val)$/;"	v
+lastChild	inc/simple_html_dom.php	/^    function lastChild() {return $this->last_child();}$/;"	f
+lastChild	inc/simple_html_dom.php	/^    function lastChild() {return $this->root->last_child();}$/;"	f
+last_child	inc/simple_html_dom.php	/^    function last_child()$/;"	f
+lead	inc/simple_html_dom.php	/^        $lead = str_repeat('    ', $deep);$/;"	v
+len	inc/simple_html_dom.php	/^        $len = strcspn($this->doc, $chars, $pos);$/;"	v
+len	inc/simple_html_dom.php	/^        $len = strspn($this->doc, $chars, $pos);$/;"	v
+len	inc/simple_html_dom.php	/^        $len=strlen($str);$/;"	v
+link_nodes	inc/simple_html_dom.php	/^    protected function link_nodes(&$node, $is_child)$/;"	f
+load	inc/simple_html_dom.php	/^    function load($str, $lowercase=true, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	f
+loadFile	inc/simple_html_dom.php	/^    function loadFile() {$args = func_get_args();$this->load_file($args);}$/;"	f
+load_file	inc/simple_html_dom.php	/^    function load_file()$/;"	f
+lowercase	inc/simple_html_dom.php	/^        $this->lowercase = $lowercase;$/;"	v
+lowercase	inc/simple_html_dom.php	/^    function __construct($str=null, $lowercase=true, $forceTagsClosed=true, $target_charset=DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	v
+lowercase	inc/simple_html_dom.php	/^    function load($str, $lowercase=true, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	v
+lowercase	inc/simple_html_dom.php	/^    protected function prepare($str, $lowercase=true, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	v
+lowercase	inc/simple_html_dom.php	/^    protected function seek($selector, &$ret, $lowercase=false)$/;"	v
+lowercase	inc/simple_html_dom.php	/^    public $lowercase = false;$/;"	v
+lowercase	inc/simple_html_dom.php	/^function str_get_html($str, $lowercase=true, $forceTagsClosed=true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	v
+makeup	inc/simple_html_dom.php	/^    function makeup()$/;"	f
+match	inc/simple_html_dom.php	/^    protected function match($exp, $pattern, $value) {$/;"	f
+n	inc/simple_html_dom.php	/^                    $n = ($k===-1) ? $this->dom->root : $this->dom->nodes[$k];$/;"	v
+n	inc/simple_html_dom.php	/^        foreach ($this->nodes as $n) {$n->clear(); $n = null;}$/;"	v
+n	inc/simple_html_dom.php	/^        if (isset($this->children)) foreach ($this->children as $n) {$n->clear(); $n = null;}$/;"	v
+name	inc/simple_html_dom.php	/^                $name = $this->restore_noise($name);$/;"	v
+name	inc/simple_html_dom.php	/^                if ($this->lowercase) $name = strtolower($name);$/;"	v
+name	inc/simple_html_dom.php	/^            $name = $this->copy_until($this->token_equal);$/;"	v
+nextSibling	inc/simple_html_dom.php	/^    function nextSibling() {return $this->next_sibling();}$/;"	f
+next_sibling	inc/simple_html_dom.php	/^    function next_sibling()$/;"	f
+no_key	inc/simple_html_dom.php	/^            if (isset($key[0]) && $key[0]==='!') {$key=substr($key, 1); $no_key=true;}$/;"	v
+node	inc/simple_html_dom.php	/^            $node = $this->dom->nodes[$i];$/;"	v
+node	inc/simple_html_dom.php	/^        $node = new simple_html_dom_node($this);$/;"	v
+nodeKeyValue	inc/simple_html_dom.php	/^                    $nodeKeyValue = $node->attr[$key];$/;"	v
+nodeKeyValue	inc/simple_html_dom.php	/^                    $nodeKeyValue = $node->text();$/;"	v
+nodeName	inc/simple_html_dom.php	/^    function nodeName() {return $this->tag;}$/;"	f
+nodes	inc/simple_html_dom.php	/^        $this->nodes = array();$/;"	v
+nodes	inc/simple_html_dom.php	/^        $this->nodes = null;$/;"	v
+nodes	inc/simple_html_dom.php	/^    public $nodes = array();$/;"	v
+nodetype	inc/simple_html_dom.php	/^    public $nodetype = HDOM_TYPE_TEXT;$/;"	v
+noise	inc/simple_html_dom.php	/^        $this->noise = array();$/;"	v
+noise	inc/simple_html_dom.php	/^    protected $noise = array();$/;"	v
+optional_closing_array	inc/simple_html_dom.php	/^            $this->optional_closing_array=array();$/;"	v
+optional_closing_tags	inc/simple_html_dom.php	/^    protected $optional_closing_tags = array($/;"	v
+or	inc/simple_html_dom.php	/^        \/\/ If the class or id is specified in a SEPARATE css file thats not on the page, go get it and do what we were just doing for the ones on the page.$/;"	c
+or	inc/simple_html_dom.php	/^        \/\/ Look at all the parent tags of this image to see if they specify a class or id that has an img selector that specifies a height or width$/;"	c
+or	inc/simple_html_dom.php	/^        \/\/ Look in the tag to see if there is a class or id specified that has a height or width attribute to it.$/;"	c
+or	inc/simple_html_dom.php	/^        \/\/ Note that in this case, the class or id will have the img subselector for it to apply to the image.$/;"	c
+org_parent	inc/simple_html_dom.php	/^                    $org_parent = $this->parent;$/;"	v
+original_size	inc/simple_html_dom.php	/^        $this->original_size = $this->size;$/;"	v
+original_size	inc/simple_html_dom.php	/^    public $original_size;$/;"	v
+outertext	inc/simple_html_dom.php	/^    function outertext()$/;"	f
+parent	inc/simple_html_dom.php	/^                        $this->parent = $org_parent; \/\/ restore origonal parent$/;"	v
+parent	inc/simple_html_dom.php	/^                        $this->parent = $this->parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^                        if ($this->parent->parent) $this->parent = $this->parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^                    $this->parent = $this->parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^                $parent = $parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^                $this->parent = $this->parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^            $parent = $this->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^            $this->parent = $parent;$/;"	v
+parent	inc/simple_html_dom.php	/^            if (!isset($this->self_closing_tags[strtolower($node->tag)])) $this->parent = $node;$/;"	v
+parent	inc/simple_html_dom.php	/^            if ($this->parent->parent) $this->parent = $this->parent->parent;$/;"	v
+parent	inc/simple_html_dom.php	/^        $this->parent = $this->root;$/;"	v
+parent	inc/simple_html_dom.php	/^        $this->parent = null;$/;"	v
+parent	inc/simple_html_dom.php	/^    function parent($parent=null)$/;"	f
+parent	inc/simple_html_dom.php	/^    protected $parent;$/;"	v
+parent	inc/simple_html_dom.php	/^    public $parent = null;$/;"	v
+parentNode	inc/simple_html_dom.php	/^    function parentNode() {return $this->parent();}$/;"	f
+parent_lower	inc/simple_html_dom.php	/^            $parent_lower = strtolower($this->parent->tag);$/;"	v
+parse	inc/simple_html_dom.php	/^    protected function parse()$/;"	f
+parse_attr	inc/simple_html_dom.php	/^    protected function parse_attr($node, $name, &$space)$/;"	f
+parse_charset	inc/simple_html_dom.php	/^    protected function parse_charset()$/;"	f
+parse_selector	inc/simple_html_dom.php	/^    protected function parse_selector($selector_string) {$/;"	f
+pass	inc/simple_html_dom.php	/^                    if (($key != "plaintext") && !isset($node->attr[$key])) $pass=false;$/;"	v
+pass	inc/simple_html_dom.php	/^                    if (isset($node->attr[$key])) $pass=false;$/;"	v
+pass	inc/simple_html_dom.php	/^                if (!$check) $pass = false;$/;"	v
+pass	inc/simple_html_dom.php	/^            $pass = true;$/;"	v
+pattern	inc/simple_html_dom.php	/^        $pattern = "\/([\\w-:\\*]*)(?:\\#([\\w-]+)|\\.([\\w-]+))?(?:\\[@?(!?[\\w-:]+)(?:([!*^$]?=)[\\"']?(.*?)[\\"']?)?\\])?([\\\/, ]+)\/is";$/;"	v
+pattern	inc/simple_html_dom.php	/^\/\/        $pattern = "\/([\\w-:\\*]*)(?:\\#([\\w-]+)|\\.([\\w-]+))?(?:\\[@?(!?[\\w-]+)(?:([!*^$]?=)[\\"']?(.*?)[\\"']?)?\\])?([\\\/, ]+)\/is";$/;"	v
+pos	inc/simple_html_dom.php	/^                $this->pos = $this->size;$/;"	v
+pos	inc/simple_html_dom.php	/^            $this->pos = $pos;$/;"	v
+pos	inc/simple_html_dom.php	/^            $this->pos = $this->size;$/;"	v
+pos	inc/simple_html_dom.php	/^        $pos = $this->pos;$/;"	v
+pos	inc/simple_html_dom.php	/^        $this->pos = $pos;$/;"	v
+pos	inc/simple_html_dom.php	/^        $this->pos = 0;$/;"	v
+pos	inc/simple_html_dom.php	/^    protected $pos;$/;"	v
+pos_old	inc/simple_html_dom.php	/^            $pos_old = $this->pos;$/;"	v
+pos_old	inc/simple_html_dom.php	/^        $pos_old = $this->pos;$/;"	v
+prepare	inc/simple_html_dom.php	/^    protected function prepare($str, $lowercase=true, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	f
+prev_sibling	inc/simple_html_dom.php	/^    function prev_sibling()$/;"	f
+previousSibling	inc/simple_html_dom.php	/^    function previousSibling() {return $this->prev_sibling();}$/;"	f
+proposed_height	inc/simple_html_dom.php	/^                    $proposed_height = substr($attributes['height'], 0, -2);$/;"	v
+proposed_width	inc/simple_html_dom.php	/^                    $proposed_width = substr($attributes['width'], 0, -2);$/;"	v
+quote	inc/simple_html_dom.php	/^                    case HDOM_QUOTE_DOUBLE: $quote = '"'; break;$/;"	v
+quote	inc/simple_html_dom.php	/^                    case HDOM_QUOTE_SINGLE: $quote = '\\''; break;$/;"	v
+quote	inc/simple_html_dom.php	/^                    default: $quote = '';$/;"	v
+read_tag	inc/simple_html_dom.php	/^    protected function read_tag()$/;"	f
+removeAttribute	inc/simple_html_dom.php	/^    function removeAttribute($name) {$this->__set($name, null);}$/;"	f
+remove_callback	inc/simple_html_dom.php	/^    function remove_callback()$/;"	f
+remove_noise	inc/simple_html_dom.php	/^    protected function remove_noise($pattern, $remove_tag=false)$/;"	f
+remove_tag	inc/simple_html_dom.php	/^    protected function remove_noise($pattern, $remove_tag=false)$/;"	v
+restore_noise	inc/simple_html_dom.php	/^    function restore_noise($text)$/;"	f
+result	inc/simple_html_dom.php	/^                $result = array();$/;"	v
+result	inc/simple_html_dom.php	/^        $result = array('height' => $height,$/;"	v
+result	inc/simple_html_dom.php	/^        $result = array();$/;"	v
+ret	inc/simple_html_dom.php	/^                $ret = array();$/;"	v
+ret	inc/simple_html_dom.php	/^                $ret = substr($this->doc, $this->pos, $this->size-$this->pos);$/;"	v
+ret	inc/simple_html_dom.php	/^            $ret = "";$/;"	v
+ret	inc/simple_html_dom.php	/^            $ret = $this->dom->nodes[$this->_[HDOM_INFO_BEGIN]]->makeup();$/;"	v
+ret	inc/simple_html_dom.php	/^            $ret = substr($this->doc, $this->pos, $this->size-$this->pos);$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = $this->dom->restore_noise($ret);$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = $this->innertext();$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = $this->root->innertext();$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = '';$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = '<'.$this->tag;$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = str_ireplace('<![CDATA[', '', $ret);$/;"	v
+ret	inc/simple_html_dom.php	/^        $ret = str_replace(']]>', '', $ret);$/;"	v
+returnDom	inc/simple_html_dom.php	/^            $returnDom = $returnDom->parent;$/;"	v
+returnDom	inc/simple_html_dom.php	/^        $returnDom = $this;$/;"	v
+returns	inc/simple_html_dom.php	/^        \/\/ It's passed by reference so this is actually what this function returns.$/;"	f
+root	inc/simple_html_dom.php	/^        $this->root = new simple_html_dom_node($this);$/;"	v
+root	inc/simple_html_dom.php	/^    public $root = null;$/;"	v
+save	inc/simple_html_dom.php	/^    function save($filepath='')$/;"	f
+search_noise	inc/simple_html_dom.php	/^    function search_noise($text)$/;"	f
+seek	inc/simple_html_dom.php	/^    protected function seek($selector, &$ret, $lowercase=false)$/;"	f
+selectors	inc/simple_html_dom.php	/^        $selectors = $this->parse_selector($selector);$/;"	v
+selectors	inc/simple_html_dom.php	/^        $selectors = array();$/;"	v
+self_closing_tags	inc/simple_html_dom.php	/^    protected $self_closing_tags = array('img'=>1, 'br'=>1, 'input'=>1, 'meta'=>1, 'link'=>1, 'hr'=>1, 'base'=>1, 'embed'=>1, 'spacer'=>1);$/;"	v
+setAttribute	inc/simple_html_dom.php	/^    function setAttribute($name, $value) {$this->__set($name, $value);}$/;"	f
+set_callback	inc/simple_html_dom.php	/^    function set_callback($function_name)$/;"	f
+show_attr	inc/simple_html_dom.php	/^function dump_html_tree($node, $show_attr=true, $deep=0)$/;"	v
+simple_html_dom	inc/simple_html_dom.php	/^class simple_html_dom$/;"	c
+simple_html_dom_node	inc/simple_html_dom.php	/^class simple_html_dom_node$/;"	c
+size	inc/simple_html_dom.php	/^            $this->size = strlen($str);$/;"	v
+size	inc/simple_html_dom.php	/^        $this->size = strlen($str);$/;"	v
+size	inc/simple_html_dom.php	/^        $this->size = strlen($this->doc);$/;"	v
+size	inc/simple_html_dom.php	/^    public $size;$/;"	v
+skip	inc/simple_html_dom.php	/^    protected function skip($chars)$/;"	f
+sourceCharset	inc/simple_html_dom.php	/^            $sourceCharset = strtoupper($this->dom->_charset);$/;"	v
+sourceCharset	inc/simple_html_dom.php	/^        $sourceCharset = "";$/;"	v
+space	inc/simple_html_dom.php	/^                $space = array($this->copy_skip($this->token_blank), '', '');$/;"	v
+space	inc/simple_html_dom.php	/^        $space = array($this->copy_skip($this->token_blank), '', '');$/;"	v
+start	inc/simple_html_dom.php	/^                $start = $pos+1;$/;"	v
+start	inc/simple_html_dom.php	/^        $start = $this->pos;$/;"	v
+str	inc/simple_html_dom.php	/^            $str = str_replace("\\n", " ", $str);$/;"	v
+str	inc/simple_html_dom.php	/^            $str = str_replace("\\r", " ", $str);$/;"	v
+str_get_html	inc/simple_html_dom.php	/^function str_get_html($str, $lowercase=true, $forceTagsClosed=true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	f
+string	inc/simple_html_dom.php	/^        $string = $this->tag;$/;"	v
+success	inc/simple_html_dom.php	/^                    $success = preg_match('\/charset=(.+)\/', $fullvalue, $matches);$/;"	v
+success	inc/simple_html_dom.php	/^            $success = preg_match('\/charset=(.+)\/', $contentTypeHeader, $matches);$/;"	v
+tag	inc/simple_html_dom.php	/^                $tag = substr($tag, 0, $pos);$/;"	v
+tag	inc/simple_html_dom.php	/^                if ($tag==='*' || $tag===$c->tag) {$/;"	v
+tag	inc/simple_html_dom.php	/^            $tag = $this->copy_until_char('>');$/;"	v
+tag	inc/simple_html_dom.php	/^            $tag = '<' . substr($tag, 0, -1);$/;"	v
+tag	inc/simple_html_dom.php	/^        $tag = $this->copy_until($this->token_slash);$/;"	v
+tag	inc/simple_html_dom.php	/^    public $tag = 'text';$/;"	v
+tag_lower	inc/simple_html_dom.php	/^            $tag_lower = strtolower($tag);$/;"	v
+tag_lower	inc/simple_html_dom.php	/^        $tag_lower = strtolower($tag);$/;"	v
+tag_start	inc/simple_html_dom.php	/^    public $tag_start = 0;$/;"	v
+targetCharset	inc/simple_html_dom.php	/^            $targetCharset = strtoupper($this->dom->_target_charset);$/;"	v
+targetCharset	inc/simple_html_dom.php	/^        $targetCharset = "";$/;"	v
+text	inc/simple_html_dom.php	/^                    $text = " with text: " . $this->text;$/;"	v
+text	inc/simple_html_dom.php	/^                    $text = substr($text, 0, $pos).$this->noise[$key].substr($text, $pos+16);$/;"	v
+text	inc/simple_html_dom.php	/^                    $text = substr($text, 0, $pos).'UNDEFINED NOISE FOR KEY: '.$key . substr($text, $pos+16);$/;"	v
+text	inc/simple_html_dom.php	/^                $text = substr($text, 0, $pos).'NO NUMERIC NOISE KEY' . substr($text, $pos+11);$/;"	v
+text	inc/simple_html_dom.php	/^            $text = '';$/;"	v
+text	inc/simple_html_dom.php	/^    function text()$/;"	f
+to	inc/simple_html_dom.php	/^    \/\/ Debugging function to dump a single dom node with a bunch of information about it.$/;"	f
+to	inc/simple_html_dom.php	/^    \/\/ function to locate a specific ancestor tag in the path to the root.$/;"	f
+token_attr	inc/simple_html_dom.php	/^    protected $token_attr = ' >';$/;"	v
+token_blank	inc/simple_html_dom.php	/^    protected $token_blank = " \\t\\r\\n";$/;"	v
+token_equal	inc/simple_html_dom.php	/^    protected $token_equal = ' =\/>';$/;"	v
+token_slash	inc/simple_html_dom.php	/^    protected $token_slash = " \/>\\r\\n\\t";$/;"	v
+use_include_path	inc/simple_html_dom.php	/^function file_get_html($url, $use_include_path = false, $context=null, $offset = -1, $maxLen=-1, $lowercase = true, $forceTagsClosed=true, $target_charset = DEFAULT_TARGET_CHARSET, $stripRN=true, $defaultBRText=DEFAULT_BR_TEXT, $defaultSpanText=DEFAULT_SPAN_TEXT)$/;"	v
+val	inc/simple_html_dom.php	/^            if (!empty($m[2])) {$key='id'; $val=$m[2];}$/;"	v
+val	inc/simple_html_dom.php	/^            if (!empty($m[3])) {$key='class'; $val=$m[3];}$/;"	v
+val	inc/simple_html_dom.php	/^            if ($val===null || $val===false)$/;"	v
+value	inc/simple_html_dom.php	/^    function createElement($name, $value=null) {return @str_get_html("<$name>$value<\/$name>")->first_child();}$/;"	v
+width	inc/simple_html_dom.php	/^                        $width = $proposed_width;$/;"	v
+width	inc/simple_html_dom.php	/^            $width = $this->attr['width'];$/;"	v
+width	inc/simple_html_dom.php	/^            if (isset($attributes['width']) && $width == -1)$/;"	v
+width	inc/simple_html_dom.php	/^        $width = -1;$/;"	v
+xmltext	inc/simple_html_dom.php	/^    function xmltext()$/;"	f
+Table	inc/table_class.php	/^    function Table($name, $url) $/;"	f
+Table	inc/table_class.php	/^class Table $/;"	c
+TableField	inc/table_class.php	/^    function TableField($name,$type,$access)$/;"	f
+TableField	inc/table_class.php	/^class TableField$/;"	c
+access	inc/table_class.php	/^        $this->access=$access;$/;"	v
+access	inc/table_class.php	/^    var $access;$/;"	v
+description	inc/table_class.php	/^    var $description;$/;"	v
+fields	inc/table_class.php	/^    var $fields;$/;"	v
+name	inc/table_class.php	/^        $this->name=$name;$/;"	v
+name	inc/table_class.php	/^    var $name;$/;"	v
+type	inc/table_class.php	/^        $this->type=$type;$/;"	v
+type	inc/table_class.php	/^    var $type;$/;"	v
+url	inc/table_class.php	/^        $this->url=$url;$/;"	v
+url	inc/table_class.php	/^    var $url;$/;"	v
+variable	inc/table_class.php	/^     * undocumented class variable$/;"	c
+servicearray	index.php	/^    $servicearray =getServiceList();$/;"	v
+CastQuery	lib/Phinq/CastQuery.php	/^	class CastQuery implements Query {$/;"	c
+__construct	lib/Phinq/CastQuery.php	/^		public function __construct($type) {$/;"	f
+caster	lib/Phinq/CastQuery.php	/^					$this->caster = function($value) { return (unset)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (array)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (binary)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (bool)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (float)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (int)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (object)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			        $this->caster = function($value) { return (string)$value; };$/;"	v
+caster	lib/Phinq/CastQuery.php	/^			$caster = $this->caster;$/;"	v
+caster	lib/Phinq/CastQuery.php	/^		private $caster;$/;"	v
+execute	lib/Phinq/CastQuery.php	/^		public function execute(array $collection) {$/;"	f
+value	lib/Phinq/CastQuery.php	/^				$value = $caster($value);$/;"	v
+ComparableQuery	lib/Phinq/ComparableQuery.php	/^	abstract class ComparableQuery implements Query, Comparer {$/;"	c
+__construct	lib/Phinq/ComparableQuery.php	/^		public function __construct(EqualityComparer $comparer = null) {$/;"	f
+comparer	lib/Phinq/ComparableQuery.php	/^			$this->comparer = $comparer ?: DefaultEqualityComparer::getInstance();$/;"	v
+comparer	lib/Phinq/ComparableQuery.php	/^		private $comparer;$/;"	v
+comparer	lib/Phinq/ComparableQuery.php	/^		public function __construct(EqualityComparer $comparer = null) {$/;"	v
+getComparer	lib/Phinq/ComparableQuery.php	/^		public final function getComparer() {$/;"	f
+Comparer	lib/Phinq/Comparer.php	/^	interface Comparer {$/;"	i
+getComparer	lib/Phinq/Comparer.php	/^		function getComparer();$/;"	f
+ConcatQuery	lib/Phinq/ConcatQuery.php	/^	class ConcatQuery implements Query {$/;"	c
+__construct	lib/Phinq/ConcatQuery.php	/^		public function __construct(array $additionalCollection) {$/;"	f
+additionalCollection	lib/Phinq/ConcatQuery.php	/^			$this->additionalCollection = array_values($additionalCollection);$/;"	v
+additionalCollection	lib/Phinq/ConcatQuery.php	/^		private $additionalCollection = array();$/;"	v
+execute	lib/Phinq/ConcatQuery.php	/^		public function execute(array $collection) {$/;"	f
+DefaultEqualityComparer	lib/Phinq/DefaultEqualityComparer.php	/^	final class DefaultEqualityComparer implements EqualityComparer {$/;"	c
+__construct	lib/Phinq/DefaultEqualityComparer.php	/^		private function __construct() {}$/;"	f
+equals	lib/Phinq/DefaultEqualityComparer.php	/^		public function equals($a, $b) {$/;"	f
+getInstance	lib/Phinq/DefaultEqualityComparer.php	/^		public static function getInstance() {$/;"	f
+instance	lib/Phinq/DefaultEqualityComparer.php	/^		private static $instance = null;$/;"	v
+DefaultIfEmptyQuery	lib/Phinq/DefaultIfEmptyQuery.php	/^	class DefaultIfEmptyQuery implements Query {$/;"	c
+__construct	lib/Phinq/DefaultIfEmptyQuery.php	/^		public function __construct($defaultValue = null) {$/;"	f
+defaultValue	lib/Phinq/DefaultIfEmptyQuery.php	/^			$this->defaultValue = $defaultValue;$/;"	v
+defaultValue	lib/Phinq/DefaultIfEmptyQuery.php	/^		private $defaultValue;$/;"	v
+execute	lib/Phinq/DefaultIfEmptyQuery.php	/^		public function execute(array $collection) {$/;"	f
+Dictionary	lib/Phinq/Dictionary.php	/^	class Dictionary implements ArrayAccess, Iterator, Countable {$/;"	c
+count	lib/Phinq/Dictionary.php	/^		public function count() {$/;"	f
+createValue	lib/Phinq/Dictionary.php	/^		protected function createValue($oldValue, $newValue) {$/;"	f
+current	lib/Phinq/Dictionary.php	/^		public function current() {$/;"	f
+data	lib/Phinq/Dictionary.php	/^		private $data = array();$/;"	v
+findOffsetIndex	lib/Phinq/Dictionary.php	/^		protected final function findOffsetIndex($offset) {$/;"	f
+i	lib/Phinq/Dictionary.php	/^			foreach ($this->data as $i => $datum) {$/;"	v
+index	lib/Phinq/Dictionary.php	/^				$index = count($this->data);$/;"	v
+index	lib/Phinq/Dictionary.php	/^			$index = $this->findOffsetIndex($offset);$/;"	v
+index	lib/Phinq/Dictionary.php	/^			$this->index = 0;$/;"	v
+index	lib/Phinq/Dictionary.php	/^		private $index = 0;$/;"	v
+key	lib/Phinq/Dictionary.php	/^		public function key() {$/;"	f
+next	lib/Phinq/Dictionary.php	/^		public function next() {$/;"	f
+offsetExists	lib/Phinq/Dictionary.php	/^		public function offsetExists($offset) {$/;"	f
+offsetGet	lib/Phinq/Dictionary.php	/^		public function offsetGet($offset) {$/;"	f
+offsetSet	lib/Phinq/Dictionary.php	/^		public function offsetSet($offset, $value) {$/;"	f
+offsetUnset	lib/Phinq/Dictionary.php	/^		public function offsetUnset($offset) {$/;"	f
+rewind	lib/Phinq/Dictionary.php	/^		public function rewind() {$/;"	f
+valid	lib/Phinq/Dictionary.php	/^		public function valid() {$/;"	f
+DistinctQuery	lib/Phinq/DistinctQuery.php	/^	class DistinctQuery extends ComparableQuery {$/;"	c
+collection	lib/Phinq/DistinctQuery.php	/^					$collection = array_values($collection); \/\/need to reorder indexes after unset()$/;"	v
+comparer	lib/Phinq/DistinctQuery.php	/^			$comparer = $this->getComparer();$/;"	v
+count	lib/Phinq/DistinctQuery.php	/^			for ($i = 0, $count = count($collection); $i < $count; $i++) {$/;"	v
+execute	lib/Phinq/DistinctQuery.php	/^		public function execute(array $collection) {$/;"	f
+indexesToUnset	lib/Phinq/DistinctQuery.php	/^				$indexesToUnset = array();$/;"	v
+to	lib/Phinq/DistinctQuery.php	/^			\/\/this is pretty lame, but you can't pass a user-defined function to array_unique$/;"	f
+EmptyCollectionException	lib/Phinq/EmptyCollectionException.php	/^	class EmptyCollectionException extends Exception { }$/;"	c
+EqualityComparer	lib/Phinq/EqualityComparer.php	/^	interface EqualityComparer {$/;"	i
+equals	lib/Phinq/EqualityComparer.php	/^		function equals($a, $b);$/;"	f
+ExceptQuery	lib/Phinq/ExceptQuery.php	/^	class ExceptQuery extends ComparableQuery {$/;"	c
+__construct	lib/Phinq/ExceptQuery.php	/^		public function __construct(array $collectionToExcept, EqualityComparer $comparer = null) {$/;"	f
+collectionToExcept	lib/Phinq/ExceptQuery.php	/^			$this->collectionToExcept = $collectionToExcept;$/;"	v
+collectionToExcept	lib/Phinq/ExceptQuery.php	/^		private $collectionToExcept;$/;"	v
+comparer	lib/Phinq/ExceptQuery.php	/^			$comparer = $this->getComparer();$/;"	v
+comparer	lib/Phinq/ExceptQuery.php	/^		public function __construct(array $collectionToExcept, EqualityComparer $comparer = null) {$/;"	v
+execute	lib/Phinq/ExceptQuery.php	/^		public function execute(array $collection) {$/;"	f
+GroupByQuery	lib/Phinq/GroupByQuery.php	/^	class GroupByQuery extends LambdaDrivenQuery {$/;"	c
+dictionary	lib/Phinq/GroupByQuery.php	/^			$dictionary = new GroupingDictionary();$/;"	v
+execute	lib/Phinq/GroupByQuery.php	/^		public function execute(array $collection) {$/;"	f
+groupings	lib/Phinq/GroupByQuery.php	/^			$groupings = array();$/;"	v
+lambda	lib/Phinq/GroupByQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+GroupJoinQuery	lib/Phinq/GroupJoinQuery.php	/^	class GroupJoinQuery extends ComparableQuery {$/;"	c
+__construct	lib/Phinq/GroupJoinQuery.php	/^		public function __construct(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	f
+collectionToJoinOn	lib/Phinq/GroupJoinQuery.php	/^			$this->collectionToJoinOn = $collectionToJoinOn;$/;"	v
+collectionToJoinOn	lib/Phinq/GroupJoinQuery.php	/^		private $collectionToJoinOn;$/;"	v
+comparer	lib/Phinq/GroupJoinQuery.php	/^			$comparer         = $this->getComparer();$/;"	v
+comparer	lib/Phinq/GroupJoinQuery.php	/^		private $comparer;$/;"	v
+comparer	lib/Phinq/GroupJoinQuery.php	/^		public function __construct(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	v
+dictionary	lib/Phinq/GroupJoinQuery.php	/^			$dictionary       = new GroupingDictionary();$/;"	v
+execute	lib/Phinq/GroupJoinQuery.php	/^		public function execute(array $collection) {$/;"	f
+innerKey	lib/Phinq/GroupJoinQuery.php	/^					$innerKey = $innerKeySelector($value);$/;"	v
+innerKeySelector	lib/Phinq/GroupJoinQuery.php	/^			$innerKeySelector = $this->innerKeySelector;$/;"	v
+innerKeySelector	lib/Phinq/GroupJoinQuery.php	/^			$this->innerKeySelector = $innerKeySelector;$/;"	v
+innerKeySelector	lib/Phinq/GroupJoinQuery.php	/^		private $innerKeySelector;$/;"	v
+newCollection	lib/Phinq/GroupJoinQuery.php	/^			$newCollection = array();$/;"	v
+outerCollection	lib/Phinq/GroupJoinQuery.php	/^			$outerCollection  = $this->collectionToJoinOn;$/;"	v
+outerCount	lib/Phinq/GroupJoinQuery.php	/^			$outerCount       = count($this->collectionToJoinOn);$/;"	v
+outerKeySelector	lib/Phinq/GroupJoinQuery.php	/^			$outerKeySelector = $this->outerKeySelector;$/;"	v
+outerKeySelector	lib/Phinq/GroupJoinQuery.php	/^			$this->outerKeySelector = $outerKeySelector;$/;"	v
+outerKeySelector	lib/Phinq/GroupJoinQuery.php	/^		private $outerKeySelector;$/;"	v
+resultSelector	lib/Phinq/GroupJoinQuery.php	/^			$resultSelector = $this->resultSelector;$/;"	v
+resultSelector	lib/Phinq/GroupJoinQuery.php	/^			$this->resultSelector = $resultSelector;$/;"	v
+resultSelector	lib/Phinq/GroupJoinQuery.php	/^		private $resultSelector;$/;"	v
+Grouping	lib/Phinq/Grouping.php	/^	class Grouping extends Phinq {$/;"	c
+__construct	lib/Phinq/Grouping.php	/^		public function __construct(array $collection, $key) {$/;"	f
+getKey	lib/Phinq/Grouping.php	/^		public final function getKey() {$/;"	f
+key	lib/Phinq/Grouping.php	/^			$this->key = $key;$/;"	v
+key	lib/Phinq/Grouping.php	/^		private $key;$/;"	v
+GroupingDictionary	lib/Phinq/GroupingDictionary.php	/^	class GroupingDictionary extends Dictionary {$/;"	c
+createValue	lib/Phinq/GroupingDictionary.php	/^		protected function createValue($oldValue, $newValue) {$/;"	f
+IntersectQuery	lib/Phinq/IntersectQuery.php	/^	class IntersectQuery extends ComparableQuery {$/;"	c
+__construct	lib/Phinq/IntersectQuery.php	/^		public function __construct(array $collectionToIntersect, EqualityComparer $comparer = null) {$/;"	f
+collectionToIntersect	lib/Phinq/IntersectQuery.php	/^			$this->collectionToIntersect = array_values($collectionToIntersect);$/;"	v
+collectionToIntersect	lib/Phinq/IntersectQuery.php	/^		private $collectionToIntersect;$/;"	v
+comparer	lib/Phinq/IntersectQuery.php	/^			$comparer = $this->getComparer();$/;"	v
+comparer	lib/Phinq/IntersectQuery.php	/^		public function __construct(array $collectionToIntersect, EqualityComparer $comparer = null) {$/;"	v
+execute	lib/Phinq/IntersectQuery.php	/^		public function execute(array $collection) {$/;"	f
+JoinQuery	lib/Phinq/JoinQuery.php	/^	class JoinQuery extends ComparableQuery {$/;"	c
+__construct	lib/Phinq/JoinQuery.php	/^		public function __construct(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	f
+collectionToJoinOn	lib/Phinq/JoinQuery.php	/^			$this->collectionToJoinOn = $collectionToJoinOn;$/;"	v
+collectionToJoinOn	lib/Phinq/JoinQuery.php	/^		private $collectionToJoinOn;$/;"	v
+comparer	lib/Phinq/JoinQuery.php	/^			$comparer         = $this->getComparer();$/;"	v
+comparer	lib/Phinq/JoinQuery.php	/^		public function __construct(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	v
+execute	lib/Phinq/JoinQuery.php	/^		public function execute(array $collection) {$/;"	f
+innerKey	lib/Phinq/JoinQuery.php	/^					$innerKey = $innerKeySelector($value);$/;"	v
+innerKeySelector	lib/Phinq/JoinQuery.php	/^			$innerKeySelector = $this->innerKeySelector;$/;"	v
+innerKeySelector	lib/Phinq/JoinQuery.php	/^			$this->innerKeySelector = $innerKeySelector;$/;"	v
+innerKeySelector	lib/Phinq/JoinQuery.php	/^		private $innerKeySelector;$/;"	v
+newCollection	lib/Phinq/JoinQuery.php	/^			$newCollection    = array();$/;"	v
+outerCollection	lib/Phinq/JoinQuery.php	/^			$outerCollection  = $this->collectionToJoinOn;$/;"	v
+outerCount	lib/Phinq/JoinQuery.php	/^			$outerCount       = count($this->collectionToJoinOn);$/;"	v
+outerKeySelector	lib/Phinq/JoinQuery.php	/^			$outerKeySelector = $this->outerKeySelector;$/;"	v
+outerKeySelector	lib/Phinq/JoinQuery.php	/^			$this->outerKeySelector = $outerKeySelector;$/;"	v
+outerKeySelector	lib/Phinq/JoinQuery.php	/^		private $outerKeySelector;$/;"	v
+resultSelector	lib/Phinq/JoinQuery.php	/^			$resultSelector   = $this->resultSelector;$/;"	v
+resultSelector	lib/Phinq/JoinQuery.php	/^			$this->resultSelector = $resultSelector;$/;"	v
+resultSelector	lib/Phinq/JoinQuery.php	/^		private $resultSelector;$/;"	v
+LambdaDriven	lib/Phinq/LambdaDriven.php	/^	interface LambdaDriven {$/;"	i
+getLambdaExpression	lib/Phinq/LambdaDriven.php	/^		function getLambdaExpression();$/;"	f
+LambdaDrivenQuery	lib/Phinq/LambdaDrivenQuery.php	/^	abstract class LambdaDrivenQuery implements Query, LambdaDriven {$/;"	c
+__construct	lib/Phinq/LambdaDrivenQuery.php	/^		public function __construct(Closure $lambda) {$/;"	f
+getLambdaExpression	lib/Phinq/LambdaDrivenQuery.php	/^		public final function getLambdaExpression() {$/;"	f
+lambda	lib/Phinq/LambdaDrivenQuery.php	/^			$this->lambda = $lambda;$/;"	v
+lambda	lib/Phinq/LambdaDrivenQuery.php	/^		private $lambda;$/;"	v
+OfTypeQuery	lib/Phinq/OfTypeQuery.php	/^	class OfTypeQuery implements Query {$/;"	c
+__construct	lib/Phinq/OfTypeQuery.php	/^		public function __construct($type) {$/;"	f
+execute	lib/Phinq/OfTypeQuery.php	/^		public function execute(array $collection) {$/;"	f
+type	lib/Phinq/OfTypeQuery.php	/^			$this->type = $type;$/;"	v
+type	lib/Phinq/OfTypeQuery.php	/^			$type = $this->type;$/;"	v
+type	lib/Phinq/OfTypeQuery.php	/^		private $type;$/;"	v
+OrderByQuery	lib/Phinq/OrderByQuery.php	/^	class OrderByQuery extends OrderedQuery {$/;"	c
+getSortingCallback	lib/Phinq/OrderByQuery.php	/^		public function getSortingCallback() {$/;"	f
+lambda	lib/Phinq/OrderByQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+OrderedPhinq	lib/Phinq/OrderedPhinq.php	/^	class OrderedPhinq extends Phinq {$/;"	c
+__construct	lib/Phinq/OrderedPhinq.php	/^		public function __construct($collection, array $queries) {$/;"	f
+descending	lib/Phinq/OrderedPhinq.php	/^		public function thenBy(Closure $lambda, $descending = false) {$/;"	v
+thenBy	lib/Phinq/OrderedPhinq.php	/^		public function thenBy(Closure $lambda, $descending = false) {$/;"	f
+OrderedQuery	lib/Phinq/OrderedQuery.php	/^	abstract class OrderedQuery extends LambdaDrivenQuery {$/;"	c
+__construct	lib/Phinq/OrderedQuery.php	/^		public function __construct(Closure $lambda, $descending = false) {$/;"	f
+descending	lib/Phinq/OrderedQuery.php	/^			$this->descending = (bool)$descending;$/;"	v
+descending	lib/Phinq/OrderedQuery.php	/^		private $descending;$/;"	v
+descending	lib/Phinq/OrderedQuery.php	/^		public function __construct(Closure $lambda, $descending = false) {$/;"	v
+execute	lib/Phinq/OrderedQuery.php	/^		public final function execute(array $collection) {$/;"	f
+getSortingCallback	lib/Phinq/OrderedQuery.php	/^		public abstract function getSortingCallback();$/;"	f
+isDescending	lib/Phinq/OrderedQuery.php	/^		public final function isDescending() {$/;"	f
+Phinq	lib/Phinq/Phinq.php	/^	class Phinq implements IteratorAggregate {$/;"	c
+__construct	lib/Phinq/Phinq.php	/^		protected function __construct($collection, array $queries = array()) {$/;"	f
+addToQueue	lib/Phinq/Phinq.php	/^		protected final function addToQueue(Query $query) {$/;"	f
+aggregate	lib/Phinq/Phinq.php	/^		public function aggregate(Closure $accumulator, $seed = null) {$/;"	f
+all	lib/Phinq/Phinq.php	/^		public function all(Closure $predicate) {$/;"	f
+any	lib/Phinq/Phinq.php	/^		public function any(Closure $predicate = null) {$/;"	f
+average	lib/Phinq/Phinq.php	/^		public function average(Closure $lambda = null) {$/;"	f
+cast	lib/Phinq/Phinq.php	/^		public function cast($type) {$/;"	f
+collection	lib/Phinq/Phinq.php	/^				$collection = self::create($collection)->where($predicate)->toArray();$/;"	v
+collection	lib/Phinq/Phinq.php	/^			$collection = $lambda !== null ? Phinq::create($this->toArray())->select($lambda)->toArray() : $this->toArray();$/;"	v
+collection	lib/Phinq/Phinq.php	/^			$collection = $this->getCollection($predicate);$/;"	v
+collection	lib/Phinq/Phinq.php	/^			$collection = $this->getCollection();$/;"	v
+collection	lib/Phinq/Phinq.php	/^			$collection = $this->toArray();$/;"	v
+collection	lib/Phinq/Phinq.php	/^			$this->collection = Util::convertToNumericallyIndexedArray($collection);$/;"	v
+collection	lib/Phinq/Phinq.php	/^		private $collection;$/;"	v
+comparer	lib/Phinq/Phinq.php	/^			$comparer = $comparer ?: DefaultEqualityComparer::getInstance();$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function contains($value, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function distinct(EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function except(array $collectionToExcept, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function groupJoin(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function intersect(array $collectionToIntersect, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function join(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function sequenceEqual(array $otherCollection, EqualityComparer $comparer = null) {$/;"	v
+comparer	lib/Phinq/Phinq.php	/^		public function union(array $collectionToUnion, EqualityComparer $comparer = null) {$/;"	v
+concat	lib/Phinq/Phinq.php	/^		public function concat(array $collectionToConcat) {$/;"	f
+contains	lib/Phinq/Phinq.php	/^		public function contains($value, EqualityComparer $comparer = null) {$/;"	f
+count	lib/Phinq/Phinq.php	/^			$count = count($collection);$/;"	v
+count	lib/Phinq/Phinq.php	/^			for ($i = 0, $count = count($collection); $i < $count; $i++) {$/;"	v
+count	lib/Phinq/Phinq.php	/^		public function count(Closure $predicate = null) {$/;"	f
+create	lib/Phinq/Phinq.php	/^		public final static function create($collection) {$/;"	f
+defaultIfEmpty	lib/Phinq/Phinq.php	/^		public function defaultIfEmpty($defaultValue = null) {$/;"	f
+descending	lib/Phinq/Phinq.php	/^		public function orderBy(Closure $lambda, $descending = false) {$/;"	v
+dictionary	lib/Phinq/Phinq.php	/^			$dictionary = new Dictionary();$/;"	v
+distinct	lib/Phinq/Phinq.php	/^		public function distinct(EqualityComparer $comparer = null) {$/;"	f
+element	lib/Phinq/Phinq.php	/^			$element = $this->elementAtOrDefault($index);$/;"	v
+elementAt	lib/Phinq/Phinq.php	/^		public function elementAt($index) {$/;"	f
+elementAtOrDefault	lib/Phinq/Phinq.php	/^		public function elementAtOrDefault($index) {$/;"	f
+evaluatedCollection	lib/Phinq/Phinq.php	/^					$this->evaluatedCollection = $query->execute($this->evaluatedCollection);$/;"	v
+evaluatedCollection	lib/Phinq/Phinq.php	/^				$this->evaluatedCollection = $this->collection;$/;"	v
+evaluatedCollection	lib/Phinq/Phinq.php	/^			$this->evaluatedCollection = $this->collection;$/;"	v
+evaluatedCollection	lib/Phinq/Phinq.php	/^			if ($this->isDirty || $this->evaluatedCollection === null) {$/;"	v
+evaluatedCollection	lib/Phinq/Phinq.php	/^		private $evaluatedCollection;$/;"	v
+except	lib/Phinq/Phinq.php	/^		public function except(array $collectionToExcept, EqualityComparer $comparer = null) {$/;"	f
+first	lib/Phinq/Phinq.php	/^			$first = $this->firstOrDefault($predicate);$/;"	v
+first	lib/Phinq/Phinq.php	/^		public function first(Closure $predicate = null) {$/;"	f
+firstOrDefault	lib/Phinq/Phinq.php	/^		public function firstOrDefault(Closure $predicate = null) {$/;"	f
+getCollection	lib/Phinq/Phinq.php	/^		protected function getCollection(Closure $predicate = null) {$/;"	f
+getIterator	lib/Phinq/Phinq.php	/^		public function getIterator() {$/;"	f
+getLastQuery	lib/Phinq/Phinq.php	/^		protected final function getLastQuery() {$/;"	f
+getThisOrCastDown	lib/Phinq/Phinq.php	/^		private function getThisOrCastDown() {$/;"	f
+groupBy	lib/Phinq/Phinq.php	/^		public function groupBy(Closure $lambda) {$/;"	f
+groupJoin	lib/Phinq/Phinq.php	/^		public function groupJoin(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	f
+index	lib/Phinq/Phinq.php	/^				$index = $count + $index;$/;"	v
+index	lib/Phinq/Phinq.php	/^				$this->index = 0;$/;"	v
+index	lib/Phinq/Phinq.php	/^		private $index = 0;$/;"	v
+intersect	lib/Phinq/Phinq.php	/^		public function intersect(array $collectionToIntersect, EqualityComparer $comparer = null) {$/;"	f
+isDirty	lib/Phinq/Phinq.php	/^				$this->isDirty = false;$/;"	v
+isDirty	lib/Phinq/Phinq.php	/^			$this->isDirty = true;$/;"	v
+isDirty	lib/Phinq/Phinq.php	/^		private $isDirty = false;$/;"	v
+join	lib/Phinq/Phinq.php	/^		public function join(array $collectionToJoinOn, Closure $innerKeySelector, Closure $outerKeySelector, Closure $resultSelector, EqualityComparer $comparer = null) {$/;"	f
+lambda	lib/Phinq/Phinq.php	/^			$lambda = $lambda ?: function($value) { return $value; };$/;"	v
+lambda	lib/Phinq/Phinq.php	/^		public function average(Closure $lambda = null) {$/;"	v
+lambda	lib/Phinq/Phinq.php	/^		public function max(Closure $lambda = null) {$/;"	v
+lambda	lib/Phinq/Phinq.php	/^		public function min(Closure $lambda = null) {$/;"	v
+lambda	lib/Phinq/Phinq.php	/^		public function sum(Closure $lambda = null) {$/;"	v
+last	lib/Phinq/Phinq.php	/^			$last = $this->lastOrDefault($predicate);$/;"	v
+last	lib/Phinq/Phinq.php	/^		public function last(Closure $predicate = null) {$/;"	f
+lastOrDefault	lib/Phinq/Phinq.php	/^		public function lastOrDefault(Closure $predicate = null) {$/;"	f
+max	lib/Phinq/Phinq.php	/^		public function max(Closure $lambda = null) {$/;"	f
+min	lib/Phinq/Phinq.php	/^		public function min(Closure $lambda = null) {$/;"	f
+ofType	lib/Phinq/Phinq.php	/^		public function ofType($type) {$/;"	f
+orderBy	lib/Phinq/Phinq.php	/^		public function orderBy(Closure $lambda, $descending = false) {$/;"	f
+predicate	lib/Phinq/Phinq.php	/^		protected function getCollection(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function any(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function count(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function first(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function firstOrDefault(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function last(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function lastOrDefault(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function single(Closure $predicate = null) {$/;"	v
+predicate	lib/Phinq/Phinq.php	/^		public function singleOrDefault(Closure $predicate = null) {$/;"	v
+queries	lib/Phinq/Phinq.php	/^		protected function __construct($collection, array $queries = array()) {$/;"	v
+queryQueue	lib/Phinq/Phinq.php	/^		private $queryQueue = array();$/;"	v
+reverse	lib/Phinq/Phinq.php	/^		public function reverse() {$/;"	f
+seed	lib/Phinq/Phinq.php	/^		public function aggregate(Closure $accumulator, $seed = null) {$/;"	v
+select	lib/Phinq/Phinq.php	/^		public function select(Closure $lambda) {$/;"	f
+selectMany	lib/Phinq/Phinq.php	/^		public function selectMany(Closure $lambda) {$/;"	f
+sequenceEqual	lib/Phinq/Phinq.php	/^		public function sequenceEqual(array $otherCollection, EqualityComparer $comparer = null) {$/;"	f
+single	lib/Phinq/Phinq.php	/^			$single = $this->singleOrDefault($predicate);$/;"	v
+single	lib/Phinq/Phinq.php	/^		public function single(Closure $predicate = null) {$/;"	f
+singleOrDefault	lib/Phinq/Phinq.php	/^		public function singleOrDefault(Closure $predicate = null) {$/;"	f
+skip	lib/Phinq/Phinq.php	/^		public function skip($amount) {$/;"	f
+skipWhile	lib/Phinq/Phinq.php	/^		public function skipWhile(Closure $predicate) {$/;"	f
+sum	lib/Phinq/Phinq.php	/^		public function sum(Closure $lambda = null) {$/;"	f
+take	lib/Phinq/Phinq.php	/^		public function take($amount) {$/;"	f
+takeWhile	lib/Phinq/Phinq.php	/^		public function takeWhile(Closure $predicate) {$/;"	f
+that	lib/Phinq/Phinq.php	/^		 * @param Closure $keySelector A lambda function that takes one argument, the current element, and$/;"	f
+that	lib/Phinq/Phinq.php	/^		 * function that maps each element to a numeric value. Otherwise, the result$/;"	f
+to	lib/Phinq/Phinq.php	/^		 * Applies a lambda function to each element$/;"	f
+toArray	lib/Phinq/Phinq.php	/^		public function toArray() {$/;"	f
+toDictionary	lib/Phinq/Phinq.php	/^		public function toDictionary(Closure $keySelector) {$/;"	f
+union	lib/Phinq/Phinq.php	/^		public function union(array $collectionToUnion, EqualityComparer $comparer = null) {$/;"	f
+walk	lib/Phinq/Phinq.php	/^		public function walk(Closure $lambda) {$/;"	f
+where	lib/Phinq/Phinq.php	/^		public function where(Closure $predicate) {$/;"	f
+zip	lib/Phinq/Phinq.php	/^		public function zip(array $collectionToMerge, Closure $resultSelector) {$/;"	f
+Query	lib/Phinq/Query.php	/^	interface Query {$/;"	i
+execute	lib/Phinq/Query.php	/^		function execute(array $collection);$/;"	f
+ReverseQuery	lib/Phinq/ReverseQuery.php	/^	class ReverseQuery implements Query {$/;"	c
+execute	lib/Phinq/ReverseQuery.php	/^		public function execute(array $collection) {$/;"	f
+SelectManyQuery	lib/Phinq/SelectManyQuery.php	/^	class SelectManyQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/SelectManyQuery.php	/^		public function execute(array $collection) {$/;"	f
+flattenedCollection	lib/Phinq/SelectManyQuery.php	/^				$flattenedCollection = array_merge($flattenedCollection, Util::nonRecursiveFlatten($lambda($value)));$/;"	v
+flattenedCollection	lib/Phinq/SelectManyQuery.php	/^			$flattenedCollection = array();$/;"	v
+lambda	lib/Phinq/SelectManyQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+SelectQuery	lib/Phinq/SelectQuery.php	/^	class SelectQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/SelectQuery.php	/^		public function execute(array $collection) {$/;"	f
+lambda	lib/Phinq/SelectQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+newCollection	lib/Phinq/SelectQuery.php	/^			$newCollection = array();$/;"	v
+SkipQuery	lib/Phinq/SkipQuery.php	/^	class SkipQuery implements Query {$/;"	c
+__construct	lib/Phinq/SkipQuery.php	/^		public function __construct($amount) {$/;"	f
+amount	lib/Phinq/SkipQuery.php	/^			$this->amount = $amount;$/;"	v
+amount	lib/Phinq/SkipQuery.php	/^		private $amount;$/;"	v
+execute	lib/Phinq/SkipQuery.php	/^		public function execute(array $collection) {$/;"	f
+SkipWhileQuery	lib/Phinq/SkipWhileQuery.php	/^	class SkipWhileQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/SkipWhileQuery.php	/^		public function execute(array $collection) {$/;"	f
+predicate	lib/Phinq/SkipWhileQuery.php	/^			$predicate = $this->getLambdaExpression();$/;"	v
+sliceIndex	lib/Phinq/SkipWhileQuery.php	/^			$sliceIndex = -1;$/;"	v
+TakeQuery	lib/Phinq/TakeQuery.php	/^	class TakeQuery implements Query {$/;"	c
+__construct	lib/Phinq/TakeQuery.php	/^		public function __construct($amount) {$/;"	f
+amount	lib/Phinq/TakeQuery.php	/^			$this->amount = $amount;$/;"	v
+amount	lib/Phinq/TakeQuery.php	/^		private $amount;$/;"	v
+execute	lib/Phinq/TakeQuery.php	/^		public function execute(array $collection) {$/;"	f
+TakeWhileQuery	lib/Phinq/TakeWhileQuery.php	/^	class TakeWhileQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/TakeWhileQuery.php	/^		public function execute(array $collection) {$/;"	f
+predicate	lib/Phinq/TakeWhileQuery.php	/^			$predicate = $this->getLambdaExpression();$/;"	v
+sliceIndex	lib/Phinq/TakeWhileQuery.php	/^			$sliceIndex = -1;$/;"	v
+ThenByQuery	lib/Phinq/ThenByQuery.php	/^	class ThenByQuery extends OrderedQuery {$/;"	c
+__construct	lib/Phinq/ThenByQuery.php	/^		public function __construct(OrderedQuery $previousQuery, Closure $lambda, $descending = false) {$/;"	f
+currentCallback	lib/Phinq/ThenByQuery.php	/^			$currentCallback = Util::getDefaultSortCallback($this->getLambdaExpression(), $this->isDescending());$/;"	v
+descending	lib/Phinq/ThenByQuery.php	/^		public function __construct(OrderedQuery $previousQuery, Closure $lambda, $descending = false) {$/;"	v
+getSortingCallback	lib/Phinq/ThenByQuery.php	/^		public function getSortingCallback() {$/;"	f
+previousCallback	lib/Phinq/ThenByQuery.php	/^			$previousCallback = $this->previousQuery->getSortingCallback();$/;"	v
+previousQuery	lib/Phinq/ThenByQuery.php	/^			$this->previousQuery = $previousQuery;$/;"	v
+previousQuery	lib/Phinq/ThenByQuery.php	/^		private $previousQuery;$/;"	v
+previousValue	lib/Phinq/ThenByQuery.php	/^				$previousValue = $previousCallback($a, $b);$/;"	v
+UnionQuery	lib/Phinq/UnionQuery.php	/^	class UnionQuery extends ComparableQuery {$/;"	c
+__construct	lib/Phinq/UnionQuery.php	/^		public function __construct(array $additionalCollection, EqualityComparer $comparer = null) {$/;"	f
+additionalCollection	lib/Phinq/UnionQuery.php	/^			$this->additionalCollection = array_values($additionalCollection);$/;"	v
+additionalCollection	lib/Phinq/UnionQuery.php	/^		private $additionalCollection;$/;"	v
+comparer	lib/Phinq/UnionQuery.php	/^			$comparer = $this->getComparer();$/;"	v
+comparer	lib/Phinq/UnionQuery.php	/^		private $comparer;$/;"	v
+comparer	lib/Phinq/UnionQuery.php	/^		public function __construct(array $additionalCollection, EqualityComparer $comparer = null) {$/;"	v
+diffed	lib/Phinq/UnionQuery.php	/^			$diffed = array_udiff($this->additionalCollection, $collection, function($a, $b) use ($comparer) { return $comparer->equals($a, $b); });$/;"	v
+execute	lib/Phinq/UnionQuery.php	/^		public function execute(array $collection) {$/;"	f
+Util	lib/Phinq/Util.php	/^	final class Util {$/;"	c
+__construct	lib/Phinq/Util.php	/^		private function __construct() {}$/;"	f
+a	lib/Phinq/Util.php	/^				return $a === $b ? 0 : ($a < $b ? -1 : 1);$/;"	v
+a	lib/Phinq/Util.php	/^				return (is_int($b) || is_float($b)) && $a == $b ? 0 : ($a < $b ? -1 : 1);$/;"	v
+a	lib/Phinq/Util.php	/^				return is_array($b) && $a === $b ? 0 : ($a < $b ? -1 : 1); \/\/keys must match$/;"	v
+a	lib/Phinq/Util.php	/^				return is_object($b) && $a === $b ? 0 : 1; \/\/reference equals$/;"	v
+a	lib/Phinq/Util.php	/^				return is_resource($b) && $a === $b ? 0 : ($a < $b ? -1 : 1);$/;"	v
+a	lib/Phinq/Util.php	/^				return is_string($b) && $a === $b ? 0 : ($a < $b ? -1 : 1);$/;"	v
+array	lib/Phinq/Util.php	/^				$array = array();$/;"	v
+b	lib/Phinq/Util.php	/^				return $b === null ? 0 : ($a < $b ? -1 : 1);$/;"	v
+compare	lib/Phinq/Util.php	/^		public static function compare($a, $b) {$/;"	f
+convertToNumericallyIndexedArray	lib/Phinq/Util.php	/^		public static function convertToNumericallyIndexedArray($collection) {$/;"	f
+direction	lib/Phinq/Util.php	/^			$direction = $descending ? -1 : 1;$/;"	v
+flattened	lib/Phinq/Util.php	/^			$flattened = array();$/;"	v
+getDefaultSortCallback	lib/Phinq/Util.php	/^		public static function getDefaultSortCallback(Closure $lambda, $descending) {$/;"	f
+nonRecursiveFlatten	lib/Phinq/Util.php	/^		public static function nonRecursiveFlatten(array $array) {$/;"	f
+resultA	lib/Phinq/Util.php	/^				$resultA = $lambda($a);$/;"	v
+resultB	lib/Phinq/Util.php	/^				$resultB = $lambda($b);$/;"	v
+WalkQuery	lib/Phinq/WalkQuery.php	/^	class WalkQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/WalkQuery.php	/^		public function execute(array $collection) {$/;"	f
+lambda	lib/Phinq/WalkQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+to	lib/Phinq/WalkQuery.php	/^			\/\/abstracting the lambda function to avoid the possibility of the user passing by reference$/;"	f
+WhereQuery	lib/Phinq/WhereQuery.php	/^	class WhereQuery extends LambdaDrivenQuery {$/;"	c
+execute	lib/Phinq/WhereQuery.php	/^		public function execute(array $collection) {$/;"	f
+filteredCollection	lib/Phinq/WhereQuery.php	/^			$filteredCollection = array();$/;"	v
+lambda	lib/Phinq/WhereQuery.php	/^			$lambda = $this->getLambdaExpression();$/;"	v
+ZipQuery	lib/Phinq/ZipQuery.php	/^	class ZipQuery implements Query {$/;"	c
+__construct	lib/Phinq/ZipQuery.php	/^		public function __construct(array $collectionToMerge, Closure $resultSelector) {$/;"	f
+collectionToMerge	lib/Phinq/ZipQuery.php	/^			$this->collectionToMerge = $collectionToMerge;$/;"	v
+collectionToMerge	lib/Phinq/ZipQuery.php	/^		private $collectionToMerge;$/;"	v
+count	lib/Phinq/ZipQuery.php	/^			for ($i = 0, $count = min(count($collection), count($this->collectionToMerge)); $i < $count; $i++) {$/;"	v
+execute	lib/Phinq/ZipQuery.php	/^		public function execute(array $collection) {$/;"	f
+resultSelector	lib/Phinq/ZipQuery.php	/^			$resultSelector = $this->resultSelector;$/;"	v
+resultSelector	lib/Phinq/ZipQuery.php	/^			$this->resultSelector = $resultSelector;$/;"	v
+resultSelector	lib/Phinq/ZipQuery.php	/^		private $resultSelector;$/;"	v
+file	lib/Phinq/bootstrap.php	/^		$file = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . str_replace('\\\\', DIRECTORY_SEPARATOR, ltrim($class, '\\\\')) . '.php';$/;"	v

@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=940, initial-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<title>API Documentation » \iSDK\Services\SearchService</title>
+<meta name="author" content="Elliot Boney">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">API Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                            API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a href="../namespaces/iSDK.html"><i class="icon-th"></i> iSDK</a></li>
+<li><a href="../namespaces/xmlrpc.html"><i class="icon-th"></i> xmlrpc</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ActionSequence.html"><i class="icon-folder-open"></i> ActionSequence</a></li>
+<li><a href="../packages/AffResource.html"><i class="icon-folder-open"></i> AffResource</a></li>
+<li><a href="../packages/Affiliate.html"><i class="icon-folder-open"></i> Affiliate</a></li>
+<li><a href="../packages/AffiliateProgramService.html"><i class="icon-folder-open"></i> AffiliateProgramService</a></li>
+<li><a href="../packages/AffiliateService.html"><i class="icon-folder-open"></i> AffiliateService</a></li>
+<li><a href="../packages/CCharge.html"><i class="icon-folder-open"></i> CCharge</a></li>
+<li><a href="../packages/CProgram.html"><i class="icon-folder-open"></i> CProgram</a></li>
+<li><a href="../packages/Campaign.html"><i class="icon-folder-open"></i> Campaign</a></li>
+<li><a href="../packages/CampaignStep.html"><i class="icon-folder-open"></i> CampaignStep</a></li>
+<li><a href="../packages/Campaignee.html"><i class="icon-folder-open"></i> Campaignee</a></li>
+<li><a href="../packages/Company.html"><i class="icon-folder-open"></i> Company</a></li>
+<li><a href="../packages/Contact.html"><i class="icon-folder-open"></i> Contact</a></li>
+<li><a href="../packages/ContactAction.html"><i class="icon-folder-open"></i> ContactAction</a></li>
+<li><a href="../packages/ContactGroup.html"><i class="icon-folder-open"></i> ContactGroup</a></li>
+<li><a href="../packages/ContactGroupCategory.html"><i class="icon-folder-open"></i> ContactGroupCategory</a></li>
+<li><a href="../packages/ContactService.html"><i class="icon-folder-open"></i> ContactService</a></li>
+<li><a href="../packages/CreditCard.html"><i class="icon-folder-open"></i> CreditCard</a></li>
+<li><a href="../packages/DataFormField.html"><i class="icon-folder-open"></i> DataFormField</a></li>
+<li><a href="../packages/DataFormGroup.html"><i class="icon-folder-open"></i> DataFormGroup</a></li>
+<li><a href="../packages/DataFormTab.html"><i class="icon-folder-open"></i> DataFormTab</a></li>
+<li><a href="../packages/DataService.html"><i class="icon-folder-open"></i> DataService</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/DiscountService.html"><i class="icon-folder-open"></i> DiscountService</a></li>
+<li><a href="../packages/Expense.html"><i class="icon-folder-open"></i> Expense</a></li>
+<li><a href="../packages/FileBox.html"><i class="icon-folder-open"></i> FileBox</a></li>
+<li><a href="../packages/GroupAssign.html"><i class="icon-folder-open"></i> GroupAssign</a></li>
+<li><a href="../packages/Invoice.html"><i class="icon-folder-open"></i> Invoice</a></li>
+<li><a href="../packages/InvoiceItem.html"><i class="icon-folder-open"></i> InvoiceItem</a></li>
+<li><a href="../packages/InvoicePayment.html"><i class="icon-folder-open"></i> InvoicePayment</a></li>
+<li><a href="../packages/InvoiceService.html"><i class="icon-folder-open"></i> InvoiceService</a></li>
+<li><a href="../packages/Job.html"><i class="icon-folder-open"></i> Job</a></li>
+<li><a href="../packages/JobRecurringInstance.html"><i class="icon-folder-open"></i> JobRecurringInstance</a></li>
+<li><a href="../packages/Lead.html"><i class="icon-folder-open"></i> Lead</a></li>
+<li><a href="../packages/LeadSource.html"><i class="icon-folder-open"></i> LeadSource</a></li>
+<li><a href="../packages/LeadSourceCategory.html"><i class="icon-folder-open"></i> LeadSourceCategory</a></li>
+<li><a href="../packages/LeadSourceExpense.html"><i class="icon-folder-open"></i> LeadSourceExpense</a></li>
+<li><a href="../packages/LeadSourceRecurringExpense.html"><i class="icon-folder-open"></i> LeadSourceRecurringExpense</a></li>
+<li><a href="../packages/MtgLead.html"><i class="icon-folder-open"></i> MtgLead</a></li>
+<li><a href="../packages/OrderItem.html"><i class="icon-folder-open"></i> OrderItem</a></li>
+<li><a href="../packages/PackageName.html"><i class="icon-folder-open"></i> PackageName</a></li>
+<li><a href="../packages/PayPlan.html"><i class="icon-folder-open"></i> PayPlan</a></li>
+<li><a href="../packages/PayPlanItem.html"><i class="icon-folder-open"></i> PayPlanItem</a></li>
+<li><a href="../packages/Payment.html"><i class="icon-folder-open"></i> Payment</a></li>
+<li><a href="../packages/Product.html"><i class="icon-folder-open"></i> Product</a></li>
+<li><a href="../packages/ProductCategory.html"><i class="icon-folder-open"></i> ProductCategory</a></li>
+<li><a href="../packages/ProductCategoryAssign.html"><i class="icon-folder-open"></i> ProductCategoryAssign</a></li>
+<li><a href="../packages/ProductInterest.html"><i class="icon-folder-open"></i> ProductInterest</a></li>
+<li><a href="../packages/ProductInterestBundle.html"><i class="icon-folder-open"></i> ProductInterestBundle</a></li>
+<li><a href="../packages/ProductOptValue.html"><i class="icon-folder-open"></i> ProductOptValue</a></li>
+<li><a href="../packages/ProductOption.html"><i class="icon-folder-open"></i> ProductOption</a></li>
+<li><a href="../packages/ProductService.html"><i class="icon-folder-open"></i> ProductService</a></li>
+<li><a href="../packages/RecurringOrder.html"><i class="icon-folder-open"></i> RecurringOrder</a></li>
+<li><a href="../packages/RecurringOrderWithContact.html"><i class="icon-folder-open"></i> RecurringOrderWithContact</a></li>
+<li><a href="../packages/Referral.html"><i class="icon-folder-open"></i> Referral</a></li>
+<li><a href="../packages/SavedFilter.html"><i class="icon-folder-open"></i> SavedFilter</a></li>
+<li><a href="../packages/SearchService.html"><i class="icon-folder-open"></i> SearchService</a></li>
+<li><a href="../packages/ShippingService.html"><i class="icon-folder-open"></i> ShippingService</a></li>
+<li><a href="../packages/Stage.html"><i class="icon-folder-open"></i> Stage</a></li>
+<li><a href="../packages/StageMove.html"><i class="icon-folder-open"></i> StageMove</a></li>
+<li><a href="../packages/Status.html"><i class="icon-folder-open"></i> Status</a></li>
+<li><a href="../packages/SubscriptionPlan.html"><i class="icon-folder-open"></i> SubscriptionPlan</a></li>
+<li><a href="../packages/Template.html"><i class="icon-folder-open"></i> Template</a></li>
+<li><a href="../packages/Ticket.html"><i class="icon-folder-open"></i> Ticket</a></li>
+<li><a href="../packages/TicketStage.html"><i class="icon-folder-open"></i> TicketStage</a></li>
+<li><a href="../packages/TicketType.html"><i class="icon-folder-open"></i> TicketType</a></li>
+<li><a href="../packages/User.html"><i class="icon-folder-open"></i> User</a></li>
+<li><a href="../packages/UserGroup.html"><i class="icon-folder-open"></i> UserGroup</a></li>
+<li><a href="../packages/WebFormService.html"><i class="icon-folder-open"></i> WebFormService</a></li>
+<li><a href="../packages/Xmlrpc.html"><i class="icon-folder-open"></i> Xmlrpc</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                            Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                                Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">20</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">4</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple active" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_getAllReportColumns" title="getAllReportColumns() :: Gets all possible fields/columns available for return on a saved search/report"><span class="description">Gets all possible fields/columns available for return on a saved search/report</span><pre>getAllReportColumns()</pre></a></li>
+<li class="method public "><a href="#method_getAvailableQuickSearches" title="getAvailableQuickSearches() :: This is used to find what possible quick searches the given user has access to"><span class="description">This is used to find what possible quick searches the given user has access to</span><pre>getAvailableQuickSearches()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultQuickSearch" title="getDefaultQuickSearch() :: Retrieves the quick search type that the given users has set as their default"><span class="description">Retrieves the quick search type that the given users has set as their default</span><pre>getDefaultQuickSearch()</pre></a></li>
+<li class="method public "><a href="#method_getSavedSearchResults" title="getSavedSearchResults() :: Runs a saved search/report returning only the specified fields"><span class="description">Runs a saved search/report returning only the specified fields</span><pre>getSavedSearchResults()</pre></a></li>
+<li class="method public "><a href="#method_getSavedSearchResultsAllFields" title="getSavedSearchResultsAllFields() :: Runs a saved search/report and returns all possible fields"><span class="description">Runs a saved search/report and returns all possible fields</span><pre>getSavedSearchResultsAllFields()</pre></a></li>
+<li class="method public "><a href="#method_quickSearch" title="quickSearch() :: This allows you to run a quick search via the API. The quick search is the search bar in the
+upper right hand corner of the Infusionsoft application"><span class="description">This allows you to run a quick search via the API. The quick search is the search bar in the
+upper right hand corner of the Infusionsoft application</span><pre>quickSearch()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\iSDK\Services\SearchService"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/iSDK.html">iSDK</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/iSDK.Services.html">Services</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/iSDK.Services.SearchService.html">SearchService</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">SearchService Service Class</p>
+<div class="details">
+<div class="long_description">SearchService [short description]</div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Services</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/SearchService.html">SearchService</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Elliot Boney &lt;elliotboney@gmail.com&gt;</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">MIT License (http://www.opensource.org/licenses/mit-license.php)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="">http://help.infusionsoft.com//api-docs/searchservice</a></td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_getAllReportColumns"></a><div class="element clickable method public method_getAllReportColumns" data-toggle="collapse" data-target=".method_getAllReportColumns .collapse" title="public">
+<h2>Gets all possible fields/columns available for return on a saved search/report</h2>
+<pre>getAllReportColumns(int $savedSearchId, int $userId) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savedSearchId</h4>
+<code>int</code><p>The Id of the saved search you would like columns for</p></div>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The Id number of the user who created the saved search</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+<a id="method_getAvailableQuickSearches"></a><div class="element clickable method public method_getAvailableQuickSearches" data-toggle="collapse" data-target=".method_getAvailableQuickSearches .collapse" title="public">
+<h2>This is used to find what possible quick searches the given user has access to</h2>
+<pre>getAvailableQuickSearches(int $userId) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The userId you are checking access for</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+<a id="method_getDefaultQuickSearch"></a><div class="element clickable method public method_getDefaultQuickSearch" data-toggle="collapse" data-target=".method_getDefaultQuickSearch .collapse" title="public">
+<h2>Retrieves the quick search type that the given users has set as their default</h2>
+<pre>getDefaultQuickSearch(int $userId) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The id of the user to lookup their search defaults</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+<a id="method_getSavedSearchResults"></a><div class="element clickable method public method_getSavedSearchResults" data-toggle="collapse" data-target=".method_getSavedSearchResults .collapse" title="public">
+<h2>Runs a saved search/report returning only the specified fields</h2>
+<pre>getSavedSearchResults(int $savedSearchId, int $userId, int $pageNumber, array $returnFields) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savedSearchId</h4>
+<code>int</code><p>The Id number of the saved search being run</p></div>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The userId who the saved search is assigned to. If it is
+                            &#39;Everyone&#39;, you still need to pass a valid userId</p></div>
+<div class="subelement argument">
+<h4>$pageNumber</h4>
+<code>int</code><p>The page you would like results from. Zero is the first page</p></div>
+<div class="subelement argument">
+<h4>$returnFields</h4>
+<code>array</code><p>The fields/columns of data you want returned from this saved
+                            search</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+<a id="method_getSavedSearchResultsAllFields"></a><div class="element clickable method public method_getSavedSearchResultsAllFields" data-toggle="collapse" data-target=".method_getSavedSearchResultsAllFields .collapse" title="public">
+<h2>Runs a saved search/report and returns all possible fields</h2>
+<pre>getSavedSearchResultsAllFields(int $savedSearchId, int $userId, int $pageNumber) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savedSearchId</h4>
+<code>int</code><p>The Id number of the saved search being run</p></div>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The userId who the saved search is assigned to. If it is
+                          &#39;Everyone&#39;, you still need to pass a valid userId</p></div>
+<div class="subelement argument">
+<h4>$pageNumber</h4>
+<code>int</code><p>The page you would like results from. Zero is the first page</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+<a id="method_quickSearch"></a><div class="element clickable method public method_quickSearch" data-toggle="collapse" data-target=".method_quickSearch .collapse" title="public">
+<h2>This allows you to run a quick search via the API. The quick search is the search bar in the
+upper right hand corner of the Infusionsoft application</h2>
+<pre>quickSearch(int $quickSearchType, int $userId, int $searchData, int $page, int $returnLimit) : \iSDK\Services\stuff</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$quickSearchType</h4>
+<code>int</code><p>The type of search you are running. Person, Order, Opportunity,
+                            Company, Task, Subscription, or Affiliate</p></div>
+<div class="subelement argument">
+<h4>$userId</h4>
+<code>int</code><p>The Id number of the user running this search. Results are
+                            dependent on this users&#39; permissions</p></div>
+<div class="subelement argument">
+<h4>$searchData</h4>
+<code>int</code><p>String to run the search based on</p></div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>int</code><p>The page of results you would like returned</p></div>
+<div class="subelement argument">
+<h4>$returnLimit</h4>
+<code>int</code><p>Number of results returned. Max is 1000</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\iSDK\Services\stuff</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+                        Generated on 2013-09-27T20:26:51-05:00.<br></footer></div>
+</div>
+</body>
+</html>

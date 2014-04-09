@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+pre {
+    font-family: "Source Code Pro";
+    font-size: .7em;
+    margin: 2px;
+}
+h2 {
+    font-family: "Roboto Slab";
+    font-size: 1.3em;
+    margin-left: 15px;
+    margin-bottom: -10px;
+    text-decoration: underline;
+
+}
+h2:hover {
+ color: #3773af;
+ cursor: pointer;
+}
+h3 {
+    font-family: "Source Code Pro";
+    font-size: .8em;
+    font-style: italic;
+    color: #6b6b6b;
+    font-weight: normal;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    line-height: 1.2em;
+    margin-left: 13px;
+}
+h4 {
+    font-family: "Source Code Pro";
+    font-weight: 400;
+    margin-left: 35px;
+    margin-top: 9px;
+    color: #08111a;
+    font-style: normal;
+    font-weight: normal;
+}
+h5 {
+    color: #afb5c0;
+    font-family: "Source Code Pro";
+    font-size: .7em;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    /*word-wrap: break-word;*/
+    /*white-space: normal;*/
+    margin-top: -20px;
+    /*padding: 0;*/
+    max-width: 600px;
+}

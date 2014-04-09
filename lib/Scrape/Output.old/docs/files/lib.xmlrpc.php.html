@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.10.2.min.js"  type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="../js/prism.min.js" type="text/javascript"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+        <script type="text/javascript">
+        function loadExternalCodeSnippets() {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+                var src = pre.getAttribute('data-src');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist or is empty';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        $(document).ready(function(){
+            loadExternalCodeSnippets();
+        });
+        $('#source-view').on('shown', function () {
+            loadExternalCodeSnippets();
+        })
+    </script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/iSDK.html">\iSDK</a></li>
+                                                        <li><a href="../namespaces/xmlrpc.html">\xmlrpc</a></li>
+                                                    </ul>
+                    </li>
+                    <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                    <i class="icon-list-alt"></i>&#160;Errors
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                    <i class="icon-list-alt"></i>&#160;Markers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-454566147"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-454566147" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2113646260"></a>
+                                <a href="../namespaces/iSDK.html" style="margin-left: 30px; padding-left: 0">iSDK</a>
+            </div>
+            <div id="namespace-2113646260" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1118233832"></a>
+                                <a href="../namespaces/iSDK.Tables.html" style="margin-left: 30px; padding-left: 0">Tables</a>
+            </div>
+            <div id="namespace-1118233832" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/iSDK.Tables.DataFormField.html">DataFormField</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductCategory.html">ProductCategory</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Invoice.html">Invoice</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ContactGroup.html">ContactGroup</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.DataFormGroup.html">DataFormGroup</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductInterest.html">ProductInterest</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductCategoryAssign.html">ProductCategoryAssign</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.User.html">User</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.PayPlan.html">PayPlan</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.SubscriptionPlan.html">SubscriptionPlan</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.LeadSourceCategory.html">LeadSourceCategory</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.FileBox.html">FileBox</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Company.html">Company</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.InvoicePayment.html">InvoicePayment</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.OrderItem.html">OrderItem</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.CCharge.html">CCharge</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Product.html">Product</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.MtgLead.html">MtgLead</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Contact.html">Contact</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Expense.html">Expense</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.CreditCard.html">CreditCard</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Stage.html">Stage</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Campaignee.html">Campaignee</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductOption.html">ProductOption</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Lead.html">Lead</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ContactGroupCategory.html">ContactGroupCategory</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.StageMove.html">StageMove</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.UserGroup.html">UserGroup</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Payment.html">Payment</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductOptValue.html">ProductOptValue</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.InvoiceItem.html">InvoiceItem</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.LeadSourceRecurringExpense.html">LeadSourceRecurringExpense</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.JobRecurringInstance.html">JobRecurringInstance</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Template.html">Template</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.CProgram.html">CProgram</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.PayPlanItem.html">PayPlanItem</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.LeadSourceExpense.html">LeadSourceExpense</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.LeadSource.html">LeadSource</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.SavedFilter.html">SavedFilter</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Job.html">Job</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ContactAction.html">ContactAction</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.TicketStage.html">TicketStage</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.TicketType.html">TicketType</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.GroupAssign.html">GroupAssign</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ActionSequence.html">ActionSequence</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Affiliate.html">Affiliate</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Ticket.html">Ticket</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.CampaignStep.html">CampaignStep</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Referral.html">Referral</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Campaign.html">Campaign</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.DataFormTab.html">DataFormTab</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.Status.html">Status</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.RecurringOrder.html">RecurringOrder</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.RecurringOrderWithContact.html">RecurringOrderWithContact</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.AffResource.html">AffResource</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Tables.ProductInterestBundle.html">ProductInterestBundle</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2074239974"></a>
+                                <a href="../namespaces/iSDK.Services.html" style="margin-left: 30px; padding-left: 0">Services</a>
+            </div>
+            <div id="namespace-2074239974" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/iSDK.Services.DiscountService.html">DiscountService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.InvoiceService.html">InvoiceService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.SearchService.html">SearchService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.ContactService.html">ContactService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.ShippingService.html">ShippingService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.AffiliateProgramService.html">AffiliateProgramService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.DataService.html">DataService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.ProductService.html">ProductService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.WebFormService.html">WebFormService</a></li>
+                                                    <li class="class"><a href="../classes/iSDK.Services.AffiliateService.html">AffiliateService</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/iSDK.PHPiSDK.html">PHPiSDK</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1381751098"></a>
+                                <a href="../namespaces/xmlrpc.html" style="margin-left: 30px; padding-left: 0">xmlrpc</a>
+            </div>
+            <div id="namespace-1381751098" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/xmlrpc.xmlrpc_client.html">xmlrpc_client</a></li>
+                                                    <li class="class"><a href="../classes/xmlrpc.xmlrpcresp.html">xmlrpcresp</a></li>
+                                                    <li class="class"><a href="../classes/xmlrpc.xmlrpcmsg.html">xmlrpcmsg</a></li>
+                                                    <li class="class"><a href="../classes/xmlrpc.xmlrpcval.html">xmlrpcval</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/xmlrpc_server.html">xmlrpc_server</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content file">
+                    <nav>
+                                                                    </nav>
+
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+                    <h1><small>lib</small>xmlrpc.php</h1>
+                    <p><em>All rights reserved.</em></p>
+                    <p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:</p>
+
+<ul>
+<li><p>Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce the above
+ copyright notice, this list of conditions and the following
+ disclaimer in the documentation and/or other materials provided
+ with the distribution.</p></li>
+<li><p>Neither the name of the "XML-RPC for PHP" nor the names of its
+ contributors may be used to endorse or promote products derived
+ from this software without specific prior written permission.</p></li>
+</ul>
+
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+
+                    
+                    
+                                        <h2>Classes</h2>
+                    <table class="table table-hover">
+                                            <tr>
+                            <td><a href="../classes/xmlrpc.xmlrpc_client.html">xmlrpc_client</a></td>
+                            <td><em></em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/xmlrpc.xmlrpcresp.html">xmlrpcresp</a></td>
+                            <td><em></em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/xmlrpc.xmlrpcmsg.html">xmlrpcmsg</a></td>
+                            <td><em></em></td>
+                        </tr>
+                                            <tr>
+                            <td><a href="../classes/xmlrpc.xmlrpcval.html">xmlrpcval</a></td>
+                            <td><em></em></td>
+                        </tr>
+                                        </table>
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                                                    <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">Xmlrpc</div></dd>
+                        
+                                                                                    <dt>See also</dt>
+                                                                                        <dd><a href="http://findlink.com/"><div class="namespace-wrapper">http://findlink.com/</div></a></dd>
+                                                    
+                    </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                                    <tr>
+                                <th>
+                                    category
+                                </th>
+                                <td>
+                                                                            <p>Libraries</p>
+
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    author
+                                </th>
+                                <td>
+                                                                            <p>Edd Dumbill <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#x65;&#x64;&#100;&#64;&#x75;&#x73;e&#102;&#117;&#x6c;&#x69;&#110;&#99;&#x2e;&#x63;o&#109;">&#x65;&#x64;&#100;&#64;&#x75;&#x73;e&#102;&#117;&#x6c;&#x69;&#110;&#99;&#x2e;&#x63;o&#109;</a></p>
+
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    copyright
+                                </th>
+                                <td>
+                                                                            <p>1999-2002 Edd Dumbill</p>
+
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    license
+                                </th>
+                                <td>
+                                                                            <p>MIT License</p>
+
+                                                                    </td>
+                            </tr>
+                                                    <tr>
+                                <th>
+                                    version
+                                </th>
+                                <td>
+                                                                            
+
+                                                                    </td>
+                            </tr>
+                                            </table>
+
+                </aside>
+            </div>
+
+                        <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Constants</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="constant_XMLRPC_EPI_ENABLED" name="constant_XMLRPC_EPI_ENABLED" class="anchor"></a>
+            <article id="constant_XMLRPC_EPI_ENABLED" class="constant">
+                <h3 class="">XMLRPC_EPI_ENABLED</h3>
+                <pre class="signature">XMLRPC_EPI_ENABLED</pre>
+                <p><em></em></p>
+                
+
+            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                <dt>File</dt>
+                <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                        <div class="row-fluid">
+                <section class="span8 content file">
+                    <h2>Functions</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_encode_entitites" name="method_xmlrpc_encode_entitites" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_encode_entitites()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_encode_entitites(string <span class="argument">$data</span>, string <span class="argument">$src_encoding</span>, string <span class="argument">$dest_encoding</span>) : string</pre>
+                <p><em>Convert a string to the correct XML representation in a target charset
+To help correct communication of non-ascii chars inside strings, regardless
+of the charset used when sending requests, parsing them, sending responses
+and parsing responses, an option is to convert all non-ascii chars present in the message
+into their equivalent &#039;charset entity&#039;. Charset entities enumerated this way
+are independent of the charset encoding used to transmit them, and all XML
+parsers are bound to understand them.</em></p>
+                <p>Note that in the std case we are not sending a charset encoding mime type
+along with http headers, so we are bound by RFC 3023 to emit strict us-ascii.</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$data</td>
+                                <td><p>destination encoding</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$src_encoding</td>
+                                <td><p>destination encoding</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$dest_encoding</td>
+                                <td><p>destination encoding</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>returns escaped data</p>
+
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                            <p>do a bit of basic benchmarking (strtr vs. str_replace)</p>
+
+                                                            <p>make usage of iconv() or recode_string() or mb_string() where available</p>
+
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_se" name="method_xmlrpc_se" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_se()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_se( <span class="argument">$parser</span>,  <span class="argument">$name</span>,  <span class="argument">$attrs</span>,  <span class="argument">$accept_single_vals</span>) : void</pre>
+                <p><em>xml parser handler function for opening element tags</em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$name</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$attrs</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$accept_single_vals</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_se_any" name="method_xmlrpc_se_any" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_se_any()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_se_any( <span class="argument">$parser</span>,  <span class="argument">$name</span>,  <span class="argument">$attrs</span>)</pre>
+                <p><em></em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$name</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$attrs</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_ee" name="method_xmlrpc_ee" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_ee()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_ee( <span class="argument">$parser</span>,  <span class="argument">$name</span>,  <span class="argument">$rebuild_xmlrpcvals</span>)</pre>
+                <p><em></em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$name</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$rebuild_xmlrpcvals</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_ee_fast" name="method_xmlrpc_ee_fast" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_ee_fast()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_ee_fast( <span class="argument">$parser</span>,  <span class="argument">$name</span>)</pre>
+                <p><em></em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$name</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_cd" name="method_xmlrpc_cd" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_cd()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_cd( <span class="argument">$parser</span>,  <span class="argument">$data</span>)</pre>
+                <p><em></em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$data</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_xmlrpc_dh" name="method_xmlrpc_dh" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">xmlrpc_dh()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">xmlrpc_dh( <span class="argument">$parser</span>,  <span class="argument">$data</span>)</pre>
+                <p><em></em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$parser</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$data</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_iso8601_encode" name="method_iso8601_encode" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">iso8601_encode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">iso8601_encode(int <span class="argument">$timet</span>, int <span class="argument">$utc</span>) : string</pre>
+                <p><em>Given a timestamp, return the corresponding ISO8601 encoded string.</em></p>
+                <p>Really, timezones ought to be supported
+but the XML-RPC spec says:</p>
+
+<p>"Don't assume a timezone. It should be specified by the server in its
+documentation what assumptions it makes about timezones."</p>
+
+<p>These routines always assume localtime unless
+$utc is set to 1, in which case UTC is assumed
+and an adjustment for locale is made when encoding</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>int</td>
+                                <td>$timet</td>
+                                <td><p>(timestamp)</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>int</td>
+                                <td>$utc</td>
+                                <td><p>(0 or 1)</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_iso8601_decode" name="method_iso8601_decode" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">iso8601_decode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">iso8601_decode(string <span class="argument">$idate</span>, int <span class="argument">$utc</span>) : int</pre>
+                <p><em>Given an ISO8601 date string, return a timet in the localtime, or UTC</em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$idate</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>int</td>
+                                <td>$utc</td>
+                                <td><p>either 0 or 1</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    int
+                                            &mdash; <p>(datetime)</p>
+
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_php_xmlrpc_decode" name="method_php_xmlrpc_decode" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">php_xmlrpc_decode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">php_xmlrpc_decode(\xmlrpc\xmlrpcval <span class="argument">$xmlrpc_val</span>, array <span class="argument">$options</span>) : mixed</pre>
+                <p><em>Takes an xmlrpc value in PHP xmlrpcval object format and translates it into native PHP types.</em></p>
+                <p>Works with xmlrpc message objects as input, too.</p>
+
+<p>Given proper options parameter, can rebuild generic php object instances
+(provided those have been encoded to xmlrpc format using a corresponding
+option in php_xmlrpc_encode())
+PLEASE NOTE that rebuilding php objects involves calling their constructor function.
+This means that the remote communication end can decide which php code will
+get executed on your server, leaving the door possibly open to 'php-injection'
+style of attacks (provided you have some classes defined on your server that
+might wreak havoc if instances are built outside an appropriate context).
+Make sure you trust the remote server/client before eanbling this!</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>\xmlrpc\xmlrpcval</td>
+                                <td>$xmlrpc_val</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>array</td>
+                                <td>$options</td>
+                                <td><p>if 'decode_php_objs' is set in the options array, xmlrpc structs can be decoded into php objects; if 'dates_as_objects' is set xmlrpc datetimes are decoded as php DateTime objects (standard is</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            author
+                        </th>
+                        <td>
+                                                            <p>Dan Libby (dan@libby.com)</p>
+
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_php_xmlrpc_encode" name="method_php_xmlrpc_encode" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">php_xmlrpc_encode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">php_xmlrpc_encode(mixed <span class="argument">$php_val</span>, array <span class="argument">$options</span>) : \xmlrpc\xmlrpcval</pre>
+                <p><em>Takes native php types and encodes them into xmlrpc PHP object format.</em></p>
+                <p>It will not re-encode xmlrpcval objects.</p>
+
+<p>Feature creep -- could support more types via optional type argument
+(string => datetime support has been added, ??? => base64 not yet)</p>
+
+<p>If given a proper options parameter, php object instances will be encoded
+into 'special' xmlrpc values, that can later be decoded into php objects
+by calling php_xmlrpc_decode() with a corresponding option</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$php_val</td>
+                                <td><p>the value to be converted into an xmlrpcval object</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>array</td>
+                                <td>$options</td>
+                                <td><p>can include 'encode_php_objs', 'auto_dates', 'null_extension' or 'extension_api'</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    \xmlrpc\xmlrpcval
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            author
+                        </th>
+                        <td>
+                                                            <p>Dan Libby (dan@libby.com)</p>
+
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_php_xmlrpc_decode_xml" name="method_php_xmlrpc_decode_xml" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">php_xmlrpc_decode_xml()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">php_xmlrpc_decode_xml(string <span class="argument">$xml_val</span>, array <span class="argument">$options</span>) : mixed</pre>
+                <p><em>Convert the xml representation of a method response, method request or single
+xmlrpc value into the appropriate object (a.k.a. deserialize)</em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$xml_val</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>array</td>
+                                <td>$options</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    mixed
+                                            &mdash; <p>false on error, or an instance of either xmlrpcval, xmlrpcmsg or xmlrpcresp</p>
+
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_decode_chunked" name="method_decode_chunked" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">decode_chunked()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">decode_chunked(string <span class="argument">$buffer</span>) : string</pre>
+                <p><em>decode a string that is encoded w/ &quot;chunked&quot; transfer encoding
+as defined in rfc2068 par. 19.4.6
+code shamelessly stolen from nusoap library by Dietrich Ayala</em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$buffer</td>
+                                <td><p>the string to be decoded</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_guess_encoding" name="method_guess_encoding" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">guess_encoding()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">guess_encoding( <span class="argument">$httpheader</span>, string <span class="argument">$xmlchunk</span>, string <span class="argument">$encoding_prefs</span>)</pre>
+                <p><em>xml charset encoding guessing helper function.</em></p>
+                <p>Tries to determine the charset encoding of an XML chunk received over HTTP.
+NB: according to the spec (RFC 3023), if text/xml content-type is received over HTTP without a content-type,
+we SHOULD assume it is strictly US-ASCII. But we try to be more tolerant of unconforming (legacy?) clients/servers,
+which will be most probably using UTF-8 anyway...</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$httpheader</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$xmlchunk</td>
+                                <td><p>xml content buffer</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$encoding_prefs</td>
+                                <td><p>comma separated list of character encodings to be used as default (when mb extension is enabled)</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            todo
+                        </th>
+                        <td>
+                                                            <p>explore usage of mb_http_input(): does it detect http headers + post data? if so, use it instead of hand-detection!!!</p>
+
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_is_valid_charset" name="method_is_valid_charset" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">is_valid_charset()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">is_valid_charset(string <span class="argument">$encoding</span>, mixed <span class="argument">$validlist</span>)</pre>
+                <p><em>Checks if a given charset encoding is present in a list of encodings or
+if it is a valid subset of any encoding in the list</em></p>
+                
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$encoding</td>
+                                <td><p>charset to be tested</p>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>mixed</td>
+                                <td>$validlist</td>
+                                <td><p>comma separated list of valid charsets (or array of charsets)</p>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href=""><div class="path-wrapper">lib/xmlrpc.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            subpackage
+                        </th>
+                        <td>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+        </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label"></h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/lib/xmlrpc.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/iSDK.html">\iSDK</a></li>
+                                                                            <li><a href="../namespaces/xmlrpc.html">\xmlrpc</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="">Errors</a></li>
+                                    <li><a href="">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation Generated on September 27th, 2013 at 23:59.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
