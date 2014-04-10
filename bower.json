@@ -1,0 +1,26 @@
+{
+  "name": ";",
+  "version": "0.0.1",
+  "homepage": "https://github.com/elliotboney/InfusionsoftPHPSDKGenerator",
+  "description": "PHP Scraper",
+  "main": "index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Elliot Boney"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-code-prettify": "~1.0.1",
+    "highlight": "~7.0.1"
+  }
+}

@@ -1,53 +1,86 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
-pre {
-    font-family: "Source Code Pro";
-    font-size: .7em;
-    margin: 2px;
+.col1 {
+    width: 65%;
 }
-h2 {
-    font-family: "Roboto Slab";
-    font-size: 1.3em;
-    margin-left: 15px;
-    margin-bottom: -10px;
-    text-decoration: underline;
+.col2 {
+    width: 15%;
+}
+.col3 {
+    width: 20%;
+    text-align: right;
+}
+td:nth-child(3) {
+    text-align: right;
+}
+.panel-heading {
+    font-size: 24px;
+    padding-left: 5px;
+}
 
+i {
+    margin-left: -22px;
+    margin-right: 10px;
+    color: black;
+    opacity: 0.5;
 }
-h2:hover {
- color: #3773af;
- cursor: pointer;
+
+.fa-link {
+    opacity: 0.3;
 }
-h3 {
-    font-family: "Source Code Pro";
-    font-size: .8em;
-    font-style: italic;
-    color: #6b6b6b;
-    font-weight: normal;
-    margin-bottom: -5px;
-    margin-top: 10px;
-    line-height: 1.2em;
-    margin-left: 13px;
+
+.table>tbody>tr.info>td {
+    /*background-color: #a0d2e6;*/
 }
-h4 {
-    font-family: "Source Code Pro";
-    font-weight: 400;
-    margin-left: 35px;
-    margin-top: 9px;
-    color: #08111a;
-    font-style: normal;
-    font-weight: normal;
+
+.table>tbody>tr.success>td {
+    /*background-color: #70c16f;*/
 }
-h5 {
-    color: #afb5c0;
-    font-family: "Source Code Pro";
-    font-size: .7em;
-    font-style: italic;
-    font-weight: 400;
-    margin-left: 50px;
-    margin-bottom: 5px;
-    /*word-wrap: break-word;*/
-    /*white-space: normal;*/
-    margin-top: -20px;
-    /*padding: 0;*/
-    max-width: 600px;
+
+.glyphicon {
+    opacity: 0.4;
+}
+
+pre {
+    font-family: "Source Code Pro",sans !important;
+    border: 0 none white !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    word-break: break-word;
+    white-space: nowrap !important;
+    margin-bottom: 0;
+}
+
+pre code {
+    word-break: break-word;
+
+
+    /*padding: 0 !important;*/
+}
+
+.tab-content {
+    border: 1px solid #ecf0f1;
+    border-top: 0 none white;
+    padding: 20px;
+}
+
+.hljs-operator:first-child {
+    margin-left: -100px;
+}
+
+code.hljs {
+    margin-top: -4%;
+}
+
+hr {
+    margin-top: 38px;
+    margin-bottom: 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.nav>li {
+    /*background-color: #f6f9f9;*/
 }

@@ -1,9 +1,9 @@
 <?php 
 namespace Scrape\Generators;
-use scrape\ISScraper;
-use Scrape\Table;
-use Scrape\Service;
-use Scrape\ISHelpers;
+// use scrape\ISScraper;
+// use Scrape\Table;
+// use Scrape\Service;
+// use Scrape\ISHelpers;
 
 
 class TableGenerator {
