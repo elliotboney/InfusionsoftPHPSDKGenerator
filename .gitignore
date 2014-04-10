@@ -3,3 +3,4 @@
 *.sublime-workspace
 bower_components/*
 .DS_Store
+sftp-config.json
