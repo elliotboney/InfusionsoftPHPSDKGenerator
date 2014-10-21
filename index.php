@@ -32,21 +32,27 @@ $helper = new Scrape\ISHelpers();
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css">
   <!-- END Bootstrap -->
 
 
     <!-- <link rel="stylesheet" href="bower_components/google-code-prettify/src/prettify.css"> -->
-    
+
     <link rel="stylesheet" href="assets/css/tomorrow.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!--<script src="bower_components/google-code-prettify/src/prettify.js" type="text/javascript"></script>-->
     <!-- <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css"> -->
-    
-    <script src="assets/js/highlight.pack.js"></script>
 
+    <script src="assets/js/highlight.pack.js"></script>
+<style>
+    h4, .h4 {
+        font-size: 15px;
+        border-bottom: 1px #efefef solid;
+        margin-top: 15px;
+    }
+</style>
 </head>
 <body>
 <div class="container-fluid">
@@ -64,18 +70,18 @@ $helper = new Scrape\ISHelpers();
 
 // $helper->outputTablesSQL();
 
-$helper->outputTablesSorted();
-/*
+// $helper->outputTablesSorted();
+
     $svclist = $scraper->getServiceList();
     foreach ($svclist as $s) {
-        // echo "Creating docs for Service: ".$s->name."\n";
+        echo "Creating docs for Service: ".$s->name."\n";
         $helper->flush_buffers();
         $s->methods = $scraper->getServiceInfo($s);
         $gen = new Scrape\Generators\ServiceGenerator($s);
         $gen->generate();
         unset($gen);
     }
-*/
+
 ?>
 <script type="text/javascript">
 $( document ).ready(function() {

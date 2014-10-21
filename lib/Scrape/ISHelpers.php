@@ -327,17 +327,17 @@ class ISHelpers
     }
     // print_r($tableNames);
     
-    function left($str, $length)
+    static function left($str, $length)
     {
         return substr($str, 0, $length);
     }
     
-    function right($str, $length)
+    static function right($str, $length)
     {
         return substr($str, -$length);
     }
     
-    function flush_buffers()
+    static function flush_buffers()
     {
         ob_end_flush();
         // ob_flush();

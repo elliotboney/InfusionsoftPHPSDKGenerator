@@ -63,12 +63,14 @@ class ServiceMethodParam
     var $name;
     var $type;
     var $description;
+    var $optional;
 
-    function ServiceMethod($name,$type,$description)
+    function __construct($name,$type,$description,$optional=false)
     {
         $this->name=$name;
         $this->type=$type;
         $this->description=$description;
+        $this->optional=$optional;
     }
 }
    

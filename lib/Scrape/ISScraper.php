@@ -35,15 +35,7 @@
 
 
 namespace Scrape;
-// use Scrape\Table;
-// use Scrape\Service;
-
-// use Scrape\ISHelpers;
-
-// require_once 'Table.php';
-// require_once 'Service.php';
 require_once 'lib/simple_html_dom.php';
-// dirname(__FILE__)
 
 /**
  * undocumented class
@@ -218,13 +210,13 @@ class ISScraper
         $html = file_get_html($url);
         $count = 0;
         $servicelist = array();
-        foreach ($html->find('ul.nav-list li a') as $i) {
+        foreach ($html->find('#sub ul li a') as $i) {
             $name = $i->plaintext;
             $surl = $i->href;
             if (ISHelpers::right($name, 7) == "Service") {
                 $tempservice = new Service();
-                $tempservice->name = $name;
-                $tempservice->url = $GLOBALS['api_base'] . $surl;
+                $tempservice->name = preg_replace('/ /','',$name);
+                $tempservice->url =  $surl;
                 $servicelist[] = $tempservice;
             }
             $count++;
@@ -244,6 +236,7 @@ class ISScraper
      */
     function getServiceInfo($s)
     {
+        // TODO: Add support for optional parameters
         echo "<h2>" . $s->name . "</h2>";
         $html = file_get_html($s->url);
         $methods = $html->find('.full_method');
@@ -252,36 +245,50 @@ class ISScraper
             $tmpmethod = new ServiceMethod();
             $tmpmethod->name = trim($m->find('.method', 0)->plaintext);
             $tmpmethod->description = $m->next_sibling()->plaintext;
-            
+            echo "<h4>".$tmpmethod->name."</h4>";
             $paramtable = $m->next_sibling()->next_sibling()->next_sibling();
-            $thead = true;
-            foreach ($paramtable->find('tbody tr') as $tr) {
-                if ($thead) {
-                    $thead = false;
-                    continue;
-                }
-                $tmpp = new ServiceMethodParam();
-                $name = trim($tr->children(0)->plaintext);
-                $type = trim($tr->children(1)->plaintext);
-                $descr = trim($tr->children(2)->plaintext);
-                // skip the key, we use this with all methods
-                if ($name == "privateKey" || $name == "Key" || $name == "key") {
-                    continue;
-                }
-                $tmpp->name = $name;
-                $tmpp->type = $type;
-                $tmpp->description = $descr;
-                $tmpmethod->parameters[] = $tmpp;
-                
-                echo "<pre>\n";
-                echo "        " . str_pad($name, 20, " ", STR_PAD_RIGHT) . str_pad($type, 10, " ") . str_pad(ISHelpers::left($descr, 55) . "...", 22, " ", STR_PAD_LEFT) . "\n";
-                echo "</pre>\n";
-            }
+
+            $this->getMethodParameters($paramtable,$tmpmethod);
             $methodlist[] = $tmpmethod;
+
+            // Check to see if there are any optional parameters
+            if ($paramtable->next_sibling()->plaintext == "Optional Parameters") {
+                $tmpoptmethod = new ServiceMethod();
+                $tmpoptmethod->parameters = $tmpmethod->parameters;
+                $this->getMethodParameters($paramtable->next_sibling()->next_sibling(),$tmpoptmethod,true);
+                $tmpoptmethod->name = $tmpmethod->name.ucwords($tmpoptmethod->parameters[count($tmpoptmethod->parameters)-2]->name);
+                $methodlist[] = $tmpoptmethod;
+
+            }
         }
         ISHelpers::flush_buffers();
         echo "<hr>";
         return $methodlist;
+    }
+
+    function getMethodParameters($paramtable,&$tmpmethod,$optional=false) {
+        // flag for the table heading
+        $thead = true;
+        foreach ($paramtable->find('tbody tr') as $tr) {
+            if ($thead) {
+                $thead = false;
+                continue;
+            }
+            $name = trim($tr->children(0)->plaintext);
+            $type = trim($tr->children(1)->plaintext);
+            $descr = trim($tr->children(2)->plaintext);
+            // skip the key, we use this with all methods
+            if ($name == "privateKey" || $name == "Key" || $name == "key") {
+                continue;
+            }
+            $tmpp = new ServiceMethodParam($name,$type,$descr,$optional);
+
+            $tmpmethod->parameters[] = $tmpp;
+
+            echo "<pre>\n";
+            echo "        \t" . str_pad($name, 20, " ", STR_PAD_RIGHT) . str_pad($type, 10, " ") . str_pad(ISHelpers::left($descr, 55) . "...", 22, " ", STR_PAD_LEFT) . "\n";
+            echo "</pre>\n";
+        }
     }
 } // END class
 

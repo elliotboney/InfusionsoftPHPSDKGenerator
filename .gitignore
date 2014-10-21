@@ -4,3 +4,6 @@
 bower_components/*
 .DS_Store
 sftp-config.json
+
+lib/Scrape/Output/**/*
+lib/Scrape/Output.old/**/*
