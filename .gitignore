@@ -7,3 +7,5 @@ sftp-config.json
 
 lib/Scrape/Output/**/*
 lib/Scrape/Output.old/**/*
+
+/vendor/

@@ -1,0 +1,22 @@
+{
+    "name": "elliotboney/infusionsoft-phpsdk-generator",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Elliot Boney",
+            "email": "elliotboney@gmail.com"
+        }
+    ],
+    "require": {
+        "phinq/phinq": "dev-master",
+        "sunra/php-simple-html-dom-parser": "dev-master",
+        "phpfastcache/phpfastcache": "dev-master",
+        "suramon/simple-xml-reader": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Scrape": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
